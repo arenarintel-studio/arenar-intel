@@ -7,20 +7,55 @@ public_folder: "/uploads"
 
 collections:
   - name: "posts"
-    label: "Posts"
+    label: "Articles"
     folder: "content/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
 
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string"
+        }
 
-      - { label: "Date", name: "date", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime"
+        }
 
-      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text"
+        }
 
-      - { label: "Card Type", name: "card", widget: "select", options: ["featured", "text", "compact", "basic", "grid"] }
+      - {
+          label: "Featured Image",
+          name: "image",
+          widget: "image",
+          required: false
+        }
 
-      - { label: "Homepage Featured", name: "homepage_featured", widget: "boolean", required: false }
+      - {
+          label: "Card Type",
+          name: "card",
+          widget: "select",
+          options:
+            ["text", "compact", "basic", "grid"]
+        }
 
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Homepage Featured",
+          name: "homepage_featured",
+          widget: "boolean",
+          required: false,
+          default: false
+        }
+
+      - {
+          label: "Body",
+          name: "body",
+          widget: "markdown"
+        }

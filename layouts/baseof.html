@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.Locale }}" dir="{{ or site.Language.Direction `ltr` }}">
+
 <head>
   {{ partial "head.html" . }}
+
+  <!-- NETLIFY IDENTITY -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
+
 <body>
-    <div class="page-transition" data-pagefind-ignore></div>
+
+  <div class="page-transition" data-pagefind-ignore></div>
 
   <header data-pagefind-ignore>
     {{ partial "header.html" . }}
@@ -21,6 +27,19 @@
   <footer data-pagefind-ignore>
     {{ partial "footer.html" . }}
   </footer>
+
+  <!-- NETLIFY CMS LOGIN REDIRECT -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
