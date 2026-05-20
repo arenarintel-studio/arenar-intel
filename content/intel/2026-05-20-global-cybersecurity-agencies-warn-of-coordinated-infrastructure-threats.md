@@ -1,5 +1,5 @@
 +++
-title = "Global Cybersecurity Agencies Warn of Coordinated Infrastructure Threats"
+title = "2 Global Cybersecurity Agencies Warn of Coordinated Infrastructure Threats"
 date = "2026-05-20T23:56:00+00:00"
 draft = false
 card = "text"
