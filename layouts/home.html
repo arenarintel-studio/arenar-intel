@@ -1,0 +1,159 @@
+{{ define "main" }}
+
+<div class="x-bar">
+  {{ if site.Params.xbarlink }}
+  <a
+    href="{{ site.Params.xbarlink }}"
+    class="x-post-link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="fa-brands fa-x-twitter"></i>
+
+    <span>
+      {{ site.Params.xbar | default "Follow Arenar Intel on X for real-time updates" }}
+    </span>
+  </a>
+
+  {{ else }}
+
+  <div class="x-post-link">
+    <i class="fa-brands fa-x-twitter"></i>
+    <span>Follow Arenar Intel on X for real-time updates</span>
+  </div>
+
+  {{ end }}
+</div>
+
+<div class="main-content">
+  <section class="news-feed">
+    {{ $text := where site.RegularPages "Params.card" "text" }}
+{{ $compact := where site.RegularPages "Params.card" "compact" }}
+{{ $basic := where site.RegularPages "Params.card" "basic" }}
+{{ $grid := where site.RegularPages "Params.card" "grid" }}
+
+    <!-- FEATURED -->
+    {{ $homepageFeatured := where site.RegularPages "Params.homepage_featured" true }}
+
+    {{ with index ($homepageFeatured.ByPublishDate.Reverse) 0 }}
+      {{ partial "cards/featured.html" . }}
+    {{ end }}
+
+    <!-- 1st and 2nd TEXT -->
+    {{ range first 2 ($text.ByPublishDate.Reverse) }}
+      {{ partial "cards/text.html" . }}
+    {{ end }}
+
+    <!-- 1st and 2nd COMPACT -->
+    {{ range first 2 ($compact.ByPublishDate.Reverse) }}
+      {{ partial "cards/compact.html" . }}
+    {{ end }}
+
+    <!-- 1st BASIC -->
+    {{ range first 1 ($basic.ByPublishDate.Reverse) }}
+      {{ partial "cards/basic.html" . }}
+    {{ end }}
+
+        <!--3rd and 4th COMPACT -->
+    {{ range first 2 (after 2 ($compact.ByPublishDate.Reverse)) }}
+      {{ partial "cards/compact.html" . }}
+    {{ end }}
+
+      <!-- 2nd BASIC -->
+    {{ range first 1 ( after 1 ($basic.ByPublishDate.Reverse)) }}
+      {{ partial "cards/basic.html" . }}
+    {{ end }}
+
+            <!-- 5th, 6th and 7th COMPACT -->
+    {{ range first 3 (after 4 ($compact.ByPublishDate.Reverse)) }}
+      {{ partial "cards/compact.html" . }}
+    {{ end }}
+
+    <!-- 3rd and 4th TEXT -->
+{{ range first 2 (after 2 ($text.ByPublishDate.Reverse)) }}
+  {{ partial "cards/text.html" . }}
+{{ end }}
+
+      <!--3rd  BASIC -->
+    {{ range first 1 ( after 2 ($basic.ByPublishDate.Reverse)) }}
+      {{ partial "cards/basic.html" . }}
+    {{ end }}
+
+    <!--8th and 9th Compact-->
+    {{ range first 2 ( after 7 ($compact.ByPublishDate.Reverse)) }}
+      {{ partial "cards/compact.html" . }}
+    {{ end }}
+
+    <!--4th Basic-->
+    {{ range first 1 ( after 3 ($basic.ByPublishDate.Reverse)) }}
+      {{ partial "cards/basic.html" . }}
+    {{ end }}
+
+    <!--10th, 11th and 12th Compact-->
+    {{ range first 3 ( after 9 ($compact.ByPublishDate.Reverse)) }}
+      {{ partial "cards/compact.html" . }}
+    {{ end }}
+
+        <!-- 5th and 6th TEXT -->
+{{ range first 2 (after 4 ($text.ByPublishDate.Reverse)) }}
+  {{ partial "cards/text.html" . }}
+{{ end }}
+
+<!--5th Basic-->
+    {{ range first 1 ( after 4 ($basic.ByPublishDate.Reverse)) }}
+      {{ partial "cards/basic.html" . }}
+    {{ end }}
+
+    <!-- 7th and 8th TEXT -->
+{{ range first 2 (after 6 ($text.ByPublishDate.Reverse)) }}
+  {{ partial "cards/text.html" . }}
+{{ end }}
+
+<!--13th, 14th and 15th Compact-->
+    {{ range first 3 ( after 12 ($compact.ByPublishDate.Reverse)) }}
+      {{ partial "cards/compact.html" . }}
+    {{ end }}
+
+    <!--6th Basic-->
+    {{ range first 1 ( after 5 ($basic.ByPublishDate.Reverse)) }}
+      {{ partial "cards/basic.html" . }}
+    {{ end }}
+
+    <!--16th, and 17th Compact-->
+    {{ range first 2 ( after 15 ($compact.ByPublishDate.Reverse)) }}
+      {{ partial "cards/compact.html" . }}
+    {{ end }}
+
+    <!-- 9th and 10th TEXT -->
+{{ range first 2 (after 8 ($text.ByPublishDate.Reverse)) }}
+  {{ partial "cards/text.html" . }}
+{{ end }}
+
+    <!-- GRID -->
+    <section class="grid-feed">
+      {{ range first 4 ($grid.ByPublishDate.Reverse) }}
+        {{ partial "cards/grid.html" . }}
+      {{ end }}
+    </section>
+
+    <!-- 9th and 10th TEXT -->
+{{ range first 2 (after 10 ($text.ByPublishDate.Reverse)) }}
+  {{ partial "cards/text.html" . }}
+{{ end }}
+
+ <!--17th, and 18th Compact-->
+    {{ range first 2 ( after 17 ($compact.ByPublishDate.Reverse)) }}
+      {{ partial "cards/compact.html" . }}
+    {{ end }}
+
+     <!-- GRID 2 -->
+    <section class="grid-feed">
+      {{ range first 4 (after 4 ($grid.ByPublishDate.Reverse)) }}
+        {{ partial "cards/grid.html" . }}
+      {{ end }}
+    </section>
+
+  </section>
+</div>
+
+{{ end }}

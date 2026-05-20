@@ -1,0 +1,26 @@
+<div class="menu-panel" id="menuPanel">
+  <div class="menu-search">
+    <div class="menu-search-inner">
+      <input type="text" id="search" placeholder="Search news..." autocomplete="off">
+      <button class="clear-search" aria-label="Clear Search"> &times; </button>
+      <button class="icon" aria-label="Run Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="search-results"></div>
+
+  <nav class="menu-nav">
+    <a href="/" class="{{ if .IsHome }}active{{ end }}">Intel</a>
+    <a href="/about/" class="{{ if eq .Section "about" }}active{{ end }}">About</a>
+  </nav>
+
+  <div class="menu-footer">
+    <p>© {{ now.Format "2006" }} Arenar Intel</p>
+  </div>
+</div>
+
+<div class="menu-overlay" id="menuOverlay"></div>

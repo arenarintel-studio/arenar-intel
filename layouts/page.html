@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+<main class="article-page" data-pagefind-body>
+
+    <!-- ARTICLE TITLE -->
+    <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+
+    <!-- ARTICLE META -->
+    <div class="article-meta" data-pagefind-ignore>
+        <span class="byline">
+            By {{ .Params.author | default "Arenar Intel" }}
+        </span>
+
+        <span>
+            {{ .Date.Format "January 2, 2006" }}
+            •
+            {{ .Date.Format "15:04" }} UTC
+        </span>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="article-actions" data-pagefind-ignore>
+        <button>
+            <i class="fa-solid fa-share" style="color: black;"></i>
+            Share
+        </button>
+
+        <button>
+            <i class="fa-regular fa-bookmark"></i>
+            Save
+        </button>
+    </div>
+
+    <!-- INVISIBLE FRONT MATTER SUMMARY HOOK FOR PAGEFIND -->
+    {{ with .Params.summary }}
+    <div style="display: none;" data-pagefind-meta="summary">{{ . }}</div>
+    {{ end }}
+
+    <!-- FEATURE IMAGE -->
+    {{ with .Params.image }}
+    <img
+        class="article-image"
+        src="{{ . }}"
+        alt="{{ $.Title }}"
+        data-pagefind-ignore
+    />
+    {{ end }}
+
+    <!-- SOURCE -->
+    {{ with .Params.source }}
+    <div class="article-source" data-pagefind-ignore>
+        Source: {{ . }}
+    </div>
+    {{ end }}
+
+    <!-- ARTICLE BODY -->
+    <div class="article-body">
+        {{ .Content }}
+    </div>
+
+</main>
+
+{{ end }}

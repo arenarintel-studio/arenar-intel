@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="main-content {{ .Section }}-section">
+  <section class="news-feed">
+    
+    <header class="section-header">
+      <!-- Title function ensures clean, professional Title Case capitalization -->
+      <h1>{{ .Title | title }} Desk</h1>
+    </header>
+
+    <!-- v0.146.0 strict content tracking loop -->
+    {{ $pages := .Pages }}
+    {{ if $pages }}
+      <div class="stream-grid">
+        {{ range $pages }}
+          <article class="news-card">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <span class="news-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            <p>{{ .Summary | truncate 150 }}</p>
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p>No articles found in the {{ .Title | title }} desk yet.</p>
+    {{ end }}
+
+  </section>
+</div>
+{{ end }}

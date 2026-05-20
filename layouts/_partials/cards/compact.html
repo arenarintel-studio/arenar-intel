@@ -1,0 +1,18 @@
+<a href="{{ .RelPermalink }}" class="card-link">
+  <article class="compact-card">
+
+    {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    {{ end }}
+
+    <div class="compact-info">
+      <h3>{{ .Title }}</h3>
+
+      <small>
+        <i class="fa-regular fa-clock"></i>
+        {{ .ReadingTime }} min read
+      </small>
+    </div>
+
+  </article>
+</a>

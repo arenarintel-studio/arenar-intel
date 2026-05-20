@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}" dir="{{ or site.Language.Direction `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+    <div class="page-transition" data-pagefind-ignore></div>
+
+  <header data-pagefind-ignore>
+    {{ partial "header.html" . }}
+  </header>
+
+  <div data-pagefind-ignore>
+    {{ partial "menu.html" . }}
+  </div>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer data-pagefind-ignore>
+    {{ partial "footer.html" . }}
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* CONTENT */
+.about-body {
+  padding: 0 1.2rem;
+}
+
+.about-block {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.about-block:last-child {
+  border-bottom: none;
+}
+
+.about-block .label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #e63329;
+  margin-bottom: 0.6rem;
+}
+.about-block h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0a0a0a;
+  line-height: 1.2;
+  margin-bottom: 0.7rem;
+}
+.about-block p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* PULL QUOTE */
+.pull-quote {
+  background: black;
+  margin: 0 0;
+  padding: 1rem 1rem;
+  margin-right: -120px;
+  border-left: 4px solid gray;
+}
+.pull-quote p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.5;
+  font-style: italic;
+}
+.pull-quote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  font-style: normal;
+}
+
+/* VALUES GRID */
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.value-item {
+  background: #fff;
+  border-top: 3px solid red;
+  padding: 1rem 0.8rem;
+}
+.value-item strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: black;
+  margin-bottom: 0.4rem;
+}
+.value-item p {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* CONTACT BLOCK */
+.contact-block {
+  background: #0a0a0a;
+  margin: 0rem 0 0;
+  padding: 1.1rem 1.1rem;
+}
+.contact-block .label {
+  color: red;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.contact-block h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.contact-block p {
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.contact-block a.contact-email {
+  display: inline-block;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+}

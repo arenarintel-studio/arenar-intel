@@ -1,0 +1,11 @@
+<a href="{{ .RelPermalink }}" class="card-link">
+  <article class="grid-card">
+
+    {{ with .Params.image }}
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    {{ end }}
+
+    <h3>{{ .Title }}</h3>
+
+  </article>
+</a>
