@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+site_url: "https://arenarintel.netlify.app"
+
+collections:
+  - name: "posts"
+    label: "News Articles"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+
+      - {
+          label: "Card Type",
+          name: "card",
+          widget: "select",
+          options: ["featured", "text", "compact", "basic", "grid"]
+        }
+
+      - { label: "Featured on Homepage", name: "homepage_featured", widget: "boolean", required: false }
+
+      - { label: "Description", name: "description", widget: "text" }
+
+      - { label: "Body", name: "body", widget: "markdown" }
