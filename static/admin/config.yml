@@ -103,7 +103,6 @@ collections:
         name: "image"
         widget: "image"
         required: false
-        choose_url: false
 
       - label: "Primary Executive Summary"
         name: "summary"
