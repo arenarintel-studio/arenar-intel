@@ -1091,6 +1091,7 @@ html {
   overflow-x: hidden;
   height: 100%;
   background-color: #1e1d1d;
+  overscroll-behavior-y: none;
 }
 body {
   font-family: Arial, sans-serif;
@@ -1106,10 +1107,12 @@ body {
 main {
   padding-top: 56px;
   flex: 1 0 auto;
+  background-color: #ffffff;
 }
-footer {
+.site-footer {
   flex-shrink: 0;
-  background-color: #1e1d1d;
+  background-color: #1e1d1d !important;
+  margin-top: auto;
 }
 img {
   max-width: 100%;
