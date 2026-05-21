@@ -27,10 +27,12 @@
 
 <div class="main-content">
   <section class="news-feed">
-    {{ $text := where site.RegularPages "Params.card" "text" }}
-{{ $compact := where site.RegularPages "Params.card" "compact" }}
-{{ $basic := where site.RegularPages "Params.card" "basic" }}
-{{ $grid := where site.RegularPages "Params.card" "grid" }}
+{{ $nonFeatured := where site.RegularPages "Params.homepage_featured" "!=" true }}
+
+{{ $text := where $nonFeatured "Params.card" "text" }}
+{{ $compact := where $nonFeatured "Params.card" "compact" }}
+{{ $basic := where $nonFeatured "Params.card" "basic" }}
+{{ $grid := where $nonFeatured "Params.card" "grid" }}
 
     <!-- FEATURED -->
     {{ $homepageFeatured := where site.RegularPages "Params.homepage_featured" true }}

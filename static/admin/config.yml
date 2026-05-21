@@ -28,7 +28,7 @@ collections:
 
     # ── UI EDITING PANEL SETTINGS ──
     editor:
-      preview: false # Set to true if utilizing custom React layout frames
+      preview: true # Set to true if utilizing custom React layout frames
 
     fields:
       # ── CORE EDITORIAL ATTRIBUTES ──
