@@ -1,6 +1,7 @@
 # ── BACKEND CONFIGURATION LAYER ───────────────────────
 backend:
-  name: git-gateway
+  name: github
+  repo: arenarintel-studio/arenar-intel
   branch: main
 
 # ── EDITORIAL WORKFLOW MANAGEMENT ─────────────────────
