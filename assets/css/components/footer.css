@@ -2,6 +2,7 @@
   background: #050505;
   margin-top: 1rem;
   border-top: 1px solid rgba(255,255,255,0.08);
+  width: 100%;
 }
 
 .footer-brand img {
@@ -13,7 +14,6 @@
 .footer-grid {
   max-width: 1400px;
   margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   padding: 2rem 1.4rem 1rem;
@@ -36,7 +36,7 @@
 }
 
 .footer-nav {
-    display: flex;
+  display: flex;
   flex-direction: column;
   margin: 1rem 0;
 }
@@ -52,7 +52,6 @@
   text-decoration: none;
   margin-bottom: 0.9rem;
   font-size: 0.95rem;
-
   transition: color 0.2s ease;
 }
 
@@ -69,18 +68,13 @@
 .social-icons a {
   width: 42px;
   height: 42px;
-
   border: 1px solid rgba(255,255,255,0.12);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   color: #d0d0d0;
   text-decoration: none;
-
   transition:
     background 0.2s ease,
     color 0.2s ease,
@@ -94,11 +88,10 @@
 }
 
 .intel-feed a {
-    color: #d6d6d6;
+  color: #d6d6d6;
   text-decoration: none;
   margin-bottom: 0.9rem;
   font-size: 0.95rem;
-
   transition: color 0.2s ease;
 }
 
@@ -111,20 +104,18 @@
 }
 
 .footer-bottom p {
-    padding-top: 1rem;
+  padding-top: 1rem;
   color: #777;
   font-size: 0.82rem;
 }
 
 @media (max-width: 900px) {
-
   .footer-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 0.995rem;
   }
-
   .footer-brand h2 {
     font-size: 1.6rem;
   }
-
 }

@@ -1,5 +1,5 @@
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,7 +10,6 @@ header {
   justify-content: space-between;
 
   background: rgba(255, 255, 255, 0.92);
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   padding: 0 1rem;
@@ -212,11 +211,9 @@ header {
   font-size: 0.95rem;
   line-height: 1.35;
   margin-bottom: 6px;
-
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-
   overflow: hidden;
 }
 
@@ -224,11 +221,9 @@ header {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.6);
   line-height: 1.4;
-
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-
   overflow: hidden;
 }
 
@@ -246,119 +241,44 @@ header {
   color: white;
 }
 
-/*new*/
 /* ── PAGE TRANSITION ───────────────────────── */
-
 .page-transition {
-position: fixed;
-inset: 0;
-background: #0f0f0f;
-
-opacity: 0;
-pointer-events: none;
-
-transition: opacity 0.18s ease;
-
-z-index: 999999;
+  position: fixed;
+  inset: 0;
+  background: #0f0f0f;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+  z-index: 999999;
 }
 
 .page-transition.active {
-opacity: 1;
+  opacity: 1;
 }
 
-/* ── SEARCH RESULTS ───────────────────────── */
-
-#search-results {
-display: flex;
-flex-direction: column;
-padding: 0 20px 20px;
-}
-
-/*Controls highlighted keyword in search results */
+/* Controls highlighted keyword in search results */
 .search-result-item mark {
   background: transparent;
-
   color: inherit;
-
   font-weight: inherit;
-
   padding: 0;
 }
 
-.custom-search-result {
-display: block;
-
-padding: 14px 0;
-
-border-bottom: 1px solid rgba(255,255,255,0.08);
-
-text-decoration: none;
-color: white;
-}
-
-.custom-search-result h4 {
-font-size: 0.95rem;
-line-height: 1.35;
-
-margin-bottom: 6px;
-
-display: -webkit-box;
--webkit-line-clamp: 2;
--webkit-box-orient: vertical;
-
-overflow: hidden;
-}
-
-.custom-search-result p {
-font-size: 0.8rem;
-color: rgba(255,255,255,0.6);
-
-line-height: 1.4;
-
-display: -webkit-box;
--webkit-line-clamp: 2;
--webkit-box-orient: vertical;
-
-overflow: hidden;
-}
-
 .custom-search-result:hover h4 {
-text-decoration: underline;
-}
-
-.clear-search {
-background: none;
-border: none;
-
-color: rgba(255,255,255,0.5);
-
-font-size: 18px;
-
-cursor: pointer;
-
-padding: 0 10px;
-
-transition: color 0.2s ease;
-}
-
-.clear-search:hover,
-.icon:hover {
-color: white;
+  text-decoration: underline;
 }
 
 .no-search-results {
-padding: 16px 0;
-font-size: 0.85rem;
-color: rgba(255,255,255,0.5);
+  padding: 16px 0;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
 }
 
 /* ─────────────────────────────────────────────
    SEARCH RESULTS CONTAINER
 ───────────────────────────────────────────── */
-
 #search-results {
   width: 100%;
-
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -367,23 +287,18 @@ color: rgba(255,255,255,0.5);
 /* ─────────────────────────────────────────────
    SEARCH RESULTS LIST
 ───────────────────────────────────────────── */
-
 .search-results-list {
   display: flex;
   flex-direction: column;
-
   gap: 16px;
-
   margin-top: 14px;
 }
 
 /* ─────────────────────────────────────────────
    SEARCH RESULT CARD
 ───────────────────────────────────────────── */
-
 .search-result-item {
   cursor: pointer;
-
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease,
@@ -393,16 +308,11 @@ color: rgba(255,255,255,0.5);
 /* ─────────────────────────────────────────────
    NORMAL RESULT
 ───────────────────────────────────────────── */
-
 .search-result-item:not(.recommended) {
-padding: 16px;
-
+  padding: 16px;
   border-radius: 12px;
-
   background: rgba(255, 255, 255, 0.05);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -413,103 +323,66 @@ padding: 16px;
 /* ─────────────────────────────────────────────
    RECOMMENDED RESULT
 ───────────────────────────────────────────── */
-
 .search-result-item.recommended {
   padding: 16px;
-
   border-radius: 12px;
-
   background: rgba(255, 255, 255, 0.05);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .search-result-item.recommended:hover {
   background: rgba(255, 255, 255, 0.08);
-
   border-color: rgba(255, 255, 255, 0.14);
 }
 
 /* ─────────────────────────────────────────────
    RECOMMENDED LABEL
 ───────────────────────────────────────────── */
-
 .recommended-label {
   display: flex;
   align-items: center;
-
   gap: 6px;
-
   margin-bottom: 8px;
-
   font-size: 0.7rem;
-
   font-weight: 700;
-
   letter-spacing: 0.08em;
-
   text-transform: uppercase;
-
   color: rgba(255, 255, 255, 0.45);
 }
-
-
 
 /* ─────────────────────────────────────────────
    SEARCH TITLE
 ───────────────────────────────────────────── */
-
 .search-title {
   font-size: 1rem;
-
   font-weight: 500;
-
   line-height: 1.35;
-
   color: #f1f5f9;
-
   overflow: hidden;
-
   display: -webkit-box;
-
   -webkit-box-orient: vertical;
-
   -webkit-line-clamp: 2;
 }
 
-/* Recommended Title */
-
 .search-result-item.recommended .search-title {
   font-size: 1.08rem;
-
   font-weight: 600;
-
   color: #ffffff;
 }
 
 /* ─────────────────────────────────────────────
    SEARCH EXCERPT
 ───────────────────────────────────────────── */
-
 .search-excerpt {
   margin-top: 6px;
-
   font-size: 0.86rem;
-
   line-height: 1.45;
-
   color: #a0aec0;
-
   overflow: hidden;
-
   display: -webkit-box;
-
   -webkit-box-orient: vertical;
-
   -webkit-line-clamp: 2;
 }
-
-/* Secondary Results */
 
 .search-excerpt.secondary {
   color: #718096;
@@ -518,70 +391,28 @@ padding: 16px;
 /* ─────────────────────────────────────────────
    EMPTY STATE
 ───────────────────────────────────────────── */
-
 .no-search-results {
   padding-top: 26px;
   padding-bottom: 26px;
-
   text-align: center;
-
   font-size: 0.92rem;
-
   font-weight: 500;
-
   color: #718096;
-}
-
-/* ─────────────────────────────────────────────
-   CLEAR BUTTON
-───────────────────────────────────────────── */
-
-.clear-search {
-  border: none;
-
-  background: transparent;
-
-  color: rgba(255, 255, 255, 0.4);
-
-  cursor: pointer;
-
-  padding-left: 10px;
-  padding-right: 4px;
-
-  font-size: 1.5rem;
-
-  transition: color 0.2s ease;
-}
-
-.clear-search:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* ─────────────────────────────────────────────
-   SEARCH ICON BUTTON
-───────────────────────────────────────────── */
-
-.icon:hover {
-  color: rgba(255, 255, 255, 0.85);
 }
 
 /* ─────────────────────────────────────────────
    MOBILE POLISH
 ───────────────────────────────────────────── */
-
 @media (max-width: 480px) {
   .search-result-item.recommended {
     padding: 14px;
   }
-
   .search-title {
     font-size: 0.97rem;
   }
-
   .search-result-item.recommended .search-title {
     font-size: 1.02rem;
   }
-
   .search-excerpt {
     font-size: 0.82rem;
   }
