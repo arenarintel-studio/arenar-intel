@@ -3,6 +3,11 @@
   margin-top: 1rem;
   border-top: 1px solid rgba(255,255,255,0.08);
   width: 100%;
+background: #050505;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  width: 100%;
+  position: relative; /* IMPORTANT: Add this so the button anchors to the footer */
 }
 
 .footer-brand img {
@@ -38,13 +43,13 @@
 .footer-nav {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 }
 
 .footer-socials {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-nav a {
@@ -87,24 +92,12 @@
   border-color: white;
 }
 
-.intel-feed a {
-  color: #d6d6d6;
-  text-decoration: none;
-  margin-bottom: 0.9rem;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.intel-feed a:hover {
-  color: white;
-}
-
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
 .footer-bottom p {
-  padding-top: 1rem;
+  padding-top: 0.8rem;
   color: #777;
   font-size: 0.82rem;
 }
@@ -117,5 +110,56 @@
   }
   .footer-brand h2 {
     font-size: 1.6rem;
+  }
+}
+
+/* -- SMOOTH SCROLLING -- */
+/* Makes clicking the link glide smoothly to the top instead of a harsh jump */
+html {
+  scroll-behavior: smooth;
+}
+
+/* -- BACK TO INTEL BUTTON -- */
+.back-to-intel {
+  position: absolute;
+  top: 0;
+  right: 0.025rem; /* Aligns with your 1.4rem grid padding */
+  transform: translateY(-50%); /* Pulls the button up exactly halfway across the border */
+  
+  /* Box Styling */
+  background: black; /* Off-white background */
+  color: #d6d6d6; /* Dark text */
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  border: 2px solid #777;
+  border-radius: 4px; /* Optional: adds a slight curve to the box corners */
+  
+  /* Smooth Hover Transition */
+  transition: all 0.2s ease;
+}
+
+/* Only apply hover effects on devices with a real mouse */
+@media (hover: hover) {
+.back-to-intel:hover {
+  background: #050505; 
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Soft glow effect */
+}
+}
+
+/* Add a quick tap effect for mobile users so they know it worked */
+.back-to-intel:active {
+  background: #050505;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Ensure the button aligns with your max-width container on huge monitors */
+@media (min-width: 1400px) {
+  .back-to-intel {
+    right: calc((100% - 1400px) / 2 + 1.4rem);
   }
 }
