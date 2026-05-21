@@ -11,3 +11,5 @@ title = 'Arenar Intel'
     min = '0.146.0'
 
 disableKinds = ["taxonomy", "term"]
+
+cleanDestinationDir = true

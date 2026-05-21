@@ -2,144 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arenar Intel</title>
-    <link>https://www.arenarintel.com/</link>
+    <link>http://localhost:64123/</link>
     <description>Recent content on Arenar Intel</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 19 May 2026 14:12:00 +0000</lastBuildDate>
-    <atom:link href="https://www.arenarintel.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:64123/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Congrats, fourth Featured is working properly</title>
-      <link>https://www.arenarintel.com/intel/featured/featured4/</link>
-      <pubDate>Tue, 19 May 2026 14:12:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/featured/featured4/</guid>
-      <description>This is my fourth featured article. Well done</description>
-    </item>
-    <item>
-      <title>Congrats, third Featured is working properly</title>
-      <link>https://www.arenarintel.com/intel/featured/featured3/</link>
-      <pubDate>Tue, 19 May 2026 14:11:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/featured/featured3/</guid>
-      <description>This is my third featured article. Well done</description>
-    </item>
-    <item>
-      <title>My Second Featured</title>
-      <link>https://www.arenarintel.com/intel/featured/featured2/</link>
-      <pubDate>Tue, 19 May 2026 14:10:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/featured/featured2/</guid>
-      <description>This is a test of my second featured article if it works</description>
-    </item>
-    <item>
-      <title>text 4</title>
-      <link>https://www.arenarintel.com/intel/text/text4/</link>
-      <pubDate>Mon, 19 May 2025 15:30:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/text/text4/</guid>
-      <description>A landmark intelligence report reveals major geopolitical and economic developments shaping global stability.</description>
-    </item>
-    <item>
-      <title>text 3</title>
-      <link>https://www.arenarintel.com/intel/text/text3/</link>
-      <pubDate>Mon, 19 May 2025 14:30:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/text/text3/</guid>
-      <description>A landmark intelligence report reveals major geopolitical and economic developments shaping global stability.</description>
-    </item>
-    <item>
-      <title>1</title>
-      <link>https://www.arenarintel.com/intel/grid/article-12/</link>
-      <pubDate>Mon, 19 May 2025 14:12:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/grid/article-12/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>2</title>
-      <link>https://www.arenarintel.com/intel/grid/article-13/</link>
-      <pubDate>Mon, 19 May 2025 14:12:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/grid/article-13/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>3</title>
-      <link>https://www.arenarintel.com/intel/grid/article-17/</link>
-      <pubDate>Mon, 19 May 2025 14:12:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/grid/article-17/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>4</title>
-      <link>https://www.arenarintel.com/intel/grid/article-18/</link>
-      <pubDate>Mon, 19 May 2025 14:12:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/grid/article-18/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Basic 2</title>
-      <link>https://www.arenarintel.com/intel/basic/test2/</link>
-      <pubDate>Mon, 19 May 2025 14:10:01 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/basic/test2/</guid>
-      <description>A landmark intelligence report reveals major geopolitical and economic developments shaping global stability.</description>
-    </item>
-    <item>
-      <title> Basic 1</title>
-      <link>https://www.arenarintel.com/intel/basic/article-5/</link>
-      <pubDate>Mon, 19 May 2025 14:10:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/basic/article-5/</guid>
-      <description>A landmark intelligence report reveals major geopolitical and economic developments shaping global stability.</description>
-    </item>
-    <item>
-      <title>text 2 here</title>
-      <link>https://www.arenarintel.com/intel/text/text2/</link>
-      <pubDate>Mon, 19 May 2025 12:30:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/text/text2/</guid>
-      <description>A landmark intelligence report reveals major geopolitical and economic developments shaping global stability.</description>
-    </item>
-    <item>
-      <title>test 5</title>
-      <link>https://www.arenarintel.com/intel/compact/test5/</link>
-      <pubDate>Mon, 19 May 2025 11:35:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/compact/test5/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>test4</title>
-      <link>https://www.arenarintel.com/intel/compact/test4/</link>
-      <pubDate>Mon, 19 May 2025 11:33:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/compact/test4/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>test 3</title>
-      <link>https://www.arenarintel.com/intel/compact/test3/</link>
-      <pubDate>Mon, 19 May 2025 11:32:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/compact/test3/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>test 2</title>
-      <link>https://www.arenarintel.com/intel/compact/test2/</link>
-      <pubDate>Mon, 19 May 2025 11:31:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/compact/test2/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title> 1 Breaking: Major Global Intelligence Report Released</title>
-      <link>https://www.arenarintel.com/intel/compact/test/</link>
-      <pubDate>Mon, 19 May 2025 11:30:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/compact/test/</guid>
-      <description>&lt;p&gt;A landmark intelligence report was released today, revealing critical insights into global security.&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-findings&#34;&gt;Key Findings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Major shifts in geopolitical alliances&lt;/li&gt;&#xA;&lt;li&gt;Economic indicators pointing to stability&lt;/li&gt;&#xA;&lt;li&gt;Technology sector showing unexpected growth&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>text 1</title>
-      <link>https://www.arenarintel.com/intel/text/text-1/</link>
-      <pubDate>Mon, 19 May 2025 11:30:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/text/text-1/</guid>
-      <description>A landmark intelligence report reveals major geopolitical and economic developments shaping global stability.</description>
-    </item>
-    <item>
-      <title>Breaking: Major Global Intelligence Report Released</title>
-      <link>https://www.arenarintel.com/intel/featured/featured/</link>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.arenarintel.com/intel/featured/featured/</guid>
-      <description>A landmark intelligence report reveals major geopolitical and economic developments shaping global stability.</description>
+      <title>Global Cybersecurity Agencies Warn of Coordinated Infrastructure Threats</title>
+      <link>http://localhost:64123/intel/coordinated-infrastructure-threat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:64123/intel/coordinated-infrastructure-threat/</guid>
+      <description>International cybersecurity agencies issued a coordinated warning after detecting elevated digital intrusion activity targeting transportation, energy, and communications infrastructure across multiple regions.</description>
     </item>
   </channel>
 </rss>

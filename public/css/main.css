@@ -1089,16 +1089,27 @@ html {
   overflow-y: scroll;
   scrollbar-gutter: stable;
   overflow-x: hidden;
+  height: 100%;
+  background-color: #1e1d1d;
 }
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   color: #1e1d1d;
   min-height: 100vh;
-  transition: opacity 0.08s ease;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 main {
   padding-top: 56px;
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+  background-color: #1e1d1d;
 }
 img {
   max-width: 100%;
@@ -1159,7 +1170,6 @@ img {
   line-height: 1.2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0;
-  margin-bottom: 0;
 }
 .featured-card img {
   aspect-ratio: 16 / 9;
