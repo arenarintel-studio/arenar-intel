@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:51789/about/</loc>
+    <loc>https://www.arenarintel.com/about/</loc>
   </url><url>
-    <loc>http://localhost:51789/</loc>
+    <loc>https://www.arenarintel.com/</loc>
   </url><url>
-    <loc>http://localhost:51789/contact/</loc>
+    <loc>https://www.arenarintel.com/contact/</loc>
   </url><url>
-    <loc>http://localhost:51789/intel/coordinated-infrastructure-threat/</loc>
+    <loc>https://www.arenarintel.com/intel/coordinated-infrastructure-threat/</loc>
   </url><url>
-    <loc>http://localhost:51789/intel/</loc>
+    <loc>https://www.arenarintel.com/intel/</loc>
   </url><url>
-    <loc>http://localhost:51789/privacy/</loc>
+    <loc>https://www.arenarintel.com/privacy/</loc>
   </url><url>
-    <loc>http://localhost:51789/terms/</loc>
+    <loc>https://www.arenarintel.com/terms/</loc>
   </url>
 </urlset>

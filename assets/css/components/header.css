@@ -118,7 +118,7 @@ header {
   background: transparent;
   border: none;
   border-radius: 0;
-  font-size: 15px;
+  font-size: 16px; /* Changed from 15px to 16px to stop mobile zoom */
   color: white;
   outline: none;
   width: 100%;
@@ -226,6 +226,26 @@ header {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Nuke the native browser clear button so only your custom X shows up */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+/* Prevent browser autofill from changing the search bar color */
+input#search:-webkit-autofill,
+input#search:-webkit-autofill:hover, 
+input#search:-webkit-autofill:focus, 
+input#search:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important; /* Matches your search bar background */
+    -webkit-text-fill-color: black !important; /* Matches your typing text color */
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .clear-search {

@@ -1,15 +1,25 @@
 <div class="menu-panel" id="menuPanel">
   <div class="menu-search">
-    <div class="menu-search-inner">
-      <input type="text" id="search" placeholder="Search news..." autocomplete="off">
-      <button class="clear-search" aria-label="Clear Search"> &times; </button>
-      <button class="icon" aria-label="Run Search">
+    <!-- Wrapped inside a form element to trigger native smart mobile keyboards -->
+    <form action="" id="searchForm" class="menu-search-inner" onsubmit="event.preventDefault();">
+      <input 
+        type="search" 
+        id="search" 
+        placeholder="Search news..." 
+        autocomplete="off" 
+        enterkeyhint="search"
+      >
+      <!-- Kept your clear button unchanged -->
+      <button type="button" class="clear-search" aria-label="Clear Search"> &times; </button>
+      
+      <!-- Changed button type to submit so hitting it activates the form wrapper -->
+      <button type="submit" class="icon" aria-label="Run Search">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
       </button>
-    </div>
+    </form>
   </div>
   <div id="search-results"></div>
 

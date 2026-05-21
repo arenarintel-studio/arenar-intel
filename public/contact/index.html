@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51789&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
@@ -12,7 +12,7 @@
 <meta property="og:title" content="Contact | Arenar Intel">
 <meta property="og:description" content="">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://localhost:51789/contact/">
+<meta property="og:url" content="https://www.arenarintel.com/contact/">
 <meta name="twitter:card" content="summary_large_image">
 
 
@@ -26,7 +26,7 @@
 
 
 
-      <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/main.09b50c6e0d41cae62a47ab0910650631d5e0b1a2dfab4a9679fa802981128117.css" integrity="sha256-CbUMbg1ByuYqR6sJEGUGMdXgsaLfq0qWefqAKYESgRc=" crossorigin="anonymous">
 
 
 
@@ -82,16 +82,26 @@
   <div data-pagefind-ignore>
     <div class="menu-panel" id="menuPanel">
   <div class="menu-search">
-    <div class="menu-search-inner">
-      <input type="text" id="search" placeholder="Search news..." autocomplete="off">
-      <button class="clear-search" aria-label="Clear Search"> &times; </button>
-      <button class="icon" aria-label="Run Search">
+    
+    <form action="" id="searchForm" class="menu-search-inner" onsubmit="event.preventDefault();">
+      <input 
+        type="search" 
+        id="search" 
+        placeholder="Search news..." 
+        autocomplete="off" 
+        enterkeyhint="search"
+      >
+      
+      <button type="button" class="clear-search" aria-label="Clear Search"> &times; </button>
+      
+      
+      <button type="submit" class="icon" aria-label="Run Search">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
       </button>
-    </div>
+    </form>
   </div>
   <div id="search-results"></div>
 

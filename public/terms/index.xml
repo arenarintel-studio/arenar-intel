@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terms on Arenar Intel</title>
-    <link>http://localhost:51789/terms/</link>
+    <link>https://www.arenarintel.com/terms/</link>
     <description>Recent content in Terms on Arenar Intel</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:51789/terms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.arenarintel.com/terms/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
