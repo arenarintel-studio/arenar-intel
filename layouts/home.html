@@ -2,15 +2,15 @@
 
 <div class="x-bar">
   {{ if site.Params.xbarlink }}
-  <a href="{{ site.Params.xbarlink }}" class="x-post-link" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-x-twitter"></i>
-    <span>{{ site.Params.xbar | default "Follow Arenar Intel on X for real-time updates" }}</span>
-  </a>
+    <a href="{{ site.Params.xbarlink }}" class="x-post-link" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-x-twitter"></i>
+      <span class="x-ticker-text">{{ site.Params.xbar | default "Follow Arenar Intel on X for real-time updates" }}</span>
+    </a>
   {{ else }}
-  <div class="x-post-link">
-    <i class="fa-brands fa-x-twitter"></i>
-    <span>JUST IN: Iran has agreed to a ceasefire deal</span>
-  </div>
+    <div class="x-post-link">
+      <i class="fa-brands fa-x-twitter"></i>
+      <span class="x-ticker-text">Follow Arenar Intel on X for real-time updates</span>
+    </div>
   {{ end }}
 </div>
 

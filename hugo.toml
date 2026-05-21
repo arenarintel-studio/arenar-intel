@@ -1,15 +1,19 @@
 baseURL = 'https://www.arenarintel.com/'
 locale = "en-US"
 title = 'Arenar Intel'
+disableKinds = ["taxonomy", "term"]
+cleanDestinationDir = true
 
 [params]
   description = 'The world moves fast. Stay informed faster. Real-time global intelligence and media updates.'
+  
+  # Paste the text of your tweet here
+  xbar = "JUST IN: Iran has agreed to a ceasefire deal after intense negotiations in Geneva. Read the full thread for the geopolitical breakdown."
+  
+  # Paste the direct link to the tweet here
+  xbarlink = "https://x.com/ArenarIntel/status/1234567890"
 
 [module]
   [module.hugoVersion]
     extended = false
     min = '0.146.0'
-
-disableKinds = ["taxonomy", "term"]
-
-cleanDestinationDir = true
