@@ -3,6 +3,7 @@ backend:
   name: github
   repo: arenarintel-studio/arenar-intel
   branch: main
+  auth_type: pkce
 
 # ── EDITORIAL WORKFLOW MANAGEMENT ─────────────────────
 # Enables Decap's advanced editorial kanban board (Drafts -> Review -> Ready)
