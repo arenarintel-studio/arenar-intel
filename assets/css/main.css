@@ -68,11 +68,11 @@ img {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0 0.5rem;
+  padding: 0 0.55rem;
   background-color: #1e1d1d;
   width: 100%;
-  height: 2rem;
-  color: #ede3e3;
+  height: 2.3rem;
+  color: white;
   text-decoration: none;
   transition: color 0.2s ease;
   overflow: hidden;
@@ -80,7 +80,7 @@ img {
 }
 
 .x-bar .fa-x-twitter {
-  font-size: 1rem;
+  font-size: 1.1rem;
   border: 1px solid white;
   padding: 0.13rem 0.1875rem;
   border-radius: 0.25rem;
@@ -92,7 +92,7 @@ img {
 }
 
 .x-ticker-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   white-space: nowrap;      /* Prevents the text from dropping to a second line */
   overflow: hidden;         /* Hides the excess text */
   text-overflow: ellipsis;  /* Adds the '...' at the cut-off point */
@@ -159,15 +159,17 @@ img {
 
 .card-info h2 {
   font-family: system-ui,sans-serif;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.015rem;
   font-size: 1.2rem;
   color: #2a2929;
   margin-bottom: 0.3rem;
   line-height: 1.2;
+  /* 1. Standard fallback for older phones */
+  font-weight: 600; 
 }
 
 .card-info p {
-  font-size: 0.93rem;
+  font-size: 0.95rem;
   color: #2a2727;
   margin-bottom: 0.5rem;
 }
