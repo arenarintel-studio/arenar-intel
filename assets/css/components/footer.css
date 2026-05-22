@@ -1,6 +1,6 @@
 .intel-footer {
   background: #050505;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   border-top: 1px solid rgba(255,255,255,0.08);
   width: 100%;
 background: #0A0A0A;
@@ -27,12 +27,12 @@ background: #0A0A0A;
 .footer-description {
   color: #9a9a9a;
   line-height: 1.8;
-  font-size: 0.95rem;
+  font-size: 1rem;
   max-width: 540px;
 }
 
 .footer-heading {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #777;
@@ -56,7 +56,7 @@ background: #0A0A0A;
   color: #d6d6d6;
   text-decoration: none;
   margin-bottom: 0.9rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   transition: color 0.2s ease;
 }
 
@@ -99,7 +99,7 @@ background: #0A0A0A;
 .footer-bottom p {
   padding-top: 0.8rem;
   color: #777;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 900px) {
@@ -130,7 +130,7 @@ html {
   background: #0A0A0A; /* Off-white background */
   color: #d6d6d6; /* Dark text */
   padding: 0.3rem 0.5rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 
   letter-spacing: 0.1px;
   text-decoration: none;
