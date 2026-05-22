@@ -3,7 +3,7 @@
   margin-top: 1rem;
   border-top: 1px solid rgba(255,255,255,0.08);
   width: 100%;
-background: #050505;
+background: #0A0A0A;
   margin-top: 1rem;
   border-top: 1px solid rgba(255,255,255,0.08);
   width: 100%;
@@ -127,7 +127,7 @@ html {
   transform: translateY(-50%); /* Pulls the button up exactly halfway across the border */
   
   /* Box Styling */
-  background: black; /* Off-white background */
+  background: #0A0A0A; /* Off-white background */
   color: #d6d6d6; /* Dark text */
   padding: 0.3rem 0.5rem;
   font-size: 0.95rem;
