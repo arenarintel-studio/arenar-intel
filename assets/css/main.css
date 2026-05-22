@@ -158,18 +158,18 @@ img {
 }
 
 .card-info h2 {
-  font-family: system-ui,sans-serif;
+  font-family: sans-serif;
   letter-spacing: -0.015rem;
   font-size: 1.2rem;
   color: #2a2929;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   line-height: 1.2;
-  font-weight: 500; 
+  font-weight: 700; 
 }
 
 .card-info p {
-  font-size: 0.95rem;
-  color: #2a2727;
+  font-size: 0.9rem;
+  color: #383636;
   margin-bottom: 0.5rem;
 }
 
