@@ -1,5 +1,5 @@
 +++
-title = "Global Cybersecurity Agencies Warn of Coordinated Infrastructure Threats"
+title = "Cybersecurity Agencies Warn of Coordinated Infrastructure Threats"
 #date = {{ .Date }}
 draft = false
 image = "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1600&auto=format&fit=crop"

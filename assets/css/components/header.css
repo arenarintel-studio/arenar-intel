@@ -3,7 +3,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
 
   display: flex;
   align-items: center;
@@ -17,6 +17,9 @@ header {
 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+
+  transform: translateZ(0);
+will-change: transform;
 }
 
 .logo-box {
@@ -261,21 +264,6 @@ input#search:-webkit-autofill:active {
 .clear-search:hover,
 .icon:hover {
   color: white;
-}
-
-/* ── PAGE TRANSITION ───────────────────────── */
-.page-transition {
-  position: fixed;
-  inset: 0;
-  background: #0f0f0f;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.18s ease;
-  z-index: 999999;
-}
-
-.page-transition.active {
-  opacity: 1;
 }
 
 /* Controls highlighted keyword in search results */

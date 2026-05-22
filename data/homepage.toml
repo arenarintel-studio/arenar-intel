@@ -1,12 +1,19 @@
 # ARENAR INTEL HOMEPAGE WIREFRAME MANIFEST
 # Just type the URL slug/filename of the article you want in each slot.
 
+#featured
 slot_1 = "coordinated-infrastructure-threat.md"
-slot_2 = ""
+
+#text cards
+slot_2 = "textpost.md"
 slot_3 = ""
-slot_4 = ""
+
+#compact
+slot_4 = "compactpost.md"
 slot_5 = ""
-slot_6 = ""
+
+#basic
+slot_6 = "basicpost.md"
 slot_7 = ""
 slot_8 = ""
 slot_9 = ""
@@ -50,7 +57,9 @@ slot_46 = ""
 slot_47 = ""
 slot_48 = ""
 slot_49 = ""
-slot_50 = ""
-slot_51 = ""
-slot_52 = ""
-slot_53 = ""
+
+#grid slot 2
+slot_50 = "grid1.md"
+slot_51 = "grid2.md"
+slot_52 = "grid3.md"
+slot_53 = "grid4.md"
