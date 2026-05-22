@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
   color: #1e1d1d;
   min-height: 100%;
@@ -133,7 +133,7 @@ img {
 
 /* ===== FEATURED CARD ===== */
 .featured-card {
-  padding-top: 1rem;
+  padding-top: 0.85rem;
   padding-bottom: 0.5rem;
   line-height: 1.2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -141,32 +141,39 @@ img {
 }
 
 .featured-card img {
-  aspect-ratio: 16 / 9;
-  border-radius: 10px;
+    /* 1. THE LAYOUT CONTROLS: Strictly respects your container boundaries */
+  width: 100%;
+  max-width: 100%;
+  display: block;
+
+  border-radius: 0.4rem;
   margin-bottom: 0.4rem;
   transition: all 0.3s ease;
   border: 1px solid #ede3e3;
-  width: 100%;
   object-fit: cover;
+  aspect-ratio: 3 / 2;
+  /* Height: 13rem incase the aspect ratio doesnt fit*/
   display: block;
+  object-position: center;
 }
 
 .card-info h2 {
+  font-family: system-ui,sans-serif;
+  letter-spacing: -0.025rem;
   font-size: 1.2rem;
-  font-weight: 600;
-  color: #1e1d1d;
-  margin-bottom: 0.5rem;
+  color: #2a2929;
+  margin-bottom: 0.3rem;
   line-height: 1.2;
 }
 
 .card-info p {
-  font-size: 0.9rem;
-  color: #514e4e;
+  font-size: 0.93rem;
+  color: #2a2727;
   margin-bottom: 0.5rem;
 }
 
 .card-info small {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #514e4e;
 }
 
