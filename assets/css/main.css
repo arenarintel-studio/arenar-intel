@@ -71,7 +71,7 @@ img {
   padding: 0 0.5rem;
   background-color: #1e1d1d;
   width: 100%;
-  height: 2rem;
+  height: 2.1rem;
   color: white;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -92,7 +92,7 @@ img {
 }
 
 .x-ticker-text {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   white-space: nowrap;      /* Prevents the text from dropping to a second line */
   overflow: hidden;         /* Hides the excess text */
   text-overflow: ellipsis;  /* Adds the '...' at the cut-off point */
@@ -164,8 +164,7 @@ img {
   color: #2a2929;
   margin-bottom: 0.3rem;
   line-height: 1.2;
-  /* 1. Standard fallback for older phones */
-  font-weight: 600; 
+  font-weight: 500; 
 }
 
 .card-info p {
