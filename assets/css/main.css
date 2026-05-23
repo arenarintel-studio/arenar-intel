@@ -29,7 +29,6 @@ html {
 
   -webkit-text-size-adjust: 100%;
   scroll-behavior: auto;
-  overscroll-behavior-y: none;
 }
 
 body {
