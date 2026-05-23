@@ -1,13 +1,9 @@
 .intel-footer {
-  background: #050505;
-  margin-top: 1.2rem;
   border-top: 1px solid rgba(255,255,255,0.08);
   width: 100%;
-background: #0A0A0A;
-  margin-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  width: 100%;
+  background-color: #0A0A0A;
   position: relative; /* IMPORTANT: Add this so the button anchors to the footer */
+  z-index: 20; /* THE FIX: Forces the footer to sit on top of the main background */
 }
 
 .footer-brand img {
@@ -113,18 +109,13 @@ background: #0A0A0A;
   }
 }
 
-/* -- SMOOTH SCROLLING -- */
-/* Makes clicking the link glide smoothly to the top instead of a harsh jump */
-html {
-  scroll-behavior: smooth;
-}
-
 /* -- BACK TO INTEL BUTTON -- */
 .back-to-intel {
   position: absolute;
   top: 0;
-  right: 0.025rem; /* Aligns with your 1.4rem grid padding */
+  right: 0.1rem; /* Aligns with your 1.4rem grid padding */
   transform: translateY(-50%); /* Pulls the button up exactly halfway across the border */
+  z-index: 20; /* THE FIX: Ensures the button breaks out over everything */
   
   /* Box Styling */
   background: #0A0A0A; /* Off-white background */
@@ -136,18 +127,17 @@ html {
   text-decoration: none;
   border: 2px solid #777;
   border-radius: 4px; /* Optional: adds a slight curve to the box corners */
-  
   /* Smooth Hover Transition */
   transition: all 0.2s ease;
 }
 
 /* Only apply hover effects on devices with a real mouse */
 @media (hover: hover) {
-.back-to-intel:hover {
-  background: #050505; 
-  color: white;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Soft glow effect */
-}
+  .back-to-intel:hover {
+    background: #050505; 
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Soft glow effect */
+  }
 }
 
 /* Add a quick tap effect for mobile users so they know it worked */

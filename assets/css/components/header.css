@@ -13,13 +13,14 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   padding: 0 1rem;
-  height: 3.8rem;
+  height: 3.5rem;
 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
   transform: translateZ(0);
 will-change: transform;
+backface-visibility: hidden;
 }
 
 .logo-box {
@@ -76,10 +77,10 @@ will-change: transform;
 
 .menu-panel {
   position: fixed;
-  top: 56px;
+  top: 3.5rem;
   right: 0;
   width: 85%;
-  height: calc(100% - 56px);
+  height: calc(100dvh - 3.5rem);
   background-color: #0a0a0a;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   transform: translateX(100%);
