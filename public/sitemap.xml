@@ -2,41 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:57919/</loc>
+    <loc>http://localhost:65176/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/intel/grid1/</loc>
+    <loc>http://localhost:65176/intel/grid1/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/intel/</loc>
+    <loc>http://localhost:65176/intel/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/intel/grid2/</loc>
+    <loc>http://localhost:65176/intel/grid2/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/intel/grid3/</loc>
+    <loc>http://localhost:65176/intel/grid3/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/intel/basicpost/</loc>
+    <loc>http://localhost:65176/intel/grid4/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/intel/grid4/</loc>
+    <loc>http://localhost:65176/intel/basicpost/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/intel/compactpost/</loc>
+    <loc>http://localhost:65176/intel/compactpost/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/intel/textpost/</loc>
+    <loc>http://localhost:65176/intel/textpost/</loc>
     <lastmod>2026-05-22T05:29:47+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57919/about/</loc>
+    <loc>http://localhost:65176/about/</loc>
   </url><url>
-    <loc>http://localhost:57919/contact/</loc>
+    <loc>http://localhost:65176/contact/</loc>
   </url><url>
-    <loc>http://localhost:57919/intel/coordinated-infrastructure-threat/</loc>
+    <loc>http://localhost:65176/intel/coordinated-infrastructure-threat/</loc>
   </url><url>
-    <loc>http://localhost:57919/privacy/</loc>
+    <loc>http://localhost:65176/privacy/</loc>
   </url><url>
-    <loc>http://localhost:57919/terms/</loc>
+    <loc>http://localhost:65176/terms/</loc>
   </url>
 </urlset>

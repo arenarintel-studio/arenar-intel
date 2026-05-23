@@ -94,7 +94,7 @@
     <!-- SLOT 11: BASIC CARD -->
     {{ if $board.slot_11 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_11) }}
-        {{ partial "cards/text.html" . }}
+        {{ partial "cards/basic.html" . }}
       {{ end }}
     {{ end }}
 
@@ -171,14 +171,14 @@
     <!-- SLOT 22: COMPACT CARD -->
     {{ if $board.slot_22 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_22) }}
-        {{ partial "cards/compact.html" . }}
+        {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 23: TEXT CARD -->
+    <!-- SLOT 23: COMPACT -->
     {{ if $board.slot_23 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_23) }}
-        {{ partial "cards/text.html" . }}
+        {{ partial "cards/compact.html" . }}
       {{ end }}
     {{ end }}
 

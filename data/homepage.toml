@@ -4,59 +4,103 @@
 #featured
 slot_1 = "coordinated-infrastructure-threat.md"
 
-#text cards
+#text
 slot_2 = "textpost.md"
-slot_3 = ""
+slot_3 = "textpost.md"
 
 #compact
 slot_4 = "compactpost.md"
-slot_5 = ""
+slot_5 = "basicpost.md"
 
 #basic
 slot_6 = "basicpost.md"
-slot_7 = ""
-slot_8 = ""
-slot_9 = ""
-slot_10 = ""
-slot_11 = ""
-slot_12 = ""
-slot_13 = ""
-slot_14 = ""
-slot_15 = ""
-slot_16 = ""
-slot_17 = ""
-slot_18 = ""
-slot_19 = ""
-slot_20 = ""
-slot_21 = ""
-slot_22 = ""
-slot_23 = ""
-slot_24 = ""
-slot_25 = ""
-slot_26 = ""
-slot_27 = ""
-slot_28 = ""
-slot_29 = ""
-slot_30 = ""
-slot_31 = ""
-slot_32 = ""
-slot_33 = ""
-slot_34 = ""
-slot_35 = ""
-slot_36 = ""
-slot_37 = ""
-slot_38 = ""
-slot_39 = ""
-slot_40 = ""
-slot_41 = ""
-slot_42 = ""
-slot_43 = ""
-slot_44 = ""
-slot_45 = ""
-slot_46 = ""
-slot_47 = ""
-slot_48 = ""
-slot_49 = ""
+
+#compact
+slot_7 = "basicpost.md"
+slot_8 = "basicpost.md"
+slot_9 = "basicpost.md"
+
+#text
+slot_10 = "basicpost.md"
+
+#basic
+slot_11 = "basicpost.md"
+
+#text
+slot_12 = "basicpost.md"
+slot_13 = "basicpost.md"
+slot_14 = "basicpost.md"
+
+#compact
+slot_15 = "basicpost.md"
+slot_16 = "basicpost.md"
+
+#basic
+slot_17 = "basicpost.md"
+
+#text
+slot_18 = "basicpost.md"
+slot_19 = "basicpost.md"
+slot_20 = "basicpost.md"
+
+#basic
+slot_21 = "basicpost.md"
+
+#text
+slot_22 = "basicpost.md"
+
+#compact
+slot_23 = "basicpost.md"
+slot_24 = "basicpost.md"
+slot_25 = "basicpost.md"
+
+#text
+slot_26 = "basicpost.md"
+
+#basic
+slot_27 = "basicpost.md"
+
+#compact
+slot_28 = "basicpost.md"
+slot_29 = "basicpost.md"
+
+#text
+slot_30 = "basicpost.md"
+slot_31 = "basicpost.md"
+
+#basic
+slot_32 = "basicpost.md"
+
+#compact
+slot_33 = "basicpost.md"
+slot_34 = "basicpost.md"
+slot_35 = "basicpost.md"
+
+#text
+slot_36 = "basicpost.md"
+slot_37 = "basicpost.md"
+
+#grid 1
+slot_38 = "basicpost.md"
+slot_39 = "basicpost.md"
+slot_40 = "basicpost.md"
+slot_41 = "basicpost.md"
+
+#text
+slot_42 = "basicpost.md"
+slot_43 = "basicpost.md"
+slot_44 = "basicpost.md"
+
+#basic
+slot_45 = "basicpost.md"
+
+#compact
+slot_46 = "basicpost.md"
+slot_47 = "basicpost.md"
+
+#text
+slot_48 = "basicpost.md"
+slot_49 = "basicpost.md"
 
 #grid slot 2
 slot_50 = "grid1.md"

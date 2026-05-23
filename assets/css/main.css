@@ -6,11 +6,41 @@
 @import "sections/privacy.css";
 @import "sections/article.css";
 
+/* DESIGN SYSTEM */
+:root {
+  /* COLORS */
+  --bg: #ffffff;
+  --bg-soft: #f4f4f5;
+  --text: #111111;
+  --text-soft: #2e2d2d;
+  --text-muted: #5c5c5c;
+  --black: #0a0a0a;
+  --white: #ffffff;
+  --border: rgba(0, 0, 0, 0.2);
+  --border-soft: rgba(0, 0, 0, 0.08);
+
+  /* TYPOGRAPHY */
+  --headline-weight: 700;
+  --subheadline-weight: 600;
+  --body-weight: 500;
+
+  /* SPACING */
+  --page-padding: 1rem;
+  --card-padding: 0.8rem;
+
+  /* RADIUS */
+  --radius: 0.4rem;
+
+  /* TRANSITIONS */
+  --transition: all 0.3s ease;
+}
+
+/* RESET */
 * {
-  -webkit-tap-highlight-color: transparent;
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
@@ -19,38 +49,34 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+/* ROOT */
 html {
   overflow-y: scroll;
   scrollbar-gutter: stable;
-  
   height: 100%;
-  /* This ensures the bounce area on both the extreme top and bottom renders as deep black, matching premium feeds */
-  background-color: #ffffff; 
-
+  background-color: var(--bg);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: auto;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
-  color: #1e1d1d;
+  background-color: var(--bg);
+  color: var(--text-soft);
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  
   position: relative;
   width: 100%;
-  overflow-x: clip; /* Hard-stops side shifting, but keeps the header sticky */
+  overflow-x: clip;
 }
 
 main {
   flex: 1 0 auto;
-  background-color: #ffffff;
+  background-color: var(--bg);
   z-index: 10;
 }
 
-/* Maps directly to your .intel-footer component block */
 .intel-footer {
   flex-shrink: 0;
 }
@@ -60,7 +86,30 @@ img {
   display: block;
 }
 
-/* ── X BAR ── */
+/* GLOBAL TYPOGRAPHY */
+h2, h3 {
+  font-family: Arial, system-ui, sans-serif;
+  letter-spacing: -0.04rem;
+  color: var(--text);
+}
+
+p, small {
+  color: var(--text-soft);
+}
+
+/* GLOBAL IMAGE SYSTEM */
+.featured-card img, .basic-card img,
+.compact-card img, .grid-card img {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-soft);
+  transition: var(--transition);
+  background-color: var(--bg-soft);
+}
+
+/* X BAR */
 .x-bar {
   display: flex;
   align-items: center;
@@ -73,55 +122,55 @@ img {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 0 0.5rem;
-  background-color: #0A0A0A;
   width: 100%;
   height: 2.2rem;
-  color: white;
+  padding: 0 0.5rem;
+  background-color: var(--black);
+  color: var(--white);
   text-decoration: none;
-  transition: color 0.2s ease;
   overflow: hidden;
-  box-sizing: border-box; /* Add this to prevent horizontal scrolling */
+  transition: color 0.2s ease;
 }
 
 .x-bar .fa-x-twitter {
   font-size: 1.1rem;
-  border: 1px solid white;
+  border: 1px solid var(--white);
   padding: 0.13rem 0.1875rem;
   border-radius: 0.25rem;
 }
 
 .x-post-link i {
-  color: #ffffff;
-  flex-shrink: 0; /* Prevents the X logo from getting squished by long text */
+  color: var(--white);
+  flex-shrink: 0;
 }
 
 .x-ticker-text {
-    font-size: 1.15rem;
-  white-space: nowrap;      /* Prevents the text from dropping to a second line */
-  overflow: hidden;         /* Hides the excess text */
-  text-overflow: ellipsis;  /* Adds the '...' at the cut-off point */
   display: block;
+  font-size: 1.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .x-post-link:hover .x-ticker-text {
-  text-decoration: none;
   color: #d6d6d6;
+  text-decoration: none;
 }
 
-/* ===== NEWS FEED STYLES ===== */
+/* NEWS FEED */
 .news-feed {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
   padding-bottom: 1.3rem;
 }
 
+/* CARD LINKS */
 .card-link {
-  text-decoration: none;
   display: block;
   color: inherit;
+  text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -137,163 +186,129 @@ img {
   opacity: 0.85;
 }
 
-/* ===== FEATURED CARD ===== */
+/* FEATURED CARD */
 .featured-card {
   padding-top: 0.85rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: var(--card-padding);
   line-height: 1.2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin: 0;
+  border-bottom: 1px solid var(--border);
 }
 
 .featured-card img {
-    /* 1. THE LAYOUT CONTROLS: Strictly respects your container boundaries */
   width: 100%;
-  max-width: 100%;
-  display: block;
-
-  border-radius: 0.4rem;
-  margin-bottom: 0.6rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  object-fit: cover;
   aspect-ratio: 16 / 9;
-  /* Height: 13rem incase the aspect ratio doesnt fit*/
-  display: block;
-  object-position: center;
-  background-color: #f4f4f5;
+  margin-bottom: 0.6rem;
 }
 
-h2, h3 { 
-  font-family: Arial, system-ui, sans-serif;
-  letter-spacing: -0.04rem;
-}
 .card-info h2 {
   font-size: 1.2rem;
-  color: #111111;
-  margin-bottom: 0.54rem;
   line-height: 1.2;
-  font-weight: 700; 
+  margin-bottom: 0.54rem;
+  font-weight: var(--headline-weight);
 }
 
 .card-info p {
   font-size: 0.95rem;
-  color: #2e2d2d;
   margin-bottom: 0.6rem;
-  font-weight: 500;
+  font-weight: var(--body-weight);
 }
 
 .card-info small {
   font-size: 0.85rem;
-  color: #2e2d2d;
 }
 
-/* ===== TEXT CARD ===== */
+/* TEXT CARD */
 .text-card {
-  padding: 0.8rem 0;
+  padding: var(--card-padding) 0;
   line-height: 1.2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border);
 }
 
 .text-card h3 {
   font-size: 1.1rem;
-color: #111111;
   margin-bottom: 0.4rem;
-  font-weight: 600;
+  font-weight: var(--subheadline-weight);
 }
 
 .text-card p {
   font-size: 0.95rem;
-  color: #2e2d2d;
-    font-weight: 500;
-
+  font-weight: var(--body-weight);
 }
 
-/* ===== BASIC CARD ===== */
+/* BASIC CARD */
 .basic-card {
-  padding: 0.8rem 0;
+  padding: var(--card-padding) 0;
   line-height: 1.2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border);
 }
 
 .basic-card h3 {
   font-size: 1.1rem;
-  font-weight: 600;
-  color: #111111;
   margin-bottom: 0.4rem;
+  font-weight: var(--subheadline-weight);
 }
 
 .basic-card img {
+  width: 100%;
   aspect-ratio: 2 / 1;
   margin-bottom: 0.4rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.08);  border-radius: 0.4rem;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-  object-position: center;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background-color: #f4f4f5;
 }
 
 .basic-card p {
   font-size: 0.95rem;
-color: #2e2d2d;
   line-height: 1.2;
-    font-weight: 500;
-
+  font-weight: var(--body-weight);
+  margin-bottom: 0.4rem;
 }
 
 .basic-card small {
   font-size: 0.85rem;
-  color: #2e2d2d;;
 }
 
-/* ===== COMPACT CARD ===== */
+/* COMPACT CARD */
 .compact-card {
   display: flex;
+  align-items: flex-start;
   gap: 0.6rem;
-  padding: 0.8rem 0;
+  padding: var(--card-padding) 0;
   line-height: 1.2;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border);
 }
 
 .compact-card img {
   width: 7.5rem;
   aspect-ratio: 3 / 2;
-  border-radius: 0.4rem;
   flex-shrink: 0;
   margin-bottom: 0.4rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  object-fit: cover;
-  display: block;
-  object-position: center;
+}
+
+.compact-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .compact-card h3 {
   font-size: 1.1rem;
-  font-weight: 600;
   line-height: 1.2;
-color: #111111;}
+  font-weight: var(--subheadline-weight);
+  overflow-wrap: break-word;
+}
 
 .compact-card small {
   display: block;
   font-size: 0.85rem;
-color: #2e2d2d;
   padding-top: 1.21rem;
 }
 
-/* ===== GRID FEED ===== */
+/* GRID FEED */
 .grid-feed {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin: 0;
-  padding: 0.8rem 0;
   width: 100%;
+  padding: var(--card-padding) 0;
+  border-bottom: 1px solid var(--border);
   clear: both;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .grid-card {
@@ -305,34 +320,24 @@ color: #2e2d2d;
 .grid-card img {
   width: 100%;
   aspect-ratio: 3 / 2;
-  border-radius: 0.4rem;
   margin-bottom: 0.4rem;
-  transition: all 0.3s ease;
-border: 1px solid rgba(0, 0, 0, 0.08);
-  object-fit: cover;
-  display: block;
-  object-position: center;
 }
 
 .grid-card h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.3;
-color: #111111;
   margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: var(--subheadline-weight);
 }
 
-img,
-a,
-button,
-header,
-.menu-panel {
+/* GLOBAL INTERACTION FIXES */
+img, a, button, header, .menu-panel {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* ADD THIS TO THE BOTTOM OF MAIN.CSS */
+/* MENU OPEN STATE */
 html.menu-is-open {
-  overflow: clip; /* Kills the scroll natively without breaking position: sticky */
-  overscroll-behavior: none; /* Kills the background 'pull' leakage */
-  scrollbar-gutter: stable; /* Stops the screen from shifting left/right */
+  overflow: clip;
+  overscroll-behavior: none;
+  scrollbar-gutter: stable;
 }

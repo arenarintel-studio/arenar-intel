@@ -70,19 +70,35 @@
   width: 42px;
   height: 42px;
   border: 1px solid rgba(255,255,255,0.12);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-radius: 50%;
+
   color: #d0d0d0;
   text-decoration: none;
+
   transition:
-    background 0.2s ease,
+    background-color 0.2s ease,
     color 0.2s ease,
     border-color 0.2s ease;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
-.social-icons a:hover {
+/* DESKTOP ONLY */
+@media (hover: hover) {
+  .social-icons a:hover {
+    background: white;
+    color: black;
+    border-color: white;
+  }
+}
+
+/* MOBILE TAP */
+.social-icons a:active {
   background: white;
   color: black;
   border-color: white;
