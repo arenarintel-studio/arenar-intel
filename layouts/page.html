@@ -19,17 +19,19 @@
     </div>
 
     <!-- ACTIONS -->
-    <div class="article-actions" data-pagefind-ignore>
-        <button>
-            <i class="fa-solid fa-share" style="color: black;"></i>
-            Share
-        </button>
+<div class="article-actions" data-pagefind-ignore>
 
-        <button>
-            <i class="fa-regular fa-bookmark"></i>
-            Save
-        </button>
-    </div>
+  <button class="share-btn">
+    <i class="fa-solid fa-share"></i>
+    <span>Share</span>
+  </button>
+
+  <button>
+    <i class="fa-regular fa-bookmark"></i>
+    Save
+  </button>
+
+</div>
 
     <!-- INVISIBLE FRONT MATTER SUMMARY HOOK FOR PAGEFIND -->
     {{ with .Params.summary }}

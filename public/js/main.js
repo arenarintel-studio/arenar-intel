@@ -1,46 +1,32 @@
 // ── AMBIENT DATA INITIALIZATION ───────────────────────
 
 const hamburgerBtn = document.getElementById("hamburgerBtn");
-
 const menuPanel = document.getElementById("menuPanel");
-
 const closeBtn = document.getElementById("closeBtn");
-
 const menuOverlay = document.getElementById("menuOverlay");
 
 const searchInput = document.getElementById("search");
-
 const searchResults = document.getElementById("search-results");
-
 const clearBtn = document.querySelector(".clear-search");
-
 const searchBtn = document.querySelector(".icon");
-
-const menuNav = document.querySelector(".menu-nav");
-
-const menuFooter = document.querySelector(".menu-footer");
-
 const searchForm = document.getElementById("searchForm");
 
-let searchLibrary = null;
-let scrollPosition = 0;
+const menuNav = document.querySelector(".menu-nav");
+const menuFooter = document.querySelector(".menu-footer");
 
-// ── BROWSER BUG PREVENTION ────────────────────────────
+const backToTopBtn = document.getElementById("backToTop");
+const shareBtn = document.querySelector(".share-btn");
+
+let searchLibrary = null;
+
+// ── BROWSER INPUT HARDENING ───────────────────────────
 
 if (searchInput) {
-  // "new-password" is a developer trick. It forces the browser to treat
-
-  // this as a secure, non-historical field so it stops suggesting past searches.
-
   searchInput.setAttribute("autocomplete", "new-password");
-
   searchInput.setAttribute("autocorrect", "off");
-
   searchInput.setAttribute("autocapitalize", "off");
-
   searchInput.setAttribute("spellcheck", "false");
-
-  searchInput.setAttribute("data-form-type", "other"); // Extra layer of prevention
+  searchInput.setAttribute("data-form-type", "other");
 }
 
 if (searchForm) {
@@ -49,10 +35,19 @@ if (searchForm) {
 
 // ── SEARCH STATE ──────────────────────────────────────
 
+function hideMenuElements() {
+  if (menuNav) menuNav.style.display = "none";
+  if (menuFooter) menuFooter.style.display = "none";
+}
+
+function restoreMenuElements() {
+  if (menuNav) menuNav.style.display = "";
+  if (menuFooter) menuFooter.style.display = "";
+}
+
 function resetSearchState() {
   if (searchInput) {
     searchInput.value = "";
-
     searchInput.blur();
   }
 
@@ -63,18 +58,6 @@ function resetSearchState() {
   restoreMenuElements();
 }
 
-function hideMenuElements() {
-  if (menuNav) menuNav.style.display = "none";
-
-  if (menuFooter) menuFooter.style.display = "none";
-}
-
-function restoreMenuElements() {
-  if (menuNav) menuNav.style.display = "";
-
-  if (menuFooter) menuFooter.style.display = "";
-}
-
 // ── MENU CONTROLS ─────────────────────────────────────
 
 function openMenu() {
@@ -82,17 +65,14 @@ function openMenu() {
 
   resetSearchState();
 
-
-
   menuPanel.classList.add("open");
   menuOverlay.classList.add("active");
 
   hamburgerBtn.classList.add("hide-icon");
   closeBtn.classList.add("show-close");
-  
-// CHANGED: Match the new unified class name in your CSS
+
+  // Prevent background scroll without layout glitches
   document.documentElement.classList.add("menu-is-open");
-  restoreMenuElements();
 }
 
 function closeMenu() {
@@ -108,17 +88,32 @@ function closeMenu() {
   hamburgerBtn.classList.remove("hide-icon");
   closeBtn.classList.remove("show-close");
 
-  // CHANGED: Match the new unified class name in your CSS
   document.documentElement.classList.remove("menu-is-open");
 
   resetSearchState();
 }
 
-if (hamburgerBtn) hamburgerBtn.addEventListener("click", openMenu);
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener("click", openMenu);
+}
 
-if (closeBtn) closeBtn.addEventListener("click", closeMenu);
+if (closeBtn) {
+  closeBtn.addEventListener("click", closeMenu);
+}
 
-if (menuOverlay) menuOverlay.addEventListener("click", closeMenu);
+if (menuOverlay) {
+  menuOverlay.addEventListener("click", closeMenu);
+}
+
+document.querySelectorAll(".menu-nav a").forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && menuPanel?.classList.contains("open")) {
+    closeMenu();
+  }
+});
 
 if (menuPanel) {
   menuPanel.addEventListener("click", (e) => {
@@ -132,32 +127,7 @@ if (menuPanel) {
   });
 }
 
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && menuPanel && menuPanel.classList.contains("open")) {
-    closeMenu();
-  }
-});
-
-document.querySelectorAll(".menu-nav a").forEach((link) => {
-  link.addEventListener("click", closeMenu);
-});
-
-// ── ARTICLE ACTIONS ───────────────────────────────────
-
-function shareArticle() {
-  if (navigator.share) {
-    navigator.share({ title: document.title, url: window.location.href });
-  } else {
-    navigator.clipboard.writeText(window.location.href).then(() => {
-      alert("Link copied to clipboard!");
-    });
-  }
-}
-
-window.shareArticle = shareArticle;
-
-
-const backToTopBtn = document.getElementById("backToTop");
+// ── BACK TO TOP ───────────────────────────────────────
 
 if (backToTopBtn) {
   backToTopBtn.addEventListener("click", (e) => {
@@ -170,16 +140,64 @@ if (backToTopBtn) {
   });
 }
 
-// ── PAGEFIND ──────────────────────────────────────────
+// ── SHARE ARTICLE ─────────────────────────────────────
+
+async function shareArticle() {
+  const shareData = {
+    title: document.title,
+    url: window.location.href
+  };
+
+  try {
+    // Native mobile / desktop sharing
+    if (navigator.share) {
+      await navigator.share(shareData);
+      return;
+    }
+
+    // Clipboard fallback
+    await navigator.clipboard.writeText(window.location.href);
+
+    if (!shareBtn) return;
+
+    const shareText = shareBtn.querySelector("span");
+
+    if (!shareText) return;
+
+    const originalText = shareText.textContent;
+
+    shareText.textContent = "Copied!";
+
+    setTimeout(() => {
+      shareText.textContent = originalText;
+    }, 1500);
+
+  } catch (err) {
+    console.error("Share failed:", err);
+  }
+}
+
+if (shareBtn) {
+  shareBtn.addEventListener("click", shareArticle);
+}
+
+// ── PAGEFIND SEARCH ───────────────────────────────────
 
 window.addEventListener("DOMContentLoaded", async () => {
-  if (!searchInput || !searchResults || !clearBtn || !searchBtn) return;
+
+  if (
+    !searchInput ||
+    !searchResults ||
+    !clearBtn ||
+    !searchBtn
+  ) {
+    return;
+  }
 
   try {
     searchLibrary = await import("/pagefind/pagefind.js");
   } catch (error) {
     console.error("Pagefind failed to load:", error);
-
     return;
   }
 
@@ -191,17 +209,15 @@ window.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  let searchToken = 0; // Prevents old searches from overriding new ones when typing fast
-
-  // isLive = true means user is currently typing. isLive = false means they hit enter/submit.
+  let searchToken = 0;
 
   async function processSearch(query, isLive) {
+
     if (!searchLibrary) return;
 
     const currentToken = ++searchToken;
 
-    // Only blur (hide keyboard) if they actually submitted the search
-
+    // Hide keyboard only on actual submit
     if (!isLive) {
       searchInput.blur();
     }
@@ -209,35 +225,37 @@ window.addEventListener("DOMContentLoaded", async () => {
     if (query.length < 2) {
       searchResults.innerHTML = "";
 
-      if (!isLive) restoreMenuElements();
+      if (!isLive) {
+        restoreMenuElements();
+      }
 
       return;
     }
 
     try {
+
       const searchExecution = await searchLibrary.search(query);
 
-      // Abort if user typed something new while we were fetching this, or menu was closed
-
+      // Prevent stale race-condition results
       if (currentToken !== searchToken) return;
 
+      // Prevent results after menu closes
       if (!menuPanel.classList.contains("open")) return;
-
-      // LIVE MODE: Slice to top 3. EXPLICIT MODE: Show all results.
 
       const rawResults = isLive
         ? searchExecution.results.slice(0, 3)
         : searchExecution.results;
 
-      const results = await Promise.all(rawResults.map((r) => r.data()));
-
-      // Check race condition again after fetching article data
+      const results = await Promise.all(
+        rawResults.map((r) => r.data())
+      );
 
       if (currentToken !== searchToken) return;
 
-      searchResults.innerHTML = ""; // Clear out previous results
+      searchResults.innerHTML = "";
 
       if (results.length === 0) {
+
         const emptyState = document.createElement("div");
 
         emptyState.className = "no-search-results";
@@ -254,32 +272,41 @@ window.addEventListener("DOMContentLoaded", async () => {
       listContainer.className = "search-results-list";
 
       results.forEach((article, index) => {
+
         const card = document.createElement("div");
 
         card.className =
-          index === 0 ? "search-result-item recommended" : "search-result-item";
+          index === 0
+            ? "search-result-item recommended"
+            : "search-result-item";
 
         const title = article.meta.title || "Untitled";
-
         const excerpt = article.excerpt || "";
 
         if (index === 0) {
-          card.innerHTML = `
 
+          card.innerHTML = `
             <div class="recommended-label">RECOMMENDED</div>
 
-            <div class="search-title">${title}</div>
+            <div class="search-title">
+              ${title}
+            </div>
 
-            <div class="search-excerpt">${excerpt}</div>
-
+            <div class="search-excerpt">
+              ${excerpt}
+            </div>
           `;
+
         } else {
+
           card.innerHTML = `
+            <div class="search-title">
+              ${title}
+            </div>
 
-            <div class="search-title">${title}</div>
-
-            <div class="search-excerpt secondary">${excerpt}</div>
-
+            <div class="search-excerpt secondary">
+              ${excerpt}
+            </div>
           `;
         }
 
@@ -291,14 +318,16 @@ window.addEventListener("DOMContentLoaded", async () => {
       });
 
       searchResults.appendChild(listContainer);
+
     } catch (err) {
       console.error("Search failed:", err);
     }
   }
 
-  // ── SEARCH FIELD EVENTS ────────────────────────────
+  // ── SEARCH EVENTS ──────────────────────────────────
 
   searchInput.addEventListener("focus", () => {
+
     if (searchInput.value.trim().length > 0) {
       hideMenuElements();
     } else {
@@ -306,62 +335,81 @@ window.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  // Fires immediately as the user types
-
   searchInput.addEventListener("input", () => {
+
     const query = searchInput.value.trim();
 
     if (query.length > 0) {
+
       hideMenuElements();
 
-      processSearch(query, true); // true = Live Mode (Max 3 results)
+      processSearch(query, true);
+
     } else {
+
       searchResults.innerHTML = "";
 
       restoreMenuElements();
     }
   });
 
-  // Debounced blur logic to prevent UI flashing
-
   searchInput.addEventListener("blur", () => {
+
     setTimeout(() => {
+
       if (
         searchInput.value.trim().length === 0 &&
         document.activeElement !== searchInput
       ) {
+
         searchResults.innerHTML = "";
 
         restoreMenuElements();
       }
+
     }, 150);
   });
 
-  // ── EXPLICIT SUBMISSIONS (Pressing Enter or clicking the Search button) ──
+  // ── SUBMIT SEARCH ──────────────────────────────────
 
   if (searchForm) {
+
     searchForm.addEventListener("submit", (e) => {
+
       e.preventDefault();
 
-      processSearch(searchInput.value.trim(), false); // false = Explicit Mode (All results)
+      processSearch(
+        searchInput.value.trim(),
+        false
+      );
     });
   }
 
   searchInput.addEventListener("keydown", (e) => {
+
     if (e.key === "Enter") {
+
       e.preventDefault();
 
-      processSearch(searchInput.value.trim(), false);
+      processSearch(
+        searchInput.value.trim(),
+        false
+      );
     }
   });
 
   searchBtn.addEventListener("click", (e) => {
+
     e.preventDefault();
 
-    processSearch(searchInput.value.trim(), false);
+    processSearch(
+      searchInput.value.trim(),
+      false
+    );
   });
 
   clearBtn.addEventListener("click", () => {
     resetSearchState();
   });
+
 });
