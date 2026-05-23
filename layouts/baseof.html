@@ -17,17 +17,13 @@
     {{ partial "menu.html" . }}
   </div>
 
-  <!-- WRAPPER START: This is the new scroll container -->
-  <div class="content-wrapper">
-    <main>
-      {{ block "main" . }}{{ end }}
-    </main>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
 
-    <footer data-pagefind-ignore>
-      {{ partial "footer.html" . }}
-    </footer>
-  </div>
-  <!-- WRAPPER END -->
+  <footer data-pagefind-ignore>
+    {{ partial "footer.html" . }}
+  </footer>
 
 </body>
 </html>

@@ -262,11 +262,6 @@ input#search:-webkit-autofill:active {
   padding: 0 10px;
 }
 
-/* 1. Turn off finger-swiping on the background (without breaking sticky header!) */
-body:has(.menu-panel.open) {
-  touch-action: none;
-}
-
 /* 2. Make sure the menu itself can still be scrolled */
 .menu-panel {
   touch-action: pan-y;

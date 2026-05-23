@@ -51,32 +51,6 @@ main {
   z-index: 10;
 }
 
-/* 1. Prevent the body from scrolling when the menu is open */
-body.menu-is-open {
-  overflow: hidden;
-  height: 100vh;
-}
-
-/* 2. Pin the header to the top of the viewport */
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  /* Ensure this has a background color to hide content scrolling behind it */
-  background: white; 
-}
-
-/* 3. The content-wrapper is the only thing that scrolls */
-.content-wrapper {
-  margin-top: 60px; /* IMPORTANT: Match this to your header height */
-  height: calc(100vh - 60px); /* Fill the rest of the screen */
-  overflow-y: auto;
-  overscroll-behavior: contain; /* The BBC-style bounce effect */
-  -webkit-overflow-scrolling: touch;
-}
-
 /* Maps directly to your .intel-footer component block */
 .intel-footer {
   flex-shrink: 0;
@@ -356,8 +330,10 @@ header,
 .menu-panel {
   -webkit-tap-highlight-color: transparent;
 }
-/* This stops the page from scrolling when the class 'is-locked' is present */
-html.is-locked {
-  overflow: clip;
-  scrollbar-gutter: stable;
+
+/* ADD THIS TO THE BOTTOM OF MAIN.CSS */
+html.menu-is-open {
+  overflow: clip; /* Kills the scroll natively without breaking position: sticky */
+  overscroll-behavior: none; /* Kills the background 'pull' leakage */
+  scrollbar-gutter: stable; /* Stops the screen from shifting left/right */
 }

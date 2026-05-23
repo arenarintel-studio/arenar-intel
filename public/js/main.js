@@ -82,8 +82,7 @@ function openMenu() {
 
   resetSearchState();
 
-  // New: This triggers the body { overflow: hidden } in your CSS
-  document.body.classList.add("menu-is-open");
+
 
   menuPanel.classList.add("open");
   menuOverlay.classList.add("active");
@@ -91,6 +90,8 @@ function openMenu() {
   hamburgerBtn.classList.add("hide-icon");
   closeBtn.classList.add("show-close");
   
+// CHANGED: Match the new unified class name in your CSS
+  document.documentElement.classList.add("menu-is-open");
   restoreMenuElements();
 }
 
@@ -101,14 +102,14 @@ function closeMenu() {
     searchInput.blur();
   }
 
-  // New: This removes the lock
-  document.body.classList.remove("menu-is-open");
-
   menuPanel.classList.remove("open");
   menuOverlay.classList.remove("active");
 
   hamburgerBtn.classList.remove("hide-icon");
   closeBtn.classList.remove("show-close");
+
+  // CHANGED: Match the new unified class name in your CSS
+  document.documentElement.classList.remove("menu-is-open");
 
   resetSearchState();
 }
