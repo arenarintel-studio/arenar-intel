@@ -91,6 +91,12 @@ backface-visibility: hidden;
   box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5);
 }
 
+body.menu-lock {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
 .menu-panel.open {
   transform: translateX(0);
 }

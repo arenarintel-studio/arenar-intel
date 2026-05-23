@@ -83,7 +83,9 @@ function openMenu() {
   resetSearchState();
 
 scrollPosition = window.scrollY;
-document.body.style.position = "fixed";
+
+document.body.classList.add("menu-lock");
+
 document.body.style.top = `-${scrollPosition}px`;
 document.body.style.width = "100%";
 
@@ -110,9 +112,11 @@ function closeMenu() {
   closeBtn.classList.remove("show-close");
 
   // RESTORE BODY STATE
-  document.body.style.position = "";
-  document.body.style.top = "";
-  document.body.style.width = "";
+  document.body.classList.remove("menu-lock");
+
+document.body.style.top = "";
+
+window.scrollTo(0, scrollPosition);
 
   // RESTORE EXACT SCROLL POSITION
   window.scrollTo(0, scrollPosition);
