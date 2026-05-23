@@ -181,6 +181,76 @@ if (shareBtn) {
   shareBtn.addEventListener("click", shareArticle);
 }
 
+// -- Save---
+const saveBtn = document.querySelector(".save-btn");
+
+function saveArticle() {
+
+  if (!saveBtn) return;
+
+  const icon = saveBtn.querySelector("i");
+  const text = saveBtn.querySelector("span");
+
+  const savedArticles =
+    JSON.parse(localStorage.getItem("savedArticles")) || [];
+
+  const currentURL = window.location.href;
+
+  const alreadySaved =
+    savedArticles.includes(currentURL);
+
+  if (alreadySaved) {
+
+    // REMOVE ARTICLE
+    const updatedArticles =
+      savedArticles.filter(url => url !== currentURL);
+
+    localStorage.setItem(
+      "savedArticles",
+      JSON.stringify(updatedArticles)
+    );
+
+    // EMPTY BOOKMARK
+    icon.className = "fa-regular fa-bookmark";
+
+    text.textContent = "Save";
+
+  } else {
+
+    // SAVE ARTICLE
+    savedArticles.push(currentURL);
+
+    localStorage.setItem(
+      "savedArticles",
+      JSON.stringify(savedArticles)
+    );
+
+    // FILLED BOOKMARK
+    icon.className = "fa-solid fa-bookmark";
+
+    text.textContent = "Saved";
+  }
+}
+
+// RESTORE SAVED STATE AFTER REFRESH
+if (saveBtn) {
+
+  const savedArticles =
+    JSON.parse(localStorage.getItem("savedArticles")) || [];
+
+  if (savedArticles.includes(window.location.href)) {
+
+    const icon = saveBtn.querySelector("i");
+    const text = saveBtn.querySelector("span");
+
+    icon.className = "fa-solid fa-bookmark";
+
+    text.textContent = "Saved";
+  }
+
+  saveBtn.addEventListener("click", saveArticle);
+}
+
 // ── PAGEFIND SEARCH ───────────────────────────────────
 
 window.addEventListener("DOMContentLoaded", async () => {

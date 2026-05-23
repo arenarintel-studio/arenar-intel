@@ -40,6 +40,15 @@ font-family: sans-serif;
   color: #444;
   text-decoration: none;
 }
+
+.article-actions button {
+  min-width: 92px;
+}
+
+.save-btn i {
+  transition: transform 0.2s ease;
+}
+
 .article-actions button i {
     color: black;
 }
