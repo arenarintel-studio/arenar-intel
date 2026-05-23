@@ -91,12 +91,6 @@ backface-visibility: hidden;
   box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5);
 }
 
-body.menu-lock {
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
-}
-
 .menu-panel.open {
   transform: translateX(0);
 }
@@ -268,6 +262,16 @@ input#search:-webkit-autofill:active {
   padding: 0 10px;
 }
 
+/* 1. Turn off finger-swiping on the background (without breaking sticky header!) */
+body:has(.menu-panel.open) {
+  touch-action: none;
+}
+
+/* 2. Make sure the menu itself can still be scrolled */
+.menu-panel {
+  touch-action: pan-y;
+  overscroll-behavior: contain;
+}
 .clear-search:hover,
 .icon:hover {
   color: white;

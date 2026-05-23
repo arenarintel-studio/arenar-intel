@@ -82,12 +82,7 @@ function openMenu() {
 
   resetSearchState();
 
-scrollPosition = window.scrollY;
 
-document.body.classList.add("menu-lock");
-
-document.body.style.top = `-${scrollPosition}px`;
-document.body.style.width = "100%";
 
   menuPanel.classList.add("open");
   menuOverlay.classList.add("active");
@@ -111,15 +106,7 @@ function closeMenu() {
   hamburgerBtn.classList.remove("hide-icon");
   closeBtn.classList.remove("show-close");
 
-  // RESTORE BODY STATE
-  document.body.classList.remove("menu-lock");
 
-document.body.style.top = "";
-
-window.scrollTo(0, scrollPosition);
-
-  // RESTORE EXACT SCROLL POSITION
-  window.scrollTo(0, scrollPosition);
 
   resetSearchState();
 }
