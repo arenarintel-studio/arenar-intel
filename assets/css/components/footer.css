@@ -88,22 +88,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* DESKTOP ONLY */
-@media (hover: hover) {
-  .social-icons a:hover {
-    background: white;
-    color: black;
-    border-color: white;
-  }
-}
-
-/* MOBILE TAP */
+/* MOBILE TAP / CLICK STATE */
 .social-icons a:active {
   background: white;
   color: black;
   border-color: white;
+  transition: none; /* INSTANT flash on touch-down! */
 }
 
+/* Force the FontAwesome icon to turn black during the flash */
+.social-icons a:active i {
+  color: black;
+}
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
 }
