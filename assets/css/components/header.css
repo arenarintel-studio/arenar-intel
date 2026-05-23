@@ -267,9 +267,65 @@ input#search:-webkit-autofill:active {
   touch-action: pan-y;
   overscroll-behavior: contain;
 }
-.clear-search:hover,
-.icon:hover {
+
+/* ─────────────────────────────────────────────
+   SEARCH BAR ACTIVE GLOW
+───────────────────────────────────────────── */
+
+.menu-search-inner {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+/* When search is focused */
+.menu-search-inner:focus-within {
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ─────────────────────────────────────────────
+   SEARCH & CLEAR BUTTONS
+───────────────────────────────────────────── */
+
+.clear-search,
+.icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  color: rgba(255,255,255,0.45);
+
+  transition:
+    color 0.2s ease,
+    transform 0.15s ease,
+    opacity 0.2s ease;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hover only on real desktop mouse devices */
+@media (hover: hover) {
+  .clear-search:hover,
+  .icon:hover {
+    color: white;
+  }
+}
+
+/* Mobile tap feedback only */
+.clear-search:active,
+.icon:active {
   color: white;
+  transform: scale(0.95);
 }
 
 /* Controls highlighted keyword in search results */
