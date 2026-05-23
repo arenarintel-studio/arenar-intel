@@ -82,7 +82,8 @@ function openMenu() {
 
   resetSearchState();
 
-
+  // New: This triggers the body { overflow: hidden } in your CSS
+  document.body.classList.add("menu-is-open");
 
   menuPanel.classList.add("open");
   menuOverlay.classList.add("active");
@@ -90,7 +91,6 @@ function openMenu() {
   hamburgerBtn.classList.add("hide-icon");
   closeBtn.classList.add("show-close");
   
-document.documentElement.classList.add("is-locked");
   restoreMenuElements();
 }
 
@@ -101,13 +101,14 @@ function closeMenu() {
     searchInput.blur();
   }
 
+  // New: This removes the lock
+  document.body.classList.remove("menu-is-open");
+
   menuPanel.classList.remove("open");
   menuOverlay.classList.remove("active");
 
   hamburgerBtn.classList.remove("hide-icon");
   closeBtn.classList.remove("show-close");
-
-document.documentElement.classList.remove("is-locked");
 
   resetSearchState();
 }
@@ -363,19 +364,3 @@ window.addEventListener("DOMContentLoaded", async () => {
     resetSearchState();
   });
 });
-
-// ── MOBILE SCROLL SHIELD ──────────────────────────────
-// This blocks background swiping on iPhones without breaking the header or URL bar.
-document.addEventListener("touchmove", (e) => {
-  // Only activate if the menu is actually open
-  if (menuPanel && menuPanel.classList.contains("open")) {
-    
-    // If the user's finger is swiping INSIDE the menu panel, let them scroll normally
-    if (menuPanel.contains(e.target)) {
-      return; 
-    }
-    
-    // If their finger is anywhere else (the dark overlay, header, or background), kill the swipe
-    e.preventDefault();
-  }
-}, { passive: false }); // 'passive: false' is required to allow preventDefault()

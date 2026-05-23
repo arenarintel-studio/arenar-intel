@@ -9,7 +9,7 @@
 
   <div class="page-transition" data-pagefind-ignore></div>
 
-  <header data-pagefind-ignore>
+  <header class="site-header" data-pagefind-ignore>
     {{ partial "header.html" . }}
   </header>
 
@@ -17,13 +17,17 @@
     {{ partial "menu.html" . }}
   </div>
 
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
+  <!-- WRAPPER START: This is the new scroll container -->
+  <div class="content-wrapper">
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
 
-  <footer data-pagefind-ignore>
-    {{ partial "footer.html" . }}
-  </footer>
+    <footer data-pagefind-ignore>
+      {{ partial "footer.html" . }}
+    </footer>
+  </div>
+  <!-- WRAPPER END -->
 
 </body>
 </html>
