@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Arenar Intel</title>
-    <link>http://localhost:63493/about/</link>
+    <link>http://localhost:57919/about/</link>
     <description>Recent content in About on Arenar Intel</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:63493/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57919/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

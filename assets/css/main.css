@@ -329,3 +329,8 @@ header,
 .menu-panel {
   -webkit-tap-highlight-color: transparent;
 }
+/* This stops the page from scrolling when the class 'is-locked' is present */
+html.is-locked {
+  overflow: clip;
+  scrollbar-gutter: stable;
+}
