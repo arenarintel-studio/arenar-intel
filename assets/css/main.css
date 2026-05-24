@@ -64,6 +64,11 @@ main {
   min-height: 80vh;
 }
 
+/* Force Chrome to treat the root as a scrollable container that ignores the bottom UI until scroll */
+html {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
 img {
   max-width: 100%;
   display: block;
