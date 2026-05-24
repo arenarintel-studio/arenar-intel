@@ -107,18 +107,17 @@ header {
 }
 
 /* When checkbox is checked: swap icons */
-.menu-checkbox:checked ~ header .hamburger-icon,
-.menu-checkbox:checked + label .hamburger-icon {
+.menu-checkbox:checked ~ header .hamburger-icon {
   display: none;
 }
 
-.menu-checkbox:checked + label .close-icon {
+.menu-checkbox:checked ~ header .close-icon {
   display: block;
 }
 
 .menu-panel {
   position: fixed;
-  top: 3.5rem;
+  top: 64px;
   right: 0;
   width: 85%;
   height: calc(100dvh - 3.5rem);
@@ -132,7 +131,7 @@ header {
   box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5);
 }
 
-.menu-panel.open {
+.menu-checkbox:checked ~ .menu-panel {
   transform: translateX(0);
 }
 
@@ -227,7 +226,7 @@ header {
   z-index: 998;
 }
 
-.menu-overlay.active {
+.menu-checkbox:checked ~ .menu-overlay {
   display: block;
 }
 

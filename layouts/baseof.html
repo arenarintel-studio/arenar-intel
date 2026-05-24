@@ -7,15 +7,15 @@
 
 <body>
 
+  <input type="checkbox" id="menuToggle" class="menu-checkbox" />
+
   <div class="page-transition" data-pagefind-ignore></div>
 
   <header class="site-header" data-pagefind-ignore>
     {{ partial "header.html" . }}
   </header>
 
-  <div data-pagefind-ignore>
-    {{ partial "menu.html" . }}
-  </div>
+  {{ partial "menu.html" . }}
 
   <main>
     {{ block "main" . }}{{ end }}

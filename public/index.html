@@ -43,6 +43,8 @@
 
 <body>
 
+  <input type="checkbox" id="menuToggle" class="menu-checkbox" />
+
   <div class="page-transition" data-pagefind-ignore></div>
 
   <header class="site-header" data-pagefind-ignore>
@@ -63,7 +65,6 @@
   
 </div>
 
-<input type="checkbox" id="menuToggle" class="menu-checkbox" />
 <label for="menuToggle" class="menu-toggle" aria-label="Open menu">
   <svg class="menu-icon hamburger-icon" stroke="#0A0A0A" viewBox="0 0 40 40">
     <line x1="2" y1="12" x2="18" y2="12" stroke-width="2.5" stroke-linecap="round" />
@@ -79,8 +80,7 @@
 </label>
   </header>
 
-  <div data-pagefind-ignore>
-    <div class="menu-panel" id="menuPanel">
+  <div class="menu-panel" id="menuPanel">
   <div class="menu-search">
     
     <form action="" id="searchForm" class="menu-search-inner" onsubmit="event.preventDefault();">
@@ -116,7 +116,6 @@
 </div>
 
 <div class="menu-overlay" id="menuOverlay"></div>
-  </div>
 
   <main>
     
