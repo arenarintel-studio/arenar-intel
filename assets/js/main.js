@@ -483,3 +483,13 @@ window.addEventListener("DOMContentLoaded", async () => {
   });
 
 });
+
+// ── BROWSER UI RECALCULATION FIX ─────────────────────
+
+window.addEventListener("load", () => {
+  // Give the browser 100ms to calculate the UI bar heights, 
+  // then force a minor scroll to trigger the native hide/show animation.
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 100);
+});
