@@ -32,6 +32,7 @@
 
 
 
+    <link rel="stylesheet" href="/css/sections/about.min.0ef609799422a505aa419ef78b07d212c6f37089348bb20993805e9dd86abd86.css" integrity="sha256-DvYJeZQipQWqQZ73iwfSEsbzcIk0i7IJk4BendhqvYY=" crossorigin="anonymous">
 
 
 
@@ -41,6 +42,8 @@
 </head>
 
 <body>
+
+  <input type="checkbox" id="menuToggle" class="menu-checkbox" />
 
   <div class="page-transition" data-pagefind-ignore></div>
 
@@ -62,24 +65,22 @@
   
 </div>
 
-<button class="menu-toggle" aria-label="Open menu">
-  <svg id="hamburgerBtn" class="menu-icon" stroke="#0A0A0A" viewBox="0 0 40 40">
+<label for="menuToggle" class="menu-toggle" aria-label="Open menu">
+  <svg class="menu-icon hamburger-icon" stroke="#0A0A0A" viewBox="0 0 40 40">
     <line x1="2" y1="12" x2="18" y2="12" stroke-width="2.5" stroke-linecap="round" />
     <line x1="2" y1="20" x2="14" y2="20" stroke-width="2.5" stroke-linecap="round" />
     <line x1="2" y1="28" x2="18" y2="28" stroke-width="2.5" stroke-linecap="round" />
     <circle cx="24" cy="20" r="5.5" stroke-width="2.5" fill="none" />
     <line x1="28.2" y1="24.8" x2="31" y2="27.6" stroke-width="2.5" stroke-linecap="round" />
   </svg>
-
-  <svg id="closeBtn" class="menu-icon close-icon" viewBox="0 0 40 40">
+  <svg class="menu-icon close-icon" viewBox="0 0 40 40">
     <line x1="12" y1="12" x2="28" y2="28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
     <line x1="28" y1="12" x2="12" y2="28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
   </svg>
-</button>
+</label>
   </header>
 
-  <div data-pagefind-ignore>
-    <div class="menu-panel" id="menuPanel">
+  <div class="menu-panel" id="menuPanel">
   <div class="menu-search">
     
     <form action="" id="searchForm" class="menu-search-inner" onsubmit="event.preventDefault();">
@@ -113,9 +114,6 @@
     <p>© 2026 Arenar Intel</p>
   </div>
 </div>
-
-<div class="menu-overlay" id="menuOverlay"></div>
-  </div>
 
   <main>
     

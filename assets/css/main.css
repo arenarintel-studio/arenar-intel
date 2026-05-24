@@ -6,7 +6,10 @@
 @import "sections/privacy.css";
 @import "sections/article.css";
 
-/* DESIGN SYSTEM */
+/* ─────────────────────────────────────────────
+   DESIGN SYSTEM
+───────────────────────────────────────────── */
+
 :root {
   /* COLORS */
   --bg: #ffffff;
@@ -32,10 +35,13 @@
   --radius: 0.4rem;
 
   /* TRANSITIONS */
-  --transition: all 0.3s ease;
+  --transition: opacity 0.3s ease;
 }
 
-/* RESET */
+/* ─────────────────────────────────────────────
+   RESET
+───────────────────────────────────────────── */
+
 * {
   margin: 0;
   padding: 0;
@@ -60,13 +66,7 @@ body {
 
 main {
   background-color: var(--bg);
-  z-index: 10;
-  min-height: 80vh;
-}
-
-/* Force Chrome to treat the root as a scrollable container that ignores the bottom UI until scroll */
-html {
-  padding-bottom: env(safe-area-inset-bottom);
+  min-height: 80dvh;
 }
 
 img {
@@ -74,7 +74,10 @@ img {
   display: block;
 }
 
-/* GLOBAL TYPOGRAPHY */
+/* ─────────────────────────────────────────────
+   GLOBAL TYPOGRAPHY
+───────────────────────────────────────────── */
+
 h2, h3 {
   font-family: Arial, system-ui, sans-serif;
   letter-spacing: -0.04rem;
@@ -85,19 +88,27 @@ p, small {
   color: var(--text-soft);
 }
 
-/* GLOBAL IMAGE SYSTEM */
-.featured-card img, .basic-card img,
-.compact-card img, .grid-card img {
+/* ─────────────────────────────────────────────
+   GLOBAL IMAGE SYSTEM
+───────────────────────────────────────────── */
+
+.featured-card img,
+.basic-card img,
+.compact-card img,
+.grid-card img {
+  display: block;
   object-fit: cover;
   object-position: center;
-  display: block;
   border-radius: var(--radius);
   border: 1px solid var(--border-soft);
-  transition: var(--transition);
   background-color: var(--bg-soft);
+  transition: var(--transition);
 }
 
-/* X BAR */
+/* ─────────────────────────────────────────────
+   X BAR
+───────────────────────────────────────────── */
+
 .x-bar {
   display: flex;
   align-items: center;
@@ -106,7 +117,6 @@ p, small {
   box-sizing: border-box;
 }
 
-/* Add the tap-highlight fix to your existing container */
 .x-post-link {
   display: flex;
   align-items: center;
@@ -118,7 +128,7 @@ p, small {
   color: var(--white);
   text-decoration: none;
   overflow: hidden;
-  -webkit-tap-highlight-color: transparent; /* Just prevents the default grey mobile box */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .x-bar .fa-x-twitter {
@@ -133,29 +143,29 @@ p, small {
   flex-shrink: 0;
 }
 
-/* The text gets the smooth fade for when you let go */
 .x-ticker-text {
   display: block;
   font-size: 1.15rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: color 0.2s ease; 
+  transition: color 0.2s ease;
 }
 
-/* Desktop hover: slightly dim */
 .x-post-link:hover .x-ticker-text {
   color: #d6d6d6;
   text-decoration: none;
 }
 
-/* Mobile tap: instantly goes faint. ONLY the text changes. */
 .x-post-link:active .x-ticker-text {
-  color: #888888; 
-  transition: none; 
+  color: #888888;
+  transition: none;
 }
 
-/* NEWS FEED */
+/* ─────────────────────────────────────────────
+   NEWS FEED
+───────────────────────────────────────────── */
+
 .news-feed {
   display: flex;
   flex-direction: column;
@@ -164,7 +174,10 @@ p, small {
   padding-bottom: 1.3rem;
 }
 
-/* CARD LINKS */
+/* ─────────────────────────────────────────────
+   CARD LINKS
+───────────────────────────────────────────── */
+
 .card-link {
   display: block;
   color: inherit;
@@ -184,7 +197,10 @@ p, small {
   opacity: 0.85;
 }
 
-/* FEATURED CARD */
+/* ─────────────────────────────────────────────
+   FEATURED CARD
+───────────────────────────────────────────── */
+
 .featured-card {
   padding-top: 0.85rem;
   padding-bottom: var(--card-padding);
@@ -215,7 +231,10 @@ p, small {
   font-size: 0.85rem;
 }
 
-/* TEXT CARD */
+/* ─────────────────────────────────────────────
+   TEXT CARD
+───────────────────────────────────────────── */
+
 .text-card {
   padding: var(--card-padding) 0;
   line-height: 1.2;
@@ -233,7 +252,10 @@ p, small {
   font-weight: var(--body-weight);
 }
 
-/* BASIC CARD */
+/* ─────────────────────────────────────────────
+   BASIC CARD
+───────────────────────────────────────────── */
+
 .basic-card {
   padding: var(--card-padding) 0;
   line-height: 1.2;
@@ -263,7 +285,10 @@ p, small {
   font-size: 0.85rem;
 }
 
-/* COMPACT CARD */
+/* ─────────────────────────────────────────────
+   COMPACT CARD
+───────────────────────────────────────────── */
+
 .compact-card {
   display: flex;
   align-items: flex-start;
@@ -298,7 +323,10 @@ p, small {
   padding-top: 1.21rem;
 }
 
-/* GRID FEED */
+/* ─────────────────────────────────────────────
+   GRID FEED
+───────────────────────────────────────────── */
+
 .grid-feed {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -328,14 +356,14 @@ p, small {
   font-weight: var(--subheadline-weight);
 }
 
-/* GLOBAL INTERACTION FIXES */
-img, a, button, header, .menu-panel {
-  -webkit-tap-highlight-color: transparent;
-}
+/* ─────────────────────────────────────────────
+   GLOBAL INTERACTION FIXES
+───────────────────────────────────────────── */
 
-/* MENU OPEN STATE */
-html.menu-is-open {
-  overflow: clip;
-  overscroll-behavior: none;
-  scrollbar-gutter: stable;
+img,
+a,
+button,
+header,
+.menu-panel {
+  -webkit-tap-highlight-color: transparent;
 }

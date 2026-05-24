@@ -1,34 +1,50 @@
+/* ─────────────────────────────────────────────
+   ARTICLE PAGE
+───────────────────────────────────────────── */
+
 .article-page {
   max-width: 700px;
   margin: 0 auto;
-  padding: 1.2rem 1rem calc(0.5rem + env(safe-area-inset-bottom));
+  padding: 1.2rem 1rem 0.5rem;
 }
 
 .article-page h1 {
-font-family: sans-serif;
+  font-family: sans-serif;
   font-weight: 700;
   font-size: clamp(1.6rem, 5vw, 4rem);
   line-height: 1;
   margin-bottom: 1rem;
   text-wrap: balance;
 }
+
+/* ─────────────────────────────────────────────
+   META (DATE / READ TIME)
+───────────────────────────────────────────── */
+
 .article-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
   margin-bottom: 1.2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  flex-wrap: wrap;
+
   color: #333;
   font-size: 0.95rem;
 }
+
+/* ─────────────────────────────────────────────
+   ACTION BUTTONS (SHARE / SAVE)
+───────────────────────────────────────────── */
 
 .article-actions {
   display: flex;
   gap: 0.8rem;
   margin-bottom: 1.2rem;
 }
+
 .article-actions button {
   background: none;
   border: 1px solid #ccc;
@@ -36,50 +52,52 @@ font-family: sans-serif;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.8rem;
-  /* Add background-color to transition list */
-  transition: background-color 0.2s ease, border-color 0.2s ease;
   color: #444;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent; /* Add this to prevent mobile grey box */
-}
-.article-actions button {
   min-width: 92px;
-}
-
-.save-btn i {
-  transition: transform 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .article-actions button i {
-    color: black;
+  color: black;
 }
-/* Add this to keep the tap flash instant */
+
 .article-actions button:active {
   background: #e4e2e2;
-  transition: none; /* Instant feedback on press */
 }
+
+/* ─────────────────────────────────────────────
+   IMAGE
+───────────────────────────────────────────── */
+
 .article-image {
+  display: block;
   width: 100%;
   max-width: 100%;
-  border-radius: 0.4rem;
-  margin-bottom: 0.5rem;
-  object-fit: cover;
   height: 13rem;
-  display: block;
+  margin-bottom: 0.5rem;
+  border-radius: 0.4rem;
   object-fit: cover;
   object-position: center;
 }
+
 .article-source {
   font-weight: 700;
   color: #777;
   font-size: 0.85rem;
   margin-bottom: 1rem;
 }
+
+/* ─────────────────────────────────────────────
+   BODY
+───────────────────────────────────────────── */
+
 .article-body {
   font-size: 1.1rem;
   line-height: 1.5;
   color: #222;
 }
+
 .article-body p {
   margin-bottom: 1.5rem;
 }
@@ -89,16 +107,19 @@ font-family: sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
 }
+
 .article-body h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
 }
+
 .article-body ul,
 .article-body ol {
   padding-left: 1.3rem;
   margin-bottom: 1.5rem;
 }
+
 .article-body blockquote {
   border-left: 4px solid #111;
   padding-left: 1rem;
@@ -106,20 +127,24 @@ font-family: sans-serif;
   font-size: 1.2rem;
   color: #444;
 }
+
 .article-body a {
   text-decoration: underline;
 }
+
 .article-body img {
   width: 100%;
   border-radius: 14px;
   margin: 1.5rem 0;
 }
+
 .article-body code {
   background: #f4f4f4;
   padding: 0.2rem 0.4rem;
   border-radius: 6px;
   font-size: 0.95em;
 }
+
 .article-body pre {
   background: #111;
   color: white;
@@ -128,6 +153,10 @@ font-family: sans-serif;
   overflow-x: auto;
   margin: 2rem 0;
 }
+
+/* ─────────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────────── */
 
 .article-footer {
   margin-top: 2rem;
