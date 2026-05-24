@@ -50,11 +50,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 html {
-  overflow-y: scroll;
   scrollbar-gutter: stable;
   background-color: var(--bg);
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: auto;
 }
 
 body {
@@ -66,7 +64,6 @@ body {
   flex-direction: column;
   position: relative;
   width: 100%;
-  overflow-x: clip;
 }
 
 main {
