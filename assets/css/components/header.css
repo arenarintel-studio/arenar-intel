@@ -140,6 +140,10 @@ header {
   height: auto;
 }
 
+html:has(.menu-checkbox:checked) {
+  overflow: hidden;
+}
+
 .menu-search {
   padding-top: 24px;
   padding-left: 20px;
