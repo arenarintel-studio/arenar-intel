@@ -140,12 +140,20 @@ header {
   height: auto;
 }
 
-html:has(.menu-checkbox:checked) body {
+/* Lock the page when menu is open */
+html:has(.menu-checkbox:checked) {
   overflow: hidden;
   overscroll-behavior: none;
   touch-action: none;
 }
 
+/* Keep header sticky even when html is locked */
+html:has(.menu-checkbox:checked) header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .menu-search {
   padding-top: 24px;
   padding-left: 20px;
