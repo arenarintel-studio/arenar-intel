@@ -120,7 +120,7 @@ header {
   top: 64px;
   right: 0;
   
-  width: 85%;
+  width: 100%;
   height: calc(100dvh - 64px);
   
   background-color: #0a0a0a;
@@ -147,18 +147,6 @@ header {
 .menu-logo {
   width: 7rem;
   height: auto;
-}
-
-/* When menu is open: lock the page behind */
-html:has(.menu-checkbox:checked) {
-  overflow: hidden;
-}
-
-html:has(.menu-checkbox:checked) body {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  touch-action: none;
 }
 
 .menu-search {
@@ -234,21 +222,6 @@ html:has(.menu-checkbox:checked) body {
 .menu-nav a:hover {
   color: white;
   background: rgba(255, 255, 255, 0.04);
-}
-
-.menu-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 998;
-}
-
-.menu-checkbox:checked ~ .menu-overlay {
-  display: block;
 }
 
 .menu-footer {
