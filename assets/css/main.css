@@ -50,7 +50,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 html {
-  scrollbar-gutter: stable;
   background-color: var(--bg);
   -webkit-text-size-adjust: 100%;
 }
@@ -59,11 +58,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg);
   color: var(--text-soft);
-  min-height: 100dvh; /* Changed from 100% to match the new root layout */
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
 }
 
 main {
