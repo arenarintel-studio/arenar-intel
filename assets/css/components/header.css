@@ -91,7 +91,7 @@ header {
 }
 
 /* ─────────────────────────────────────────────
-   ICONS (RIGHT)
+   HAMBURGER / CLOSE ICONS (RIGHT)
 ───────────────────────────────────────────── */
 
 .menu-icon {
@@ -101,12 +101,10 @@ header {
   color: #0a0a0a;
 }
 
-/* Close X is hidden by default */
 .close-icon {
   display: none;
 }
 
-/* When checkbox is checked: swap icons */
 .menu-checkbox:checked ~ header .hamburger-icon {
   display: none;
 }
@@ -115,28 +113,32 @@ header {
   display: block;
 }
 
+/* ─────────────────────────────────────────────
+   MENU PANEL
+───────────────────────────────────────────── */
+
 .menu-panel {
   position: fixed;
   top: 64px;
   right: 0;
-  
+
   width: 100%;
   height: calc(100dvh - 64px);
-  
+
   background-color: #0a0a0a;
-  
+
   transform: translateX(100%);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  
+
   z-index: 3990;
-  
+
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  
+
   touch-action: pan-y;
   overscroll-behavior: contain;
-  
+
   box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5);
 }
 
@@ -149,11 +151,12 @@ header {
   height: auto;
 }
 
+/* ─────────────────────────────────────────────
+   SEARCH BAR
+───────────────────────────────────────────── */
+
 .menu-search {
-  padding-top: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  padding: 24px 20px 10px;
   width: 100%;
 }
 
@@ -164,35 +167,102 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 10px;
   overflow: hidden;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.menu-search-inner:focus-within {
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .menu-search input {
   flex: 1;
+  width: 100%;
   padding: 10px 16px;
   background: transparent;
   border: none;
   border-radius: 0;
-  font-size: 16px; /* Changed from 15px to 16px to stop mobile zoom */
+  font-size: 16px;
   color: white;
   outline: none;
-  width: 100%;
 }
 
 .menu-search input::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
+/* Remove native search junk */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+/* Autofill cleanup */
+input#search:-webkit-autofill,
+input#search:-webkit-autofill:hover,
+input#search:-webkit-autofill:focus,
+input#search:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: black !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ─────────────────────────────────────────────
+   SEARCH / CLEAR BUTTONS
+───────────────────────────────────────────── */
+
+.clear-search,
 .icon {
   background: none;
   border: none;
   cursor: pointer;
+  color: rgba(255, 255, 255, 0.45);
+
+  transition:
+    color 0.2s ease,
+    transform 0.15s ease,
+    opacity 0.2s ease;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.icon {
   padding: 10px 14px;
   display: flex;
   align-items: center;
   align-self: stretch;
-  color: rgba(255, 255, 255, 0.4);
-  transition: color 0.2s ease;
 }
+
+.clear-search {
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+@media (hover: hover) {
+  .clear-search:hover,
+  .icon:hover {
+    color: white;
+  }
+}
+
+.clear-search:active,
+.icon:active {
+  color: white;
+  transform: scale(0.95);
+}
+
+/* ─────────────────────────────────────────────
+   NAVIGATION
+───────────────────────────────────────────── */
 
 .menu-nav {
   padding: 1px 0;
@@ -224,6 +294,10 @@ header {
   background: rgba(255, 255, 255, 0.04);
 }
 
+/* ─────────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────────── */
+
 .menu-footer {
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -234,15 +308,31 @@ header {
   font-size: 0.75rem;
 }
 
+/* ─────────────────────────────────────────────
+   SEARCH RESULTS CONTAINER
+───────────────────────────────────────────── */
+
 #search-results {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 0 20px 20px;
 }
 
+.search-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+/* ─────────────────────────────────────────────
+   LEGACY CUSTOM SEARCH RESULT
+───────────────────────────────────────────── */
+
 .custom-search-result {
   padding: 14px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   text-decoration: none;
   color: white;
 }
@@ -259,7 +349,7 @@ header {
 
 .custom-search-result p {
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -267,173 +357,29 @@ header {
   overflow: hidden;
 }
 
-/* Nuke the native browser clear button so only your custom X shows up */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance: none;
-  appearance: none;
-  display: none;
-}
-
-/* Prevent browser autofill from changing the search bar color */
-input#search:-webkit-autofill,
-input#search:-webkit-autofill:hover, 
-input#search:-webkit-autofill:focus, 
-input#search:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px white inset !important; /* Matches your search bar background */
-    -webkit-text-fill-color: black !important; /* Matches your typing text color */
-    transition: background-color 5000s ease-in-out 0s;
-}
-
-.clear-search {
-  background: none;
-  border: none;
-  color: rgba(255,255,255,0.5);
-  font-size: 20px;
-  cursor: pointer;
-  padding: 0 10px;
-}
-
-/* 2. Make sure the menu itself can still be scrolled */
-.menu-panel {
-  touch-action: pan-y;
-  overscroll-behavior: contain;
-}
-
-/* ─────────────────────────────────────────────
-   SEARCH BAR ACTIVE GLOW
-───────────────────────────────────────────── */
-
-.menu-search-inner {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-  overflow: hidden;
-
-  transition:
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease;
-}
-
-/* When search is focused */
-.menu-search-inner:focus-within {
-  border-color: rgba(255, 255, 255, 0.55);
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-/* ─────────────────────────────────────────────
-   SEARCH & CLEAR BUTTONS
-───────────────────────────────────────────── */
-
-.clear-search,
-.icon {
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  color: rgba(255,255,255,0.45);
-
-  transition:
-    color 0.2s ease,
-    transform 0.15s ease,
-    opacity 0.2s ease;
-
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Hover only on real desktop mouse devices */
-@media (hover: hover) {
-  .clear-search:hover,
-  .icon:hover {
-    color: white;
-  }
-}
-
-/* Mobile tap feedback only */
-.clear-search:active,
-.icon:active {
-  color: white;
-  transform: scale(0.95);
-}
-
-/* Controls highlighted keyword in search results */
-.search-result-item mark {
-  background: transparent;
-  color: inherit;
-  font-weight: inherit;
-  padding: 0;
-}
-
 .custom-search-result:hover h4 {
   text-decoration: underline;
-}
-
-.no-search-results {
-  padding: 16px 0;
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.5);
-}
-
-/* ─────────────────────────────────────────────
-   SEARCH RESULTS CONTAINER
-───────────────────────────────────────────── */
-#search-results {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-/* ─────────────────────────────────────────────
-   SEARCH RESULTS LIST
-───────────────────────────────────────────── */
-.search-results-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 14px;
 }
 
 /* ─────────────────────────────────────────────
    SEARCH RESULT CARD
 ───────────────────────────────────────────── */
+
 .search-result-item {
   cursor: pointer;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease,
     transform 0.15s ease;
 }
 
-/* ─────────────────────────────────────────────
-   NORMAL RESULT
-───────────────────────────────────────────── */
-.search-result-item:not(.recommended) {
-  padding: 16px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
 .search-result-item:not(.recommended):hover {
   background-color: rgba(255, 255, 255, 0.03);
-}
-
-/* ─────────────────────────────────────────────
-   RECOMMENDED RESULT
-───────────────────────────────────────────── */
-.search-result-item.recommended {
-  padding: 16px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .search-result-item.recommended:hover {
@@ -441,9 +387,17 @@ input#search:-webkit-autofill:active {
   border-color: rgba(255, 255, 255, 0.14);
 }
 
+.search-result-item mark {
+  background: transparent;
+  color: inherit;
+  font-weight: inherit;
+  padding: 0;
+}
+
 /* ─────────────────────────────────────────────
    RECOMMENDED LABEL
 ───────────────────────────────────────────── */
+
 .recommended-label {
   display: flex;
   align-items: center;
@@ -457,8 +411,9 @@ input#search:-webkit-autofill:active {
 }
 
 /* ─────────────────────────────────────────────
-   SEARCH TITLE
+   SEARCH TITLE / EXCERPT
 ───────────────────────────────────────────── */
+
 .search-title {
   font-size: 1rem;
   font-weight: 500;
@@ -476,9 +431,6 @@ input#search:-webkit-autofill:active {
   color: #ffffff;
 }
 
-/* ─────────────────────────────────────────────
-   SEARCH EXCERPT
-───────────────────────────────────────────── */
 .search-excerpt {
   margin-top: 6px;
   font-size: 0.86rem;
@@ -497,9 +449,9 @@ input#search:-webkit-autofill:active {
 /* ─────────────────────────────────────────────
    EMPTY STATE
 ───────────────────────────────────────────── */
+
 .no-search-results {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 26px 0;
   text-align: center;
   font-size: 0.92rem;
   font-weight: 500;
@@ -509,6 +461,7 @@ input#search:-webkit-autofill:active {
 /* ─────────────────────────────────────────────
    MOBILE POLISH
 ───────────────────────────────────────────── */
+
 @media (max-width: 480px) {
   .search-result-item.recommended {
     padding: 14px;
