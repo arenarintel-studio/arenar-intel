@@ -119,15 +119,24 @@ header {
   position: fixed;
   top: 64px;
   right: 0;
+  
   width: 85%;
-  height: calc(100dvh - 3.5rem);
+  height: calc(100dvh - 64px);
+  
   background-color: #0a0a0a;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  
   transform: translateX(100%);
-  z-index: 999;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  z-index: 3990;
+  
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  
+  touch-action: pan-y;
+  overscroll-behavior: contain;
+  
   box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5);
 }
 
@@ -140,20 +149,18 @@ header {
   height: auto;
 }
 
-/* Lock the page when menu is open */
+/* When menu is open: lock the page behind */
 html:has(.menu-checkbox:checked) {
   overflow: hidden;
-  overscroll-behavior: none;
+}
+
+html:has(.menu-checkbox:checked) body {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
   touch-action: none;
 }
 
-/* Keep header sticky even when html is locked */
-html:has(.menu-checkbox:checked) header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 .menu-search {
   padding-top: 24px;
   padding-left: 20px;
