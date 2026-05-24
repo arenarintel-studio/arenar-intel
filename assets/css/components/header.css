@@ -1,136 +1,119 @@
+/* ─────────────────────────────────────────────
+   ARENAR INTEL HEADER
+───────────────────────────────────────────── */
+
 header {
   position: sticky;
   top: 0;
-  width: 100%;
-  z-index: 999;
+  left: 0;
+  right: 0;
+  z-index: 4000;
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  height: 3.6rem;
-  padding: 0 1rem;
+  width: 100%;
+  height: 64px;
+  padding: 0 16px;
 
-  background: #ffffff;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e8ea;
 }
 
-/* THREE EQUAL COLUMNS */
+/* ─────────────────────────────────────────────
+   HIDDEN CHECKBOX (CONTROLS MENU STATE)
+───────────────────────────────────────────── */
+
+.menu-checkbox {
+  display: none;
+}
+
+/* ─────────────────────────────────────────────
+   THREE EQUAL COLUMNS
+───────────────────────────────────────────── */
+
 .header-profile,
 .logo-box,
 .menu-toggle {
   flex: 1;
   display: flex;
   align-items: center;
+
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
-/* LEFT */
 .header-profile {
   justify-content: flex-start;
 }
 
-/* CENTER */
 .logo-box {
   justify-content: center;
 }
 
-/* RIGHT */
 .menu-toggle {
   justify-content: flex-end;
 }
 
-/* LEFT SIDE */
-.header-profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 44px;
-  height: 44px;
-
-  padding: 0;
-  margin: 0;
-
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  -webkit-tap-highlight-color: transparent;
-}
+/* ─────────────────────────────────────────────
+   PROFILE ICON (LEFT)
+───────────────────────────────────────────── */
 
 .profile-icon {
-  width: 40px;
-  height: 40px;
-
+  width: 36px;
+  height: 36px;
   display: block;
 }
 
-/* LOGO */
-.logo-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ─────────────────────────────────────────────
+   LOGO (CENTER)
+───────────────────────────────────────────── */
 
-  margin: 0;
-  padding: 0;
-}
-
-.logo-link {
-  display: flex;
-  align-items: center;
+.logo-link,
+.text-logo {
+  display: block;
+  text-decoration: none;
+  color: #0a0a0a;
 }
 
 .logo-box img {
-  width: 96px;
+  width: 112px;
   height: auto;
   display: block;
 }
 
-.menu-toggle {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 44px;
-  height: 44px;
-
-  padding: 0;
-  margin: 0;
-
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  color: #0A0A0A;
-
-  -webkit-tap-highlight-color: transparent;
+.text-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
+
+/* ─────────────────────────────────────────────
+   ICONS (RIGHT)
+───────────────────────────────────────────── */
 
 .menu-icon {
- 
-
-  width: 40px;
-  height: 40px;
-
+  width: 36px;
+  height: 36px;
   display: block;
+  color: #0a0a0a;
 }
 
+/* Close X is hidden by default */
 .close-icon {
   display: none;
 }
 
-.close-icon.show-close {
-  display: block;
-}
-
-.hide-icon {
+/* When checkbox is checked: swap icons */
+.menu-checkbox:checked ~ header .hamburger-icon,
+.menu-checkbox:checked + label .hamburger-icon {
   display: none;
 }
 
-.header-profile,
-.menu-toggle,
-.logo-box {
-  -webkit-tap-highlight-color: transparent;
+.menu-checkbox:checked + label .close-icon {
+  display: block;
 }
 
 .menu-panel {
