@@ -132,16 +132,13 @@ p, small {
   -webkit-tap-highlight-color: transparent;
 }
 
-.x-bar .fa-x-twitter {
-  font-size: 1.1rem;
+.x-post-link svg {
+  flex-shrink: 0;
+  color: var(--white);
   border: 1px solid var(--white);
   padding: 0.13rem 0.1875rem;
   border-radius: 0.25rem;
-}
-
-.x-post-link i {
-  color: var(--white);
-  flex-shrink: 0;
+  transform: translateY(-1px);
 }
 
 .x-ticker-text {
@@ -229,7 +226,16 @@ p, small {
 }
 
 .card-info small {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.card-info small svg {
+  flex-shrink: 0;
+  transform: translateY(-1px);
 }
 
 /* ─────────────────────────────────────────────
@@ -279,11 +285,20 @@ p, small {
   font-size: 0.95rem;
   line-height: 1.2;
   font-weight: var(--body-weight);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .basic-card small {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.basic-card small svg {
+  flex-shrink: 0;
+  transform: translateY(-1px);
 }
 
 /* ─────────────────────────────────────────────
@@ -319,9 +334,20 @@ p, small {
 }
 
 .compact-card small {
-  display: block;
+  padding-top: 1.1rem;
+}
+
+.compact-card small {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font-size: 0.85rem;
-  padding-top: 1.21rem;
+  color: var(--text-muted);
+}
+
+.compact-card small svg {
+  flex-shrink: 0;
+  transform: translateY(-1px);
 }
 
 /* ─────────────────────────────────────────────

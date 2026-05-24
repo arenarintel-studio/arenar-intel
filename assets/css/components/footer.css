@@ -1,40 +1,55 @@
-.intel-footer {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  width: 100%;
-  background-color: #0A0A0A;
-  position: relative; /* IMPORTANT: Add this so the button anchors to the footer */
-  z-index: 20; /* THE FIX: Forces the footer to sit on top of the main background */
-}
+/* ─────────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────────── */
 
-.footer-brand img {
-  width: 140px;
-  filter: brightness(0) invert(1);
-  margin-bottom: 0.5rem;
+.intel-footer {
+  position: relative;
+  width: 100%;
+  background-color: #0a0a0a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-grid {
-  max-width: 1400px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 2rem 1.4rem 1rem;
 }
 
+/* ─────────────────────────────────────────────
+   BRAND
+───────────────────────────────────────────── */
+
+.footer-brand img {
+  width: 140px;
+  margin-bottom: 0.5rem;
+  filter: brightness(0) invert(1);
+}
+
 .footer-description {
+  max-width: 540px;
   color: #9a9a9a;
   line-height: 1.8;
   font-size: 1rem;
-  max-width: 540px;
 }
 
+/* ─────────────────────────────────────────────
+   SECTION HEADINGS
+───────────────────────────────────────────── */
+
 .footer-heading {
+  margin-bottom: 1.2rem;
   font-size: 0.85rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #777;
-  margin-bottom: 1.2rem;
-  font-weight: 700;
 }
+
+/* ─────────────────────────────────────────────
+   NAVIGATION LINKS
+───────────────────────────────────────────── */
 
 .footer-nav {
   display: flex;
@@ -42,22 +57,26 @@
   margin: 0.8rem 0;
 }
 
-.footer-socials {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 0.5rem;
-}
-
 .footer-nav a {
+  margin-bottom: 0.9rem;
   color: #d6d6d6;
   text-decoration: none;
-  margin-bottom: 0.9rem;
   font-size: 1rem;
   transition: color 0.2s ease;
 }
 
 .footer-nav a:hover {
   color: white;
+}
+
+/* ─────────────────────────────────────────────
+   SOCIAL ICONS
+───────────────────────────────────────────── */
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
 }
 
 .social-icons {
@@ -67,14 +86,13 @@
 }
 
 .social-icons a {
-  width: 42px;
-  height: 42px;
-  border: 1px solid rgba(255,255,255,0.12);
-
   display: flex;
   align-items: center;
   justify-content: center;
 
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 50%;
 
   color: #d0d0d0;
@@ -88,20 +106,23 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* MOBILE TAP / CLICK STATE */
 .social-icons a:active {
   background: white;
   color: black;
   border-color: white;
-  transition: none; /* INSTANT flash on touch-down! */
+  transition: none;
 }
 
-/* Force the FontAwesome icon to turn black during the flash */
 .social-icons a:active i {
   color: black;
 }
+
+/* ─────────────────────────────────────────────
+   COPYRIGHT
+───────────────────────────────────────────── */
+
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-bottom p {
@@ -110,10 +131,51 @@
   font-size: 0.95rem;
 }
 
+/* ─────────────────────────────────────────────
+   BACK TO TOP BUTTON
+───────────────────────────────────────────── */
+
+.back-to-intel {
+  position: absolute;
+  top: 0;
+  right: 0.1rem;
+  transform: translateY(-50%);
+
+  padding: 0.3rem 0.5rem;
+  background: #0a0a0a;
+  border: 2px solid #777;
+  border-radius: 4px;
+
+  color: #d6d6d6;
+  font-size: 0.9rem;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  .back-to-intel:hover {
+    background: #050505;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.back-to-intel:active {
+  background: #050505;
+  color: white;
+}
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────────── */
+
 @media (max-width: 900px) {
   .footer-grid {
-    display: flex;
-    flex-direction: column;
     gap: 0.995rem;
   }
   .footer-brand h2 {
@@ -121,45 +183,6 @@
   }
 }
 
-/* -- BACK TO INTEL BUTTON -- */
-.back-to-intel {
-  position: absolute;
-  top: 0;
-  right: 0.1rem; /* Aligns with your 1.4rem grid padding */
-  transform: translateY(-50%); /* Pulls the button up exactly halfway across the border */
-  z-index: 20; /* THE FIX: Ensures the button breaks out over everything */
-  
-  /* Box Styling */
-  background: #0A0A0A; /* Off-white background */
-  color: #d6d6d6; /* Dark text */
-  padding: 0.3rem 0.5rem;
-  font-size: 0.9rem;
-
-  letter-spacing: 0.1px;
-  text-decoration: none;
-  border: 2px solid #777;
-  border-radius: 4px; /* Optional: adds a slight curve to the box corners */
-  /* Smooth Hover Transition */
-  transition: all 0.2s ease;
-}
-
-/* Only apply hover effects on devices with a real mouse */
-@media (hover: hover) {
-  .back-to-intel:hover {
-    background: #050505; 
-    color: white;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Soft glow effect */
-  }
-}
-
-/* Add a quick tap effect for mobile users so they know it worked */
-.back-to-intel:active {
-  background: #050505;
-  color: white;
-  transition: transform 0.3s ease;
-}
-
-/* Ensure the button aligns with your max-width container on huge monitors */
 @media (min-width: 1400px) {
   .back-to-intel {
     right: calc((100% - 1400px) / 2 + 1.4rem);

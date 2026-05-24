@@ -1,13 +1,16 @@
 <a href="{{ .RelPermalink }}" class="card-link">
-      <article class="featured-card">
-        {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}" />{{ end}}
-        <div class="card-info">
-          <h2>{{ .Title }}</h2>
-          <p>{{ .Params.summary }}</p>
-          <small>
-            <i class="fa-regular fa-clock"></i>
-            {{ .ReadingTime }} min read
-          </small>
-        </div>
-      </article>
-    </a>
+  <article class="featured-card">
+    {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}" />{{ end }}
+    <div class="card-info">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Params.summary }}</p>
+      <small>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="12 6 12 12 16 12" />
+        </svg>
+        {{ .ReadingTime }} min read
+      </small>
+    </div>
+  </article>
+</a>

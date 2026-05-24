@@ -18,7 +18,7 @@ header {
   padding: 0 16px;
 
   background-color: #ffffff;
-  border-bottom: 1px solid #e6e8ea;
+  border-bottom: 1px solid #d5d6d7;
 }
 
 /* ─────────────────────────────────────────────
@@ -63,8 +63,8 @@ header {
 ───────────────────────────────────────────── */
 
 .profile-icon {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   display: block;
 }
 
@@ -95,8 +95,8 @@ header {
 ───────────────────────────────────────────── */
 
 .menu-icon {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   display: block;
   color: #0a0a0a;
 }
