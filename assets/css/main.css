@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6, p {
 html {
   overflow-y: scroll;
   scrollbar-gutter: stable;
-  height: 100%;
+  
   background-color: var(--bg);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: auto;
@@ -63,7 +63,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg);
   color: var(--text-soft);
-  min-height: 100%;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -118,6 +118,7 @@ p, small {
   box-sizing: border-box;
 }
 
+/* Add the tap-highlight fix to your existing container */
 .x-post-link {
   display: flex;
   align-items: center;
@@ -129,7 +130,7 @@ p, small {
   color: var(--white);
   text-decoration: none;
   overflow: hidden;
-  transition: color 0.2s ease;
+  -webkit-tap-highlight-color: transparent; /* Just prevents the default grey mobile box */
 }
 
 .x-bar .fa-x-twitter {
@@ -144,17 +145,26 @@ p, small {
   flex-shrink: 0;
 }
 
+/* The text gets the smooth fade for when you let go */
 .x-ticker-text {
   display: block;
   font-size: 1.15rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: color 0.2s ease; 
 }
 
+/* Desktop hover: slightly dim */
 .x-post-link:hover .x-ticker-text {
   color: #d6d6d6;
   text-decoration: none;
+}
+
+/* Mobile tap: instantly goes faint. ONLY the text changes. */
+.x-post-link:active .x-ticker-text {
+  color: #888888; 
+  transition: none; 
 }
 
 /* NEWS FEED */
