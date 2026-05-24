@@ -49,11 +49,10 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-/* ROOT */
 html {
   overflow-y: scroll;
   scrollbar-gutter: stable;
-  
+  height: -webkit-fill-available;
   background-color: var(--bg);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: auto;
@@ -63,7 +62,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg);
   color: var(--text-soft);
-  min-height: 100dvh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   position: relative;
