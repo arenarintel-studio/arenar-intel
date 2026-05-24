@@ -140,8 +140,10 @@ header {
   height: auto;
 }
 
-html:has(.menu-checkbox:checked) {
+html:has(.menu-checkbox:checked) body {
   overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
 }
 
 .menu-search {
