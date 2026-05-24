@@ -1,74 +1,136 @@
 header {
   position: sticky;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 999;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
-  padding: 0 1rem;
   height: 3.6rem;
+  padding: 0 1rem;
 
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #ffffff;
 }
 
+/* THREE EQUAL COLUMNS */
+.header-profile,
+.logo-box,
+.menu-toggle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* LEFT */
+.header-profile {
+  justify-content: flex-start;
+}
+
+/* CENTER */
 .logo-box {
-  width: 6.8rem;
+  justify-content: center;
+}
+
+/* RIGHT */
+.menu-toggle {
+  justify-content: flex-end;
+}
+
+/* LEFT SIDE */
+.header-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
   padding: 0;
   margin: 0;
-  color: #0A0A0A;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
 }
 
-.header-left svg {
-  width: 2.5rem;
-  height: 2.5rem;
+.profile-icon {
+  width: 40px;
+  height: 40px;
+
+  display: block;
 }
 
-.hamburgerbtn {
+/* LOGO */
+.logo-box {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 2.9rem;
-  height: 2.9rem;
-  color: #0A0A0A;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
 }
 
-.header-right {
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box img {
+  width: 96px;
+  height: auto;
+  display: block;
+}
+
+.menu-toggle {
   position: relative;
-  width: 2.7rem;
-  height: 2.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+  margin: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  color: #0A0A0A;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu-icon {
+ 
+
+  width: 40px;
+  height: 40px;
+
+  display: block;
 }
 
 .close-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: none;
-  cursor: pointer;
-  color: #0A0A0A;
-  width: 2.55rem;
-  height: 2.55rem;
 }
 
 .close-icon.show-close {
-  display: flex;
-  align-items: center;
+  display: block;
 }
 
 .hide-icon {
   display: none;
 }
 
-.show-close {
-  display: block;
+.header-profile,
+.menu-toggle,
+.logo-box {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-panel {
