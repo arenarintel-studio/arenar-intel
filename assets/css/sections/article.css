@@ -36,11 +36,12 @@ font-family: sans-serif;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.8rem;
-  transition: background 0.2s ease;
+  /* Add background-color to transition list */
+  transition: background-color 0.2s ease, border-color 0.2s ease;
   color: #444;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent; /* Add this to prevent mobile grey box */
 }
-
 .article-actions button {
   min-width: 92px;
 }
@@ -52,8 +53,10 @@ font-family: sans-serif;
 .article-actions button i {
     color: black;
 }
+/* Add this to keep the tap flash instant */
 .article-actions button:active {
   background: #e4e2e2;
+  transition: none; /* Instant feedback on press */
 }
 .article-image {
   width: 100%;
