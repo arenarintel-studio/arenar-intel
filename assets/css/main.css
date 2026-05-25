@@ -80,16 +80,15 @@ img {
 ───────────────────────────────────────────── */
 
 h2, h3 {
-      font-family: Arial, Tahoma; 
-  letter-spacing: 0.01rem;
-  color: var(--text);
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+font-family: Arial, sans-serif;
+ color: var(--text);
 }
 
 p, small {
   color: var(--text-soft);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-
-
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* ─────────────────────────────────────────────
@@ -141,18 +140,20 @@ p, small {
   border: 1px solid var(--white);
   padding: 0.13rem 0.1875rem;
   border-radius: 0.25rem;
-  transform: translateY(1px);
+  transform: translateY(0.3px);
 }
 
 .x-ticker-text {
   display: block;
-  font-size: 1.25rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transition: color 0.2s ease;
-font-family: Times,Arial; 
-}
+  font-size: 1.2rem;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+font-family: Arial, sans-serif; }
 
 .x-post-link:hover .x-ticker-text {
   color: #d6d6d6;
@@ -220,15 +221,16 @@ font-family: Times,Arial;
 
 .card-info h2 {
   font-size: 1.2rem;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
-  font-weight: var(--headline-weight);
-font-family: Arial; 
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-family: Arial, sans-serif; 
 }
 
 .card-info p {
   font-size: 0.97rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
   font-weight: var(--body-weight);
 }
 
@@ -236,7 +238,7 @@ font-family: Arial;
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.89rem;
+  font-size: 0.93rem;
   color: var(--text-muted);
 }
 
@@ -256,10 +258,10 @@ font-family: Arial;
 }
 
 .text-card h3 {
-  font-size: 1.13rem;
+  font-size: 1.1rem;
   margin-bottom: 0.4rem;
   font-weight: var(--subheadline-weight);
-}
+  }
 
 .text-card p {
   font-size: 0.97rem;
@@ -277,7 +279,7 @@ font-family: Arial;
 }
 
 .basic-card h3 {
-  font-size: 1.13rem;
+  font-size: 1.1rem;
   margin-bottom: 0.4rem;
   font-weight: var(--subheadline-weight);
 }
@@ -299,7 +301,7 @@ font-family: Arial;
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
 }
 
@@ -335,7 +337,6 @@ font-family: Arial;
 
 .compact-card h3 {
   font-size: 1.1rem;
-  line-height: 1.2;
   font-weight: var(--subheadline-weight);
   overflow-wrap: break-word;
 }
@@ -345,7 +346,7 @@ font-family: Arial;
   align-items: center;
   gap: 0.35rem;
   padding-top: 1.1rem;
-  font-size: 0.87rem;
+  font-size: 0.92rem;
   color: var(--text-muted);
 }
 
@@ -383,7 +384,6 @@ font-family: Arial;
 .grid-card h3 {
   margin-top: 0.5rem;
   font-size: 1rem;
-  line-height: 1.2;
   font-weight: var(--subheadline-weight);
 }
 
