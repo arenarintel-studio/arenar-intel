@@ -80,8 +80,8 @@ img {
 ───────────────────────────────────────────── */
 
 h2, h3 {
-      font-family: Cambria, Arial; 
-  letter-spacing: -0.04rem;
+      font-family: Arial, Tahoma; 
+  letter-spacing: 0.01rem;
   color: var(--text);
 }
 
@@ -146,12 +146,12 @@ p, small {
 
 .x-ticker-text {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transition: color 0.2s ease;
-font-family: serif, sans-serif, Arial; 
+font-family: Times,Arial; 
 }
 
 .x-post-link:hover .x-ticker-text {
@@ -219,11 +219,11 @@ font-family: serif, sans-serif, Arial;
 }
 
 .card-info h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.2;
   margin-bottom: 0.5rem;
   font-weight: var(--headline-weight);
-font-family: serif, sans-serif, Arial; 
+font-family: Arial; 
 }
 
 .card-info p {
@@ -242,7 +242,7 @@ font-family: serif, sans-serif, Arial;
 
 .card-info small svg {
   flex-shrink: 0;
-  transform: translateY(1px);
+  transform: translateY(-0px);
 }
 
 /* ─────────────────────────────────────────────
