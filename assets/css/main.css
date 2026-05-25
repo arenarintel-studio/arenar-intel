@@ -14,8 +14,8 @@
   /* COLORS */
   --bg: #ffffff;
   --bg-soft: #f4f4f5;
-  --text: #111111;
-  --text-soft: #2e2d2d;
+  --text: #1a1a1a;
+  --text-soft: #333333;
   --text-muted: #5c5c5c;
   --black: #0a0a0a;
   --white: #ffffff;
@@ -149,7 +149,7 @@ p, small {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: color 0.2s ease;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.1;
   letter-spacing: -0.5px;
   font-weight: 500;
@@ -302,7 +302,6 @@ p, small {
   align-items: center;
   gap: 0.35rem;
   font-size: 0.92rem;
-  color: var(--text-muted);
 }
 
 .basic-card small svg {
@@ -347,7 +346,6 @@ p, small {
   gap: 0.35rem;
   padding-top: 1.1rem;
   font-size: 0.92rem;
-  color: var(--text-muted);
 }
 
 .compact-card small svg {

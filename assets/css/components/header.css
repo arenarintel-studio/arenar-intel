@@ -190,7 +190,7 @@ header {
   font-size: 16px;
   color: white;
   outline: none;
-  font-family: Cambria, Arial;
+  font-family: Arial, sans-serif; 
 }
 
 .menu-search input::placeholder {
@@ -275,14 +275,15 @@ input#search:-webkit-autofill:active {
   padding: 16px 20px;
   color: rgba(255, 255, 255, 0.75);
   font-size: 1.1rem;
-  font-weight: 600;
+    letter-spacing: -0.5px;
+  font-family: Arial, sans-serif; 
+  font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   letter-spacing: 0.02em;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
   touch-action: manipulation;
-font-family: "Palatino Linotype", serif, sans-serif, Arial; 
 }
 
 .menu-nav a.active {
@@ -308,7 +309,7 @@ font-family: "Palatino Linotype", serif, sans-serif, Arial;
 .menu-footer p {
   color: rgba(255, 255, 255, 0.3);
   font-size: 0.75rem;
-font-family: "Palatino Linotype", serif, sans-serif, Arial; 
+  font-family: Arial, sans-serif; 
 }
 
 /* ─────────────────────────────────────────────
