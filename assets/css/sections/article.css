@@ -9,7 +9,7 @@
 }
 
 .article-page h1 {
-  font-family: Cambria, Arial; 
+font-family: serif, sans-serif, Arial; 
   font-weight: var(--headline-weight);
   font-size: clamp(1.6rem, 5vw, 4rem);
   line-height: 1;
@@ -34,7 +34,7 @@
 
   color: var(--text-soft);
   font-size: 0.95rem;
-  font-family: Cambria, Arial; 
+font-family: serif, sans-serif, Arial; 
 }
 
 /* ─────────────────────────────────────────────
@@ -62,7 +62,7 @@
   text-decoration: none;
   min-width: 92px;
   -webkit-tap-highlight-color: transparent;
-font-family: "Palatino Linotype", serif, sans-serif, Arial; 
+font-family: serif, sans-serif, Arial; 
 }
 
 .article-actions button svg {
@@ -107,7 +107,7 @@ font-family: "Palatino Linotype", serif, sans-serif, Arial;
   color: var(--text-muted);
   font-size: 0.9rem;
   margin-bottom: 1rem;
-font-family: "Palatino Linotype", serif, sans-serif, Arial; 
+font-family: serif, sans-serif, Arial; 
 }
 
 /* ─────────────────────────────────────────────

@@ -146,13 +146,12 @@ p, small {
 
 .x-ticker-text {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transition: color 0.2s ease;
-font-family: "Palatino Linotype", serif, sans-serif, Arial; 
-
+font-family: serif, sans-serif, Arial; 
 }
 
 .x-post-link:hover .x-ticker-text {
@@ -224,7 +223,7 @@ font-family: "Palatino Linotype", serif, sans-serif, Arial;
   line-height: 1.2;
   margin-bottom: 0.5rem;
   font-weight: var(--headline-weight);
-font-family: "Palatino Linotype", serif, sans-serif, Arial; 
+font-family: serif, sans-serif, Arial; 
 }
 
 .card-info p {
