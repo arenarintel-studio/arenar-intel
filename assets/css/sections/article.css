@@ -62,7 +62,7 @@
   text-decoration: none;
   min-width: 92px;
   -webkit-tap-highlight-color: transparent;
-  font-family: Cambria, Arial; 
+font-family: "Palatino Linotype", serif, sans-serif, Arial; 
 }
 
 .article-actions button svg {
@@ -107,7 +107,7 @@
   color: var(--text-muted);
   font-size: 0.9rem;
   margin-bottom: 1rem;
-  font-family: Cambria, Arial; 
+font-family: "Palatino Linotype", serif, sans-serif, Arial; 
 }
 
 /* ─────────────────────────────────────────────

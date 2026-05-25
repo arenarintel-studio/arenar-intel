@@ -151,7 +151,7 @@ p, small {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: color 0.2s ease;
-        font-family: Cambria, Arial; 
+font-family: "Palatino Linotype", serif, sans-serif, Arial; 
 
 }
 
@@ -224,7 +224,7 @@ p, small {
   line-height: 1.2;
   margin-bottom: 0.5rem;
   font-weight: var(--headline-weight);
-font-family: Cambria, Arial; 
+font-family: "Palatino Linotype", serif, sans-serif, Arial; 
 }
 
 .card-info p {

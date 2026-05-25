@@ -282,7 +282,7 @@ input#search:-webkit-autofill:active {
   -webkit-tap-highlight-color: transparent;
   user-select: none;
   touch-action: manipulation;
-  font-family: Cambria, Arial; 
+font-family: "Palatino Linotype", serif, sans-serif, Arial; 
 }
 
 .menu-nav a.active {
@@ -308,7 +308,7 @@ input#search:-webkit-autofill:active {
 .menu-footer p {
   color: rgba(255, 255, 255, 0.3);
   font-size: 0.75rem;
-  font-family: Cambria, Arial; 
+font-family: "Palatino Linotype", serif, sans-serif, Arial; 
 }
 
 /* ─────────────────────────────────────────────
