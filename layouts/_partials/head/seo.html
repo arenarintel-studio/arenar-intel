@@ -1,0 +1,106 @@
+{{/* ─────────────────────────────────────────────
+     STRUCTURED DATA (JSON-LD)
+     Tells search engines what your site and content
+     are. Required for Google News, Top Stories,
+     and rich search results.
+   ───────────────────────────────────────────── */}}
+
+{{ $logoAbs := absURL site.Params.logo }}
+{{ $imageAbs := "" }}
+{{ if .Params.image }}
+  {{ $imageAbs = absURL .Params.image }}
+{{ else }}
+  {{ $imageAbs = $logoAbs }}
+{{ end }}
+
+{{/* ─────────────────────────────────────────────
+     ORGANIZATION SCHEMA
+     Tells Google "Arenar Intel" is a real publisher.
+     Shows on every page.
+   ───────────────────────────────────────────── */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "name": "Arenar Intelligence",
+  "alternateName": "Arenar Intel",
+  "url": "{{ site.BaseURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ $logoAbs }}",
+    "width": 512,
+    "height": 512
+  },
+  "sameAs": [
+    "https://x.com/arenarintel",
+    "https://www.instagram.com/arenarintel",
+    "https://t.me/arenarintel",
+    "https://www.youtube.com/@arenarintel"
+  ]
+}
+</script>
+
+{{/* ─────────────────────────────────────────────
+     WEBSITE SCHEMA (HOMEPAGE ONLY)
+     Tells Google this is the official site search.
+   ───────────────────────────────────────────── */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Arenar Intel",
+  "alternateName": "Arenar Intelligence",
+  "url": "{{ site.BaseURL }}",
+  "description": "{{ site.Params.description }}",
+  "publisher": {
+    "@type": "NewsMediaOrganization",
+    "name": "Arenar Intelligence",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ $logoAbs }}"
+    }
+  }
+}
+</script>
+{{ end }}
+
+{{/* ─────────────────────────────────────────────
+     NEWS ARTICLE SCHEMA (ARTICLE PAGES ONLY)
+     This is what gets your articles into Google News
+     and Top Stories. The single most important
+     SEO element on the entire site.
+   ───────────────────────────────────────────── */}}
+{{ if and (not .IsHome) (eq .Section "intel") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "headline": "{{ .Title }}",
+  "description": "{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}",
+  "image": [
+    "{{ $imageAbs }}"
+  ],
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ (or .Lastmod .Date).Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author | default "The Intel Desk" }}"
+  },
+  "publisher": {
+    "@type": "NewsMediaOrganization",
+    "name": "Arenar Intelligence",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ $logoAbs }}",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+{{ end }}

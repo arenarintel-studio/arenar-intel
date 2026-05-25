@@ -190,6 +190,7 @@ header {
   font-size: 16px;
   color: white;
   outline: none;
+  font-family: Cambria, Arial;
 }
 
 .menu-search input::placeholder {
@@ -273,7 +274,7 @@ input#search:-webkit-autofill:active {
   display: block;
   padding: 16px 20px;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
@@ -281,6 +282,7 @@ input#search:-webkit-autofill:active {
   -webkit-tap-highlight-color: transparent;
   user-select: none;
   touch-action: manipulation;
+  font-family: Cambria, Arial; 
 }
 
 .menu-nav a.active {
@@ -306,6 +308,7 @@ input#search:-webkit-autofill:active {
 .menu-footer p {
   color: rgba(255, 255, 255, 0.3);
   font-size: 0.75rem;
+  font-family: Cambria, Arial; 
 }
 
 /* ─────────────────────────────────────────────

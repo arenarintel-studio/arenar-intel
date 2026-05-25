@@ -1,27 +1,94 @@
+{{/* ─────────────────────────────────────────────
+     CHARSET, VIEWPORT, LANGUAGE
+   ───────────────────────────────────────────── */}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="description" content="{{ if .IsHome }}{{ site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
 
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+{{/* ─────────────────────────────────────────────
+     PAGE-SPECIFIC VARIABLES
+     We compute these once at the top so the rest
+     of the file stays readable.
+   ───────────────────────────────────────────── */}}
+{{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
 
-<!-- Open Graph / Facebook / X -->
-<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
-<meta property="og:description" content="{{ if .IsHome }}{{ site.Params.description }}{{ else }}{{ .Summary }}{{ end }}">
-<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-<meta property="og:url" content="{{ .Permalink }}">
+{{ $description := site.Params.description }}
+{{ if not .IsHome }}
+  {{ if .Params.summary }}
+    {{ $description = .Params.summary }}
+  {{ else if .Summary }}
+    {{ $description = .Summary }}
+  {{ end }}
+{{ end }}
+
+{{ $image := site.Params.logo }}
+{{ if .Params.image }}
+  {{ $image = .Params.image }}
+{{ end }}
+{{ $imageAbs := absURL $image }}
+
+{{ $canonical := .Permalink }}
+
+{{/* ─────────────────────────────────────────────
+     PRIMARY META
+   ───────────────────────────────────────────── */}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="canonical" href="{{ $canonical }}">
+
+{{/* ─────────────────────────────────────────────
+     OPEN GRAPH (FACEBOOK, WHATSAPP, LINKEDIN, TELEGRAM)
+   ───────────────────────────────────────────── */}}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ cond .IsHome "website" "article" }}">
+<meta property="og:url" content="{{ $canonical }}">
+<meta property="og:image" content="{{ $imageAbs }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+{{/* ─────────────────────────────────────────────
+     ARTICLE-SPECIFIC OPEN GRAPH
+   ───────────────────────────────────────────── */}}
+{{ if not .IsHome }}
+  <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+  {{ if not .Lastmod.IsZero }}
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+  {{ end }}
+  {{ with .Params.author }}
+    <meta property="article:author" content="{{ . }}">
+  {{ end }}
+{{ end }}
+
+{{/* ─────────────────────────────────────────────
+     TWITTER / X CARD
+   ───────────────────────────────────────────── */}}
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ site.Params.twitter }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $imageAbs }}">
 
-<!-- Favicon -->
+{{/* ─────────────────────────────────────────────
+     FAVICON
+   ───────────────────────────────────────────── */}}
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+{{/* ─────────────────────────────────────────────
+     PAGEFIND SEARCH ASSETS
+   ───────────────────────────────────────────── */}}
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="/pagefind/pagefind-ui.js"></script>
 
-<!-- Automated Cascading Style Sheets (CSS) -->
-{{ partialCached "head/css.html" . }}
+{{/* ─────────────────────────────────────────────
+     STRUCTURED DATA (JSON-LD)
+   ───────────────────────────────────────────── */}}
+{{ partial "head/seo.html" . }}
 
-<!-- Automated Scripting Architectures (JS) -->
+{{/* ─────────────────────────────────────────────
+     CSS AND JS
+   ───────────────────────────────────────────── */}}
+{{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

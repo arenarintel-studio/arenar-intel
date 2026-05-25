@@ -1,6 +1,6 @@
 <a href="{{ .RelPermalink }}" class="card-link">
   <article class="featured-card">
-    {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}" />{{ end }}
+    {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}" loading="eager" fetchpriority="high" />{{ end }}
     <div class="card-info">
       <h2>{{ .Title }}</h2>
       <p>{{ .Params.summary }}</p>

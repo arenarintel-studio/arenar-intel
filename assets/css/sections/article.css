@@ -5,16 +5,17 @@
 .article-page {
   max-width: 700px;
   margin: 0 auto;
-  padding: 1.2rem 1rem 0.5rem;
+  padding: 1rem 1rem 0.5rem;
 }
 
 .article-page h1 {
-  font-family: sans-serif;
-  font-weight: 700;
+  font-family: Cambria, Arial; 
+  font-weight: var(--headline-weight);
   font-size: clamp(1.6rem, 5vw, 4rem);
   line-height: 1;
   margin-bottom: 1rem;
   text-wrap: balance;
+  color: var(--text);
 }
 
 /* ─────────────────────────────────────────────
@@ -29,10 +30,11 @@
 
   margin-bottom: 1.2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border);
 
-  color: #333;
+  color: var(--text-soft);
   font-size: 0.95rem;
+  font-family: Cambria, Arial; 
 }
 
 /* ─────────────────────────────────────────────
@@ -46,24 +48,43 @@
 }
 
 .article-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
   background: none;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-soft);
   padding: 0.4rem 0.9rem;
-  border-radius: 4px;
+  border-radius: var(--radius);
   cursor: pointer;
-  font-size: 0.8rem;
-  color: #444;
+  font-size: 0.9rem;
+  color: var(--text-soft);
   text-decoration: none;
   min-width: 92px;
   -webkit-tap-highlight-color: transparent;
+  font-family: Cambria, Arial; 
 }
 
-.article-actions button i {
-  color: black;
+.article-actions button svg {
+  flex-shrink: 0;
+  transform: translateY(-1px);
 }
 
 .article-actions button:active {
-  background: #e4e2e2;
+  background: var(--bg-soft);
+}
+
+/* Bookmark icon swap */
+.save-icon--filled {
+  display: none;
+}
+
+.save-btn.is-saved .save-icon--empty {
+  display: none;
+}
+
+.save-btn.is-saved .save-icon--filled {
+  display: block;
 }
 
 /* ─────────────────────────────────────────────
@@ -74,18 +95,19 @@
   display: block;
   width: 100%;
   max-width: 100%;
-  height: 13rem;
+  aspect-ratio: 16 / 9;
   margin-bottom: 0.5rem;
-  border-radius: 0.4rem;
+  border-radius: var(--radius);
   object-fit: cover;
   object-position: center;
 }
 
 .article-source {
-  font-weight: 700;
-  color: #777;
-  font-size: 0.85rem;
+  font-weight: var(--headline-weight);
+  color: var(--text-muted);
+  font-size: 0.9rem;
   margin-bottom: 1rem;
+  font-family: Cambria, Arial; 
 }
 
 /* ─────────────────────────────────────────────
@@ -95,23 +117,27 @@
 .article-body {
   font-size: 1.1rem;
   line-height: 1.5;
-  color: #222;
+  color: var(--text);
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .article-body p {
   margin-bottom: 1.5rem;
+  
 }
 
 .article-body h2 {
   margin-bottom: 0.5rem;
   font-size: 1.6rem;
   line-height: 1.2;
+  font-family: Cambria, Arial; 
 }
 
 .article-body h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
+  font-family: Cambria, Arial; 
 }
 
 .article-body ul,
@@ -121,11 +147,11 @@
 }
 
 .article-body blockquote {
-  border-left: 4px solid #111;
+  border-left: 4px solid var(--text);
   padding-left: 1rem;
   margin: 1.2rem 0;
   font-size: 1.2rem;
-  color: #444;
+  color: var(--text-soft);
 }
 
 .article-body a {
@@ -134,22 +160,22 @@
 
 .article-body img {
   width: 100%;
-  border-radius: 14px;
+  border-radius: var(--radius);
   margin: 1.5rem 0;
 }
 
 .article-body code {
-  background: #f4f4f4;
+  background: var(--bg-soft);
   padding: 0.2rem 0.4rem;
   border-radius: 6px;
   font-size: 0.95em;
 }
 
 .article-body pre {
-  background: #111;
-  color: white;
+  background: var(--text);
+  color: var(--white);
   padding: 1.2rem;
-  border-radius: 14px;
+  border-radius: var(--radius);
   overflow-x: auto;
   margin: 2rem 0;
 }
@@ -161,8 +187,8 @@
 .article-footer {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid var(--border);
   text-align: center;
   font-size: 0.85rem;
-  color: #555;
+  color: var(--text-muted);
 }

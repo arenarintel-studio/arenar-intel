@@ -2,41 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:57022/</loc>
+    <loc>http://localhost:61580/</loc>
+    <lastmod>2026-05-22T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61580/intel/coordinated-infrastructure-threat/</loc>
+    <lastmod>2026-05-22T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61580/intel/</loc>
+    <lastmod>2026-05-22T08:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:61580/intel/grid1/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/intel/grid1/</loc>
+    <loc>http://localhost:61580/intel/grid2/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/intel/</loc>
+    <loc>http://localhost:61580/intel/grid3/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/intel/grid2/</loc>
+    <loc>http://localhost:61580/intel/grid4/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/intel/grid3/</loc>
+    <loc>http://localhost:61580/intel/basicpost/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/intel/grid4/</loc>
+    <loc>http://localhost:61580/intel/compactpost/</loc>
     <lastmod>2026-05-22T05:34:43+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/intel/basicpost/</loc>
-    <lastmod>2026-05-22T05:34:43+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:57022/intel/compactpost/</loc>
-    <lastmod>2026-05-22T05:34:43+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:57022/intel/textpost/</loc>
+    <loc>http://localhost:61580/intel/textpost/</loc>
     <lastmod>2026-05-22T05:29:47+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57022/about/</loc>
+    <loc>http://localhost:61580/about/</loc>
   </url><url>
-    <loc>http://localhost:57022/contact/</loc>
+    <loc>http://localhost:61580/contact/</loc>
   </url><url>
-    <loc>http://localhost:57022/intel/coordinated-infrastructure-threat/</loc>
+    <loc>http://localhost:61580/privacy/</loc>
   </url><url>
-    <loc>http://localhost:57022/privacy/</loc>
-  </url><url>
-    <loc>http://localhost:57022/terms/</loc>
+    <loc>http://localhost:61580/terms/</loc>
   </url>
 </urlset>

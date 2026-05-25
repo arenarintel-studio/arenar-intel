@@ -118,25 +118,24 @@ if (shareBtn) {
 function saveArticle() {
   if (!saveBtn) return;
 
-  const icon = saveBtn.querySelector("i");
   const text = saveBtn.querySelector("span");
 
   const savedArticles = JSON.parse(localStorage.getItem("savedArticles")) || [];
   const currentURL = window.location.href;
   const alreadySaved = savedArticles.includes(currentURL);
 
-  if (alreadySaved) {
+if (alreadySaved) {
     const updatedArticles = savedArticles.filter(url => url !== currentURL);
     localStorage.setItem("savedArticles", JSON.stringify(updatedArticles));
 
-    icon.className = "fa-regular fa-bookmark";
+    saveBtn.classList.remove("is-saved");
     text.textContent = "Save";
 
   } else {
     savedArticles.push(currentURL);
     localStorage.setItem("savedArticles", JSON.stringify(savedArticles));
 
-    icon.className = "fa-solid fa-bookmark";
+    saveBtn.classList.add("is-saved");
     text.textContent = "Saved";
   }
 }
@@ -145,11 +144,10 @@ function saveArticle() {
 if (saveBtn) {
   const savedArticles = JSON.parse(localStorage.getItem("savedArticles")) || [];
 
-  if (savedArticles.includes(window.location.href)) {
-    const icon = saveBtn.querySelector("i");
+if (savedArticles.includes(window.location.href)) {
     const text = saveBtn.querySelector("span");
 
-    icon.className = "fa-solid fa-bookmark";
+    saveBtn.classList.add("is-saved");
     text.textContent = "Saved";
   }
 

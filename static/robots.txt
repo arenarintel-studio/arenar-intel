@@ -1,0 +1,12 @@
+# Arenar Intelligence — robots.txt
+# Allow all search engines to crawl public content
+
+User-agent: *
+Allow: /
+
+# Block search/admin paths
+Disallow: /admin/
+Disallow: /pagefind/
+
+# Point to sitemap
+Sitemap: https://www.arenarintel.com/sitemap.xml

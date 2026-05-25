@@ -1,6 +1,6 @@
 +++
 title = "Cybersecurity Agencies Warn of Coordinated Infrastructure Threats"
-#date = {{ .Date }}
+date = 2026-05-22T08:00:00Z
 draft = false
 image = "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1600&auto=format&fit=crop"
 summary = "International cybersecurity agencies issued a coordinated warning after detecting elevated digital intrusion activity targeting transportation, energy, and communications infrastructure across multiple regions."

@@ -2,63 +2,80 @@
 
 <main class="article-page" data-pagefind-body>
 
-    <!-- ARTICLE TITLE -->
-    <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+  <!-- ARTICLE TITLE -->
+  <h1 data-pagefind-meta="title">{{ .Title }}</h1>
 
-    <!-- ARTICLE META -->
-    <div class="article-meta" data-pagefind-ignore>
-        <span class="byline">
-             {{ .Params.author | default "The Intel Desk" }}
-        </span>
+  <!-- ARTICLE META -->
+  <div class="article-meta" data-pagefind-ignore>
+    <span class="byline">
+      {{ .Params.author | default "The Intel Desk" }}
+    </span>
 
-        <span>
-            {{ .Date.Format "January 2, 2006" }}
-            •
-            {{ .Date.Format "15:04" }} UTC
-        </span>
-    </div>
+    <span>
+      {{ .Date.Format "January 2, 2006" }}
+      •
+      {{ .Date.Format "15:04" }} UTC
+    </span>
+  </div>
 
-    <!-- ACTIONS -->
-<div class="article-actions" data-pagefind-ignore>
+  <!-- ACTIONS -->
+  <div class="article-actions" data-pagefind-ignore>
 
-  <button class="share-btn">
-    <i class="fa-solid fa-share"></i>
-    <span>Share</span>
-  </button>
+    <button class="share-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1rem;height:1rem" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="18" cy="5" r="3" />
+        <circle cx="6" cy="12" r="3" />
+        <circle cx="18" cy="19" r="3" />
+        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+      </svg>
+      <span>Share</span>
+    </button>
 
-  <button class="save-btn">
-  <i class="fa-regular fa-bookmark"></i>
+    <button class="save-btn">
+  <!-- EMPTY BOOKMARK (default) -->
+  <svg class="save-icon save-icon--empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1rem;height:1rem" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+  </svg>
+
+  <!-- FILLED BOOKMARK (when saved) -->
+  <svg class="save-icon save-icon--filled" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:1rem;height:1rem" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+  </svg>
+
   <span>Save</span>
 </button>
 
-</div>
+  </div>
 
-    <!-- INVISIBLE FRONT MATTER SUMMARY HOOK FOR PAGEFIND -->
-    {{ with .Params.summary }}
+  <!-- INVISIBLE FRONT MATTER SUMMARY HOOK FOR PAGEFIND -->
+  {{ with .Params.summary }}
     <div style="display: none;" data-pagefind-meta="summary">{{ . }}</div>
-    {{ end }}
+  {{ end }}
 
-    <!-- FEATURE IMAGE -->
-    {{ with .Params.image }}
-    <img
-        class="article-image"
-        src="{{ . }}"
-        alt="{{ $.Title }}"
-        data-pagefind-ignore
-    />
-    {{ end }}
+  <!-- FEATURE IMAGE -->
+{{ with .Params.image }}
+  <img
+    class="article-image"
+    src="{{ . }}"
+    alt="{{ $.Title }}"
+    loading="eager"
+    fetchpriority="high"
+    data-pagefind-ignore
+  />
+{{ end }}
 
-    <!-- SOURCE -->
-    {{ with .Params.source }}
+  <!-- SOURCE -->
+  {{ with .Params.source }}
     <div class="article-source" data-pagefind-ignore>
-        Source: {{ . }}
+      Source: {{ . }}
     </div>
-    {{ end }}
+  {{ end }}
 
-    <!-- ARTICLE BODY -->
-    <div class="article-body">
-        {{ .Content }}
-    </div>
+  <!-- ARTICLE BODY -->
+  <div class="article-body">
+    {{ .Content }}
+  </div>
 
 </main>
 
