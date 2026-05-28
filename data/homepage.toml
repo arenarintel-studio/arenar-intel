@@ -2,15 +2,15 @@
 # Just type the URL slug/filename of the article you want in each slot.
 
 #featured
-slot_1 = "coordinated-infrastructure-threat.md"
+slot_1 = "trump-iran-negotiations"
 
 #text
-slot_2 = "textpost.md"
-slot_3 = "textpost.md"
+slot_2 = "textpost"
+slot_3 = "textpost"
 
 #compact
-slot_4 = "compactpost.md"
-slot_5 = "basicpost.md"
+slot_4 = "compactpost"
+slot_5 = "basicpost"
 
 #basic
 slot_6 = "basicpost.md"

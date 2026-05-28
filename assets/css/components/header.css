@@ -277,7 +277,7 @@ input#search:-webkit-autofill:active {
   font-size: 1.1rem;
     letter-spacing: -0.5px;
   font-family: Arial, sans-serif; 
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   letter-spacing: 0.02em;

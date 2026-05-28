@@ -3,6 +3,8 @@ locale = "en-US"
 title = 'Arenar Intel'
 cleanDestinationDir = true
 
+buildFuture = true
+
 disableKinds = ["taxonomy", "term"]
 [taxonomies]
 
