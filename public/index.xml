@@ -10,7 +10,7 @@
     <description>The Global Intelligence Feed - delivering fast, verified reporting on the events, conflicts and decisions shaping the modern world.</description>
     <language>en-US</language>
     <copyright>© 2026 Arenar Intelligence. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 28 May 2026 21:15:18 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 23:23:53 +0000</lastBuildDate>
     <generator>Hugo</generator>
 
     <image>
@@ -23,6 +23,26 @@
 
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 
+    
+    <item>
+      <title>Russia dismisses US warning over planned strikes on Kyiv</title>
+      <link>http://localhost:1313/intel/russia-kyiv-strikes/</link>
+      <pubDate>Thu, 28 May 2026 11:30:00 +0000</pubDate>
+      <guid isPermaLink="true">http://localhost:1313/intel/russia-kyiv-strikes/</guid>
+      <dc:creator>The Intel Desk</dc:creator>
+      <description>Russia brushed aside US calls to avoid broader strikes on Kyiv as Moscow warned foreign diplomats to leave the Ukranian capital amid renewed escalation.</description>
+      
+      <media:content url="http://localhost:1313/images/intel/trump-landscape.jpg" medium="image" />
+      <enclosure url="http://localhost:1313/images/intel/trump-landscape.jpg" type="image/jpeg" />
+      
+<content:encoded><![CDATA[<p>Russia dismissed US calls to avoid broader strikes on Kyiv after Washington criticized Moscow’s recent missile and drone barrage against the Ukrainian capital during a United Nations Security Council meeting.</p>
+<p>The United States warned Russia against launching what Moscow described as “systematic strikes” on Kyiv, saying further escalation could increase civilian casualties and undermine prospects for peace.</p>
+<p>Deputy US Ambassador to the United Nations Tammy Bruce described Russia’s recent use of the nuclear-capable Oreshnik ballistic missile as a “dangerous and barbaric escalation” of the conflict.</p>
+<p>Russia’s ambassador to the United Nations, Vassily Nebenzia, rejected the criticism and reiterated Moscow’s warning for foreign diplomats and international personnel to leave Kyiv ahead of potential future strikes.</p>
+<p>Moscow said recent attacks targeted Ukrainian military and intelligence infrastructure, while Ukraine requested the Security Council session following large scale Russian bombardments involving drones and missiles.</p>
+<p>The United Nations said it remained “deeply concerned” by Russia’s threat to carry out continued strikes against targets in Kyiv.</p>
+<p>The renewed escalation comes as tensions between Moscow and Western governments continue to rise amid stalled efforts to end the war.</p>
+]]></content:encoded>    </item>
     
     <item>
       <title>Trump says US is not satisfied with Iran negotiations</title>
@@ -149,25 +169,6 @@ yes <em>Hi</em> <strong>bold</strong></p>
       <enclosure url="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>In web dev, basic cards are in dispensable and must be present regularly</p>
-]]></content:encoded>    </item>
-    
-    <item>
-      <title>Global Cybersecurity Agencies Warn of Coordinated Infrastrucuture Threats</title>
-      <link>http://localhost:1313/intel/textpost/</link>
-      <pubDate>Fri, 22 May 2026 05:29:47 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/textpost/</guid>
-      <dc:creator>The Intel Desk</dc:creator>
-      <description>This is a test of the text only post slot</description>
-      
-      <media:content url="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" medium="image" />
-      <enclosure url="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" type="image/jpeg" />
-      
-<content:encoded><![CDATA[<p>In recent times, international new sources tried to merge Ai into journalism. The end results was fatal.</p>
-<h2 id="key-findings">Key Findings</h2>
-<ol>
-<li>It failed</li>
-<li>Ai can merge with journalism</li>
-</ol>
 ]]></content:encoded>    </item>
     
   </channel>

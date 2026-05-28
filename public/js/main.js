@@ -40,6 +40,15 @@ function closeMenu() {
   }
 }
 
+// Clear search whenever menu opens
+if (menuCheckbox) {
+  menuCheckbox.addEventListener("change", () => {
+    if (menuCheckbox.checked) {
+      resetSearchState();
+    }
+  });
+}
+
 function hideMenuElements() {
   if (menuNav) menuNav.style.display = "none";
   if (menuFooter) menuFooter.style.display = "none";

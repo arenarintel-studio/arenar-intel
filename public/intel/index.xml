@@ -10,7 +10,7 @@
     <description>The Global Intelligence Feed - delivering fast, verified reporting on the events, conflicts and decisions shaping the modern world.</description>
     <language>en-US</language>
     <copyright>© 2026 Arenar Intelligence. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 28 May 2026 21:03:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 22:44:14 +0000</lastBuildDate>
     <generator>Hugo</generator>
 
     <image>
@@ -25,6 +25,21 @@
 
     
     <item>
+      <title>Russia dismisses US warning over planned strikes on Kyiv</title>
+      <link>http://localhost:1313/intel/russia-kyiv-strikes/</link>
+      <pubDate>Thu, 28 May 2026 11:30:00 +0000</pubDate>
+      <guid isPermaLink="true">http://localhost:1313/intel/russia-kyiv-strikes/</guid>
+      <dc:creator>The Intel Desk</dc:creator>
+      <description>Russia brushed aside US calls to avoid broader strikes on Kyiv as Moscow warned foreign diplomats to leave the Ukranian capital amid renewed escalation.</description>
+      
+      <media:content url="http://localhost:1313/images/intel/trump-landscape.jpg" medium="image" />
+      <enclosure url="http://localhost:1313/images/intel/trump-landscape.jpg" type="image/jpeg" />
+      
+<content:encoded><![CDATA[<p>Russia dismissed US calls to avoid broader strikes on Kyiv after Washington criticized Moscow&rsquo;s recent missile and drone barrage against the Ukranian capital during a United Nations Security Council meeting.</p>
+<p>The United States warned Russia against launching what Moscow described as &ldquo;systematic strikes on Kyiv, saying further</p>
+]]></content:encoded>    </item>
+    
+    <item>
       <title>Trump says US is not satisfied with Iran negotiations</title>
       <link>http://localhost:1313/intel/trump-iran-negotiations/</link>
       <pubDate>Wed, 27 May 2026 13:30:00 +0000</pubDate>
@@ -32,8 +47,8 @@
       <dc:creator>The Intel Desk</dc:creator>
       <description>Trump says US remains unsatisfied with Iran negotiations as talks continue over Strait of Hormuz and regional security arrangements</description>
       
-      <media:content url="http://localhost:1313/images/intel/trump-portrait.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/intel/trump-portrait.webp" type="image/jpeg" />
+      <media:content url="http://localhost:1313/images/intel/trump-landscape.jpg" medium="image" />
+      <enclosure url="http://localhost:1313/images/intel/trump-landscape.jpg" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>President Donald Trump said the United States remains unsatisfied with ongoing negotiations with Iran over a potential agreement involving the Strait of Hormuz and wider regional security arrangements.</p>
 <p>Iranian state media had earlier reported what it described as details of a draft agreement, including proposals linked to reopening the Strait of Hormuz and changes in US military positioning in the region. The White House dismissed the report as inaccurate.</p>
@@ -149,25 +164,6 @@ yes <em>Hi</em> <strong>bold</strong></p>
       <enclosure url="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>In web dev, basic cards are in dispensable and must be present regularly</p>
-]]></content:encoded>    </item>
-    
-    <item>
-      <title>Global Cybersecurity Agencies Warn of Coordinated Infrastrucuture Threats</title>
-      <link>http://localhost:1313/intel/textpost/</link>
-      <pubDate>Fri, 22 May 2026 05:29:47 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/textpost/</guid>
-      <dc:creator>The Intel Desk</dc:creator>
-      <description>This is a test of the text only post slot</description>
-      
-      <media:content url="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" medium="image" />
-      <enclosure url="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&amp;w=1600&amp;auto=format&amp;fit=crop" type="image/jpeg" />
-      
-<content:encoded><![CDATA[<p>In recent times, international new sources tried to merge Ai into journalism. The end results was fatal.</p>
-<h2 id="key-findings">Key Findings</h2>
-<ol>
-<li>It failed</li>
-<li>Ai can merge with journalism</li>
-</ol>
 ]]></content:encoded>    </item>
     
   </channel>

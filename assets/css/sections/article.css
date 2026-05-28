@@ -103,14 +103,18 @@ font-family: Georgia, Arial;
   object-position: center;
 }
 
-.article-source {
-  font-weight: var(--headline-weight);
+.image-source {
   color: var(--text-muted);
   font-size: 0.9rem;
   margin-bottom: 1rem;
 font-family: Times;
 }
 
+.article-source {
+  margin-bottom: 1.5rem;
+
+  color: var(--text-muted);
+}
 /* ─────────────────────────────────────────────
    BODY
 ───────────────────────────────────────────── */

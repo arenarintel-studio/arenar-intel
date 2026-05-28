@@ -5,7 +5,7 @@
 slot_1 = "trump-iran-negotiations"
 
 #text
-slot_2 = "textpost"
+slot_2 = "russia-kyiv-strikes"
 slot_3 = "textpost"
 
 #compact

@@ -66,9 +66,9 @@
 {{ end }}
 
   <!-- SOURCE -->
-  {{ with .Params.source }}
-    <div class="article-source" data-pagefind-ignore>
-      Source: {{ . }}
+  {{ with .Params.img_source }}
+    <div class="image-source" data-pagefind-ignore>
+      Image: {{ . }}
     </div>
   {{ end }}
 
@@ -76,6 +76,12 @@
   <div class="article-body">
     {{ .Content }}
   </div>
+
+  {{ with .Params.source }}
+  <div class = "article-source" data-pagefind-ignore>
+    {{ . }}
+  </div>
+  {{ end }}
 
 </main>
 
