@@ -5,7 +5,7 @@ draft = false
 image = "/images/intel/trump-landscape.jpg"
 summary = "Russia brushed aside US calls to avoid broader strikes on Kyiv as Moscow warned foreign diplomats to leave the Ukranian capital amid renewed escalation."
 source = "Based on Reuters reporting and United Nations remarks."
-img_source = "Library of Congress"
+image_source = "Library of Congress"
 +++
 
 Russia dismissed US calls to avoid broader strikes on Kyiv after Washington criticized Moscow’s recent missile and drone barrage against the Ukrainian capital during a United Nations Security Council meeting.

@@ -4,7 +4,8 @@ date = 2026-05-27T13:30:00Z
 draft = false
 image = "/images/intel/trump-landscape.jpg"
 summary = "Trump says US remains unsatisfied with Iran negotiations as talks continue over Strait of Hormuz and regional security arrangements"
-img_source = "hi"
+source = "Based on Reuters reporting and United Nations remarks."
+image_source = "hi"
 +++
 
 President Donald Trump said the United States remains unsatisfied with ongoing negotiations with Iran over a potential agreement involving the Strait of Hormuz and wider regional security arrangements.

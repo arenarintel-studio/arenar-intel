@@ -35,12 +35,11 @@
         {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
-    
 
-    <!-- SLOT 3: TEXT CARD -->
+    <!-- SLOT 3: COMPACT CARD -->
     {{ if $board.slot_3 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_3) }}
-        {{ partial "cards/text.html" . }}
+        {{ partial "cards/compact.html" . }}
       {{ end }}
     {{ end }}
 
@@ -51,17 +50,17 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 5: COMPACT CARD -->
+    <!-- SLOT 5: BASIC CARD -->
     {{ if $board.slot_5 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_5) }}
-        {{ partial "cards/compact.html" . }}
+        {{ partial "cards/basic.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 6: BASIC CARD -->
+    <!-- SLOT 6: COMPACT CARD -->
     {{ if $board.slot_6 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_6) }}
-        {{ partial "cards/basic.html" . }}
+        {{ partial "cards/compact.html" . }}
       {{ end }}
     {{ end }}
 
@@ -79,24 +78,24 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 9: COMPACT CARD -->
+    <!-- SLOT 9: TEXT CARD -->
     {{ if $board.slot_9 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_9) }}
-        {{ partial "cards/compact.html" . }}
-      {{ end }}
-    {{ end }}
-
-    <!-- SLOT 10: TEXT CARD -->
-    {{ if $board.slot_10 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_10) }}
         {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 11: BASIC CARD -->
+    <!-- SLOT 10: BASIC CARD -->
+    {{ if $board.slot_10 }}
+      {{ with site.GetPage (printf "/intel/%s" $board.slot_10) }}
+        {{ partial "cards/basic.html" . }}
+      {{ end }}
+    {{ end }}
+
+    <!-- SLOT 11: TEXT CARD -->
     {{ if $board.slot_11 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_11) }}
-        {{ partial "cards/basic.html" . }}
+        {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
@@ -114,10 +113,10 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 14: TEXT CARD -->
+    <!-- SLOT 14: COMPACT CARD -->
     {{ if $board.slot_14 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_14) }}
-        {{ partial "cards/text.html" . }}
+        {{ partial "cards/compact.html" . }}
       {{ end }}
     {{ end }}
 
@@ -128,17 +127,17 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 16: COMPACT CARD -->
+    <!-- SLOT 16: BASIC CARD -->
     {{ if $board.slot_16 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_16) }}
-        {{ partial "cards/compact.html" . }}
+        {{ partial "cards/basic.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 17: BASIC CARD -->
+    <!-- SLOT 17: TEXT CARD -->
     {{ if $board.slot_17 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_17) }}
-        {{ partial "cards/basic.html" . }}
+        {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
@@ -156,28 +155,28 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 20: TEXT CARD -->
+    <!-- SLOT 20: BASIC CARD -->
     {{ if $board.slot_20 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_20) }}
-        {{ partial "cards/text.html" . }}
-      {{ end }}
-    {{ end }}
-
-    <!-- SLOT 21: BASIC CARD -->
-    {{ if $board.slot_21 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_21) }}
         {{ partial "cards/basic.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 22: COMPACT CARD -->
-    {{ if $board.slot_22 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_22) }}
+    <!-- SLOT 21: COMPACT CARD -->
+    {{ if $board.slot_21 }}
+      {{ with site.GetPage (printf "/intel/%s" $board.slot_21) }}
         {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 23: COMPACT -->
+    <!-- SLOT 22: COMPACT -->
+    {{ if $board.slot_22 }}
+      {{ with site.GetPage (printf "/intel/%s" $board.slot_22) }}
+        {{ partial "cards/compact.html" . }}
+      {{ end }}
+    {{ end }}
+
+    <!-- SLOT 23: COMPACT CARD -->
     {{ if $board.slot_23 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_23) }}
         {{ partial "cards/compact.html" . }}
@@ -191,24 +190,24 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 25: COMPACT CARD -->
+    <!-- SLOT 25: TEXT CARD -->
     {{ if $board.slot_25 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_25) }}
-        {{ partial "cards/compact.html" . }}
-      {{ end }}
-    {{ end }}
-
-    <!-- SLOT 26: TEXT CARD -->
-    {{ if $board.slot_26 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_26) }}
         {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 27: BASIC CARD -->
+    <!-- SLOT 26: BASIC CARD -->
+    {{ if $board.slot_26 }}
+      {{ with site.GetPage (printf "/intel/%s" $board.slot_26) }}
+        {{ partial "cards/basic.html" . }}
+      {{ end }}
+    {{ end }}
+
+    <!-- SLOT 27: COMPACT CARD -->
     {{ if $board.slot_27 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_27) }}
-        {{ partial "cards/basic.html" . }}
+        {{ partial "cards/compact.html" . }}
       {{ end }}
     {{ end }}
 
@@ -219,10 +218,10 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 29: COMPACT CARD -->
+    <!-- SLOT 29: TEXT CARD -->
     {{ if $board.slot_29 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_29) }}
-        {{ partial "cards/compact.html" . }}
+        {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
@@ -233,17 +232,17 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 31: TEXT CARD -->
+    <!-- SLOT 31: BASIC CARD -->
     {{ if $board.slot_31 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_31) }}
-        {{ partial "cards/text.html" . }}
+        {{ partial "cards/basic.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 32: BASIC CARD -->
+    <!-- SLOT 32: COMPACT CARD -->
     {{ if $board.slot_32 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_32) }}
-        {{ partial "cards/basic.html" . }}
+        {{ partial "cards/compact.html" . }}
       {{ end }}
     {{ end }}
 
@@ -261,10 +260,10 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 35: COMPACT CARD -->
+    <!-- SLOT 35: TEXT CARD -->
     {{ if $board.slot_35 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_35) }}
-        {{ partial "cards/compact.html" . }}
+        {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
@@ -275,20 +274,20 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 37: TEXT CARD -->
-    {{ if $board.slot_37 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_37) }}
+    <!-- THE GRID SECTION (Slots 37 to 40) -->
+    <section class="grid-feed">
+      {{ if $board.slot_37 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_38) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
+      {{ if $board.slot_38 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_39) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
+      {{ if $board.slot_39 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_40) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
+      {{ if $board.slot_40 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_41) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
+    </section>
+
+    <!-- SLOT 41: TEXT CARD -->
+    {{ if $board.slot_41 }}
+      {{ with site.GetPage (printf "/intel/%s" $board.slot_41) }}
         {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
-
-    <!-- THE GRID SECTION (Slots 38 to 41) -->
-    <section class="grid-feed">
-      {{ if $board.slot_38 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_38) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
-      {{ if $board.slot_39 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_39) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
-      {{ if $board.slot_40 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_40) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
-      {{ if $board.slot_41 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_41) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
-    </section>
 
     <!-- SLOT 42: TEXT CARD -->
     {{ if $board.slot_42 }}
@@ -304,17 +303,17 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 44: TEXT CARD -->
+    <!-- SLOT 44: BASIC CARD -->
     {{ if $board.slot_44 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_44) }}
-        {{ partial "cards/text.html" . }}
+        {{ partial "cards/basic.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 45: BASIC CARD -->
+    <!-- SLOT 45: COMPACT CARD -->
     {{ if $board.slot_45 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_45) }}
-        {{ partial "cards/basic.html" . }}
+        {{ partial "cards/compact.html" . }}
       {{ end }}
     {{ end }}
 
@@ -325,33 +324,26 @@
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 47: COMPACT CARD -->
+    <!-- SLOT 47: TEXT CARD -->
     {{ if $board.slot_47 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_47) }}
-        {{ partial "cards/compact.html" . }}
+        {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
     <!-- SLOT 48: TEXT CARD -->
-    {{ if $board.slot_48}}
+    {{ if $board.slot_48 }}
       {{ with site.GetPage (printf "/intel/%s" $board.slot_48) }}
         {{ partial "cards/text.html" . }}
       {{ end }}
     {{ end }}
 
-    <!-- SLOT 49: TEXT CARD -->
-    {{ if $board.slot_49 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_49) }}
-        {{ partial "cards/text.html" . }}
-      {{ end }}
-    {{ end }}
-
-    <!-- THE GRID SECTION (Slots 50 to 53) -->
+    <!-- THE GRID SECTION (Slots 49 to 52) -->
     <section class="grid-feed">
+      {{ if $board.slot_49 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_49) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
       {{ if $board.slot_50 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_50) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
       {{ if $board.slot_51 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_51) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
       {{ if $board.slot_52 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_52) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
-      {{ if $board.slot_53 }}{{ with site.GetPage (printf "/intel/%s" $board.slot_53) }}{{ partial "cards/grid.html" . }}{{ end }}{{ end }}
     </section>
 
   </section>

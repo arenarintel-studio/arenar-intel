@@ -6,104 +6,103 @@ slot_1 = "trump-iran-negotiations"
 
 #text
 slot_2 = "russia-kyiv-strikes"
-slot_3 = "textpost"
 
 #compact
-slot_4 = "compactpost"
-slot_5 = "basicpost"
+slot_3 = "us-iran-ceasefired-deal"
+slot_4 = "cuba-us-military-increase"
 
 #basic
-slot_6 = "basicpost.md"
+slot_5 = "bolivia-president-resignation"
 
 #compact
-slot_7 = "basicpost.md"
-slot_8 = "basicpost.md"
-slot_9 = "basicpost.md"
+slot_6 = "netanyahu-expands-gaza-control"
+slot_7 = "man-guilty-over-swift-attack"
+slot_8 = "swift-voice-trademark"
 
 #text
-slot_10 = "basicpost.md"
+slot_9 = "eu-fines-temu"
 
 #basic
-slot_11 = "basicpost.md"
+slot_10 = "romania-andrewtate-investigation"
 
 #text
-slot_12 = "basicpost.md"
-slot_13 = "basicpost.md"
-slot_14 = "basicpost.md"
+slot_11 = "myanmar-tovisit-india"
+slot_12 = "us-imposes-new-sanctions"
+slot_13 = "iceland-eu-referendum-talks"
 
 #compact
-slot_15 = "basicpost.md"
-slot_16 = "basicpost.md"
+slot_14 = "gcb-named-best-bank"
+slot_15 = "energy-ministry-monitor-ecg"
 
 #basic
-slot_17 = "basicpost.md"
+slot_16 = "who-ebola-update"
 
 #text
-slot_18 = "basicpost.md"
-slot_19 = "basicpost.md"
-slot_20 = "basicpost.md"
+slot_17 = "illegal-miners-death"
+slot_18 = "dronestrikes-hit-romanian-building"
+slot_19 = "who-us-kenya-ebolaupdate"
 
 #basic
-slot_21 = "basicpost.md"
+slot_20 = "52-killed-clashes-colombia"
 
 #text
-slot_22 = "basicpost.md"
+slot_21 = "workers-killed-russia"
 
 #compact
+slot_22 = "us-denies-shotdown-aircraft"
 slot_23 = "basicpost.md"
 slot_24 = "basicpost.md"
+
+#text
 slot_25 = "basicpost.md"
 
-#text
+#basic
 slot_26 = "basicpost.md"
 
-#basic
-slot_27 = "basicpost.md"
-
 #compact
+slot_27 = "basicpost.md"
 slot_28 = "basicpost.md"
-slot_29 = "basicpost.md"
 
 #text
+slot_29 = "basicpost.md"
 slot_30 = "basicpost.md"
+
+#basic
 slot_31 = "basicpost.md"
 
-#basic
-slot_32 = "basicpost.md"
-
 #compact
+slot_32 = "basicpost.md"
 slot_33 = "basicpost.md"
 slot_34 = "basicpost.md"
-slot_35 = "basicpost.md"
 
 #text
+slot_35 = "basicpost.md"
 slot_36 = "basicpost.md"
-slot_37 = "basicpost.md"
 
 #grid 1
+slot_37 = "basicpost.md"
 slot_38 = "basicpost.md"
 slot_39 = "basicpost.md"
 slot_40 = "basicpost.md"
-slot_41 = "basicpost.md"
 
 #text
+slot_41 = "basicpost.md"
 slot_42 = "basicpost.md"
 slot_43 = "basicpost.md"
-slot_44 = "basicpost.md"
 
 #basic
-slot_45 = "basicpost.md"
+slot_44 = "basicpost.md"
 
 #compact
+slot_45 = "basicpost.md"
 slot_46 = "basicpost.md"
-slot_47 = "basicpost.md"
 
 #text
+slot_47 = "basicpost.md"
 slot_48 = "basicpost.md"
-slot_49 = "basicpost.md"
 
 #grid slot 2
-slot_50 = "grid1.md"
-slot_51 = "grid2.md"
-slot_52 = "grid3.md"
-slot_53 = "grid4.md"
+slot_49 = "grid1.md"
+slot_50 = "grid2.md"
+slot_51 = "grid3.md"
+slot_52 = "grid4.md"
