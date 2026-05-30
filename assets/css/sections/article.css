@@ -164,7 +164,7 @@ font-family: Times;
 .article-body a:visited,
 .article-body a:hover,
 .article-body a:active {
-  color: red !important;
+  color: var(--text-soft) !important;
   text-decoration: underline;
 }
 
