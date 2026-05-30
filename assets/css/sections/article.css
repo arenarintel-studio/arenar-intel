@@ -159,7 +159,12 @@ font-family: Times;
   color: var(--text-soft);
 }
 
-.article-body a {
+.article-body a,
+.article-body a:link,
+.article-body a:visited,
+.article-body a:hover,
+.article-body a:active {
+  color: red !important;
   text-decoration: underline;
 }
 
