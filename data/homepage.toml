@@ -2,7 +2,7 @@
 # Just type the URL slug/filename of the article you want in each slot.
 
 #featured
-slot_1 = "trump-iran-negotiations"
+slot_1 = "trump-demands-hormuz-reopen-iran-deal"
 
 #text
 slot_2 = "russia-kyiv-strikes"
