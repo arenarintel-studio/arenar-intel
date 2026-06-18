@@ -236,13 +236,13 @@ p, small {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
 .card-info small svg {
   flex-shrink: 0;
-  transform: translateY(-2px);
+  transform: translateY(-1.5px);
 }
 
 /* ─────────────────────────────────────────────
@@ -299,12 +299,12 @@ p, small {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .basic-card small svg {
   flex-shrink: 0;
-  transform: translateY(-1px);
+  transform: translateY(-1.5px);
 }
 
 /* ─────────────────────────────────────────────
@@ -343,12 +343,12 @@ p, small {
   align-items: center;
   gap: 0.35rem;
   padding-top: 1.1rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .compact-card small svg {
   flex-shrink: 0;
-  transform: translateY(-1px);
+  transform: translateY(-1.5px);
 }
 
 /* ─────────────────────────────────────────────
