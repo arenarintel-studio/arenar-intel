@@ -62,7 +62,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg);
   color: var(--text-soft);
-  padding-top: 58px;
 }
 
 main {
@@ -88,7 +87,7 @@ font-family: Arial, sans-serif;
 
 p, small {
   color: var(--text-soft);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ─────────────────────────────────────────────
@@ -238,13 +237,13 @@ p, small {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.93rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
 }
 
 .card-info small svg {
   flex-shrink: 0;
-  transform: translateY(-0px);
+  transform: translateY(-2px);
 }
 
 /* ─────────────────────────────────────────────
@@ -301,12 +300,12 @@ p, small {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.92rem;
+  font-size: 0.75rem;
 }
 
 .basic-card small svg {
   flex-shrink: 0;
-  transform: translateY(1px);
+  transform: translateY(-1px);
 }
 
 /* ─────────────────────────────────────────────
@@ -345,12 +344,12 @@ p, small {
   align-items: center;
   gap: 0.35rem;
   padding-top: 1.1rem;
-  font-size: 0.92rem;
+  font-size: 0.75rem;
 }
 
 .compact-card small svg {
   flex-shrink: 0;
-  transform: translateY(1px);
+  transform: translateY(-1px);
 }
 
 /* ─────────────────────────────────────────────
