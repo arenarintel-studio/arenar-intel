@@ -242,7 +242,7 @@ p, small {
 
 .card-info small svg {
   flex-shrink: 0;
-  transform: translateY(-1.2px);
+  transform: translateY(-1.1px);
 }
 
 /* ─────────────────────────────────────────────
