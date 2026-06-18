@@ -123,32 +123,38 @@ font-family: Times;
   font-size: 1.1rem;
   line-height: 1.5;
   color: var(--text);
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  /* Fallback for text not wrapped in a p tag */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Directly targeting the P tag overrides the global main.css rule */
 .article-body p {
   margin-bottom: 1.5rem;
-  
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Directly targeting H2 overrides the global Arial rule */
 .article-body h2 {
   margin-bottom: 0.5rem;
   font-size: 1.6rem;
   line-height: 1.2;
-  font-family: Cambria, Arial; 
+  font-family: Cambria, Georgia, serif; 
 }
 
+/* Directly targeting H3 overrides the global Arial rule */
 .article-body h3 {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
-  font-family: Cambria, Arial; 
+  font-family: Cambria, Georgia, serif; 
 }
 
 .article-body ul,
 .article-body ol {
   padding-left: 1.3rem;
   margin-bottom: 1.5rem;
+  /* Ensure lists also get the serif treatment */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .article-body blockquote {
@@ -157,6 +163,8 @@ font-family: Times;
   margin: 1.2rem 0;
   font-size: 1.2rem;
   color: var(--text-soft);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 
 .article-body a,
@@ -179,6 +187,7 @@ font-family: Times;
   padding: 0.2rem 0.4rem;
   border-radius: 6px;
   font-size: 0.95em;
+  font-family: monospace;
 }
 
 .article-body pre {
@@ -188,6 +197,7 @@ font-family: Times;
   border-radius: var(--radius);
   overflow-x: auto;
   margin: 2rem 0;
+  font-family: monospace;
 }
 
 /* ─────────────────────────────────────────────
