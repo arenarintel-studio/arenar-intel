@@ -154,15 +154,8 @@ p, small {
   font-weight: 500;
   font-family: Arial, sans-serif; }
 
-.x-post-link:hover .x-ticker-text {
-  color: #d6d6d6;
-  text-decoration: none;
-}
 
-.x-post-link:active .x-ticker-text {
-  color: #888888;
-  transition: none;
-}
+
 
 /* ─────────────────────────────────────────────
    NEWS FEED
@@ -242,7 +235,7 @@ p, small {
 
 .card-info small svg {
   flex-shrink: 0;
-  transform: translateY(-0.8px);
+  transform: translateY(-1.6px);
 }
 
 /* ─────────────────────────────────────────────

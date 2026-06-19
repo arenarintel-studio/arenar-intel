@@ -15,94 +15,94 @@ slot_4 = "cuba-us-military-increase"
 slot_5 = "bolivia-president-resignation"
 
 #compact
-slot_6 = "netanyahu-expands-gaza-control"
-slot_7 = "man-guilty-over-swift-attack"
-slot_8 = "swift-voice-trademark"
+#slot_6 = "netanyahu-expands-gaza-control"
+#slot_7 = "man-guilty-over-swift-attack"
+#slot_8 = "swift-voice-trademark"
 
 #text
-slot_9 = "eu-fines-temu"
+#slot_9 = "eu-fines-temu"
 
 #basic
-slot_10 = "romania-andrewtate-investigation"
+#slot_10 = "romania-andrewtate-investigation"
 
 #text
-slot_11 = "myanmar-tovisit-india"
-slot_12 = "us-imposes-new-sanctions"
-slot_13 = "iceland-eu-referendum-talks"
+#slot_11 = "myanmar-tovisit-india"
+#slot_12 = "us-imposes-new-sanctions"
+#slot_13 = "iceland-eu-referendum-talks"
 
 #compact
-slot_14 = "gcb-named-best-bank"
-slot_15 = "energy-ministry-monitor-ecg"
+#slot_14 = "gcb-named-best-bank"
+#slot_15 = "energy-ministry-monitor-ecg"
 
 #basic
-slot_16 = "who-ebola-update"
+#slot_16 = "who-ebola-update"
 
 #text
-slot_17 = "illegal-miners-death"
-slot_18 = "dronestrikes-hit-romanian-building"
-slot_19 = "who-us-kenya-ebolaupdate"
+#slot_17 = "illegal-miners-death"
+#slot_18 = "dronestrikes-hit-romanian-building"
+#slot_19 = "who-us-kenya-ebolaupdate"
 
 #basic
-slot_20 = "52-killed-clashes-colombia"
+#slot_20 = "52-killed-clashes-colombia"
 
 #text
-slot_21 = "workers-killed-russia"
+#slot_21 = "workers-killed-russia"
 
 #compact
-slot_22 = "us-denies-shotdown-aircraft"
-slot_23 = "blue-origin-explodes"
-slot_24 = "greenpaces-illegalgold-mining-study"
+#slot_22 = "us-denies-shotdown-aircraft"
+#slot_23 = "blue-origin-explodes"
+#slot_24 = "greenpaces-illegalgold-mining-study"
 
 #text
-slot_25 = "trump-weighs-ceasefire-extension"
+#slot_25 = "trump-weighs-ceasefire-extension"
 
 #basic
-slot_26 = "us-meets-cuban-military"
+#slot_26 = "us-meets-cuban-military"
 
 #compact
-slot_27 = "who-906-ebola-cases"
-slot_28 = "britains-penalties-subsea-cables"
+#slot_27 = "who-906-ebola-cases"
+#slot_28 = "britains-penalties-subsea-cables"
 
 #text
-slot_29 = "us-immigration-agent-arrested-minneapolis"
-slot_30 = "basicpost.md"
+#slot_29 = "us-immigration-agent-arrested-minneapolis"
+#slot_30 = "basicpost.md"
 
 #basic
-slot_31 = "basicpost.md"
+#slot_31 = "basicpost.md"
 
 #compact
-slot_32 = "basicpost.md"
-slot_33 = "basicpost.md"
-slot_34 = "basicpost.md"
+#slot_32 = "basicpost.md"
+#slot_33 = "basicpost.md"
+#slot_34 = "basicpost.md"
 
 #text
-slot_35 = "basicpost.md"
-slot_36 = "basicpost.md"
+#slot_35 = "basicpost.md"
+#slot_36 = "basicpost.md"
 
 #grid 1
-slot_37 = "basicpost.md"
-slot_38 = "basicpost.md"
-slot_39 = "basicpost.md"
-slot_40 = "basicpost.md"
+#slot_37 = "basicpost.md"
+#slot_38 = "basicpost.md"
+#slot_39 = "basicpost.md"
+#slot_40 = "basicpost.md"
 
 #text
-slot_41 = "basicpost.md"
-slot_42 = "basicpost.md"
-slot_43 = "basicpost.md"
+#slot_41 = "basicpost.md"
+#slot_42 = "basicpost.md"
+#slot_43 = "basicpost.md"
 
 #basic
-slot_44 = "basicpost.md"
+#slot_44 = "basicpost.md"
 
 #compact
-slot_45 = "basicpost.md"
-slot_46 = "basicpost.md"
+#slot_45 = "basicpost.md"
+#slot_46 = "basicpost.md"
 
 #text
-slot_47 = "basicpost.md"
-slot_48 = "basicpost.md"
+#slot_47 = "basicpost.md"
+#slot_48 = "basicpost.md"
 
 #grid slot 2
-slot_49 = "grid1.md"
-slot_50 = "grid2.md"
-slot_51 = "grid3.md"
-slot_52 = "grid4.md"
+#slot_49 = "grid1.md"
+#slot_50 = "grid2.md"
+#slot_51 = "grid3.md"
+#slot_52 = "grid4.md"
