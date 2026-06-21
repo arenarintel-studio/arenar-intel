@@ -1,4 +1,4 @@
-baseURL = 'https://www.arenarintel.com/'
+baseURL = 'https://arenarintel.com/'
 locale = "en-US"
 title = 'Arenar Intel'
 cleanDestinationDir = true

@@ -9,4 +9,4 @@ Disallow: /admin/
 Disallow: /pagefind/
 
 # Point to sitemap
-Sitemap: https://www.arenarintel.com/sitemap.xml
+Sitemap: https://arenarintel.com/sitemap.xml
