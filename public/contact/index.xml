@@ -6,29 +6,29 @@
      xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Contact | Arenar Intel</title>
-    <link>http://localhost:1313/contact/</link>
+    <link>https://arenarintel.com/contact/</link>
     <description>The Global Intelligence Feed - delivering fast, verified reporting on the events, conflicts and decisions shaping the modern world.</description>
     <language>en-US</language>
     <copyright>© 2026 Arenar Intelligence. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 21 Jun 2026 04:20:13 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 04:33:47 +0000</lastBuildDate>
     <generator>Hugo</generator>
 
     <image>
-      <url>http://localhost:1313/images/logo-512.png</url>
+      <url>https://arenarintel.com/images/logo-512.png</url>
       <title>Arenar Intel</title>
-      <link>http://localhost:1313/</link>
+      <link>https://arenarintel.com/</link>
       <width>512</width>
       <height>512</height>
     </image>
 
-    <atom:link href="http://localhost:1313/contact/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://arenarintel.com/contact/index.xml" rel="self" type="application/rss+xml" />
 
     
     <item>
       <title>Neymar to miss Brazil&#39;s World Cup match with Haiti</title>
-      <link>http://localhost:1313/intel/neymar-to-miss-world-cup-with-haiti/</link>
+      <link>https://arenarintel.com/intel/neymar-to-miss-world-cup-with-haiti/</link>
       <pubDate>Thu, 18 Jun 2026 14:00:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/neymar-to-miss-world-cup-with-haiti/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/neymar-to-miss-world-cup-with-haiti/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Brazil forward Neymar will not travel with the squad for Friday&#39;s World Cup match against Haiti as he recovers from a calf injury, the country&#39;s football body says.</description>
       
@@ -43,14 +43,14 @@
     
     <item>
       <title>Broos tells critics to &#39;shut up&#39; after Mexico loss</title>
-      <link>http://localhost:1313/intel/broos-tells-critics-to-shutup/</link>
+      <link>https://arenarintel.com/intel/broos-tells-critics-to-shutup/</link>
       <pubDate>Wed, 17 Jun 2026 13:30:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/broos-tells-critics-to-shutup/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/broos-tells-critics-to-shutup/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>South Africa coach Hugo Broos has hit back at critics of his tactics after the team&#39;s 2-0 loss to Mexico, ahead of Thursday&#39;s World Cup clash with the Czech Republic.</description>
       
-      <media:content url="http://localhost:1313/images/intel/trump-landscape.jpg" medium="image" />
-      <enclosure url="http://localhost:1313/images/intel/trump-landscape.jpg" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/intel/trump-landscape.jpg" medium="image" />
+      <enclosure url="https://arenarintel.com/images/intel/trump-landscape.jpg" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Broos tells critics to &lsquo;shut up&rsquo; after Mexico loss
 South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insisted he will keep doing things his way, after his defensive tactics were blamed for the team&rsquo;s 2-0 loss to Mexico in their World Cup opener. He made the comments at a press conference ahead of Thursday&rsquo;s match against the Czech Republic.</p>
@@ -61,9 +61,9 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Top US general holds rare meeting with Cuban military officials</title>
-      <link>http://localhost:1313/intel/us-meets-cuban-military/</link>
+      <link>https://arenarintel.com/intel/us-meets-cuban-military/</link>
       <pubDate>Fri, 29 May 2026 21:19:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/us-meets-cuban-military/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/us-meets-cuban-military/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>The commander of US Southern Command met Cuban military officials near Guantanamo Bay in a rare high level military engagement between the two countries.</description>
       
@@ -79,14 +79,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Britain plans tougher penalties to protect subsea internet cables</title>
-      <link>http://localhost:1313/intel/britains-penalties-subsea-cables/</link>
+      <link>https://arenarintel.com/intel/britains-penalties-subsea-cables/</link>
       <pubDate>Fri, 29 May 2026 16:25:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/britains-penalties-subsea-cables/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/britains-penalties-subsea-cables/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Britain has proposed stronger penalties for damage to subsea internet cables as it moves to strengthen protection of critical infrastructure.</description>
       
-      <media:content url="http://localhost:1313/da" medium="image" />
-      <enclosure url="http://localhost:1313/da" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/da" medium="image" />
+      <enclosure url="https://arenarintel.com/da" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Britain has announced plans to introduce tougher penalties for damage to subsea internet cables as part of efforts to strengthen protection of critical national infrastructure.</p>
 <p>The proposed measures would allow stronger action against shipowners and operators found responsible for reckless damage to undersea communication networks, including potential prison sentences in serious cases.</p>
@@ -100,9 +100,9 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Trump weighs Iran ceasefire extension as negotiations continue</title>
-      <link>http://localhost:1313/intel/trump-weighs-ceasefire-extension/</link>
+      <link>https://arenarintel.com/intel/trump-weighs-ceasefire-extension/</link>
       <pubDate>Fri, 29 May 2026 14:27:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/trump-weighs-ceasefire-extension/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/trump-weighs-ceasefire-extension/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>President Donald Trump says he will soon decide whether to approve a proposal to extend the ceasefire between the United States and Iran as negotiations continue.</description>
       
@@ -117,14 +117,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Trump demands Strait of Hormuz reopen in possible Iran deal</title>
-      <link>http://localhost:1313/intel/trump-demands-hormuz-reopen-iran-deal/</link>
+      <link>https://arenarintel.com/intel/trump-demands-hormuz-reopen-iran-deal/</link>
       <pubDate>Fri, 29 May 2026 13:30:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/trump-demands-hormuz-reopen-iran-deal/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/trump-demands-hormuz-reopen-iran-deal/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Trump says he will soon decide on a possible deal to extend the Iran ceasefire, but Tehran disputes key parts of his account.</description>
       
-      <media:content url="http://localhost:1313/images/intel/image-of-white-house-landscape.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/intel/image-of-white-house-landscape.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/intel/image-of-white-house-landscape.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/intel/image-of-white-house-landscape.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>US President Donald Trump said on Friday he would soon make a final decision on a possible deal to extend the ceasefire with Iran. After a two-hour meeting in the White House Situation Room, no decision had been reached.</p>
 <p>In a post on <a href="https://truthsocial.com/@realDonaldTrump/116658423998920803">Truth Social</a> ahead of the meeting, Trump said Iran must agree never to have a nuclear weapon, and that the Strait of Hormuz must reopen immediately, toll-free and in both directions, to allow unrestricted shipping.</p>
@@ -135,14 +135,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>WHO reports 906 suspected Ebola cases as Bundibugyo outbreak continues</title>
-      <link>http://localhost:1313/intel/who-906-ebola-cases/</link>
+      <link>https://arenarintel.com/intel/who-906-ebola-cases/</link>
       <pubDate>Fri, 29 May 2026 09:30:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/who-906-ebola-cases/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/who-906-ebola-cases/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>The World Health Organization says hundreds of suspected Ebola cases are under investigation as the Bundibugyo outbreak continues in the Democratic Republic of Congo and Uganda.</description>
       
-      <media:content url="http://localhost:1313/jhj" medium="image" />
-      <enclosure url="http://localhost:1313/jhj" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/jhj" medium="image" />
+      <enclosure url="https://arenarintel.com/jhj" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>The World Health Organization (WHO) says 906 suspected cases of Ebola are under investigation in the Democratic Republic of Congo as health authorities continue efforts to contain the Bundibugyo strain outbreak.</p>
 <p>According to the WHO, 223 suspected deaths are also being investigated, while 125 cases and 17 deaths have been confirmed in affected areas of eastern Congo.</p>
@@ -156,14 +156,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Ghana receives citizens evacuated from South Africa</title>
-      <link>http://localhost:1313/intel/ghana-southafrica-evacuation/</link>
+      <link>https://arenarintel.com/intel/ghana-southafrica-evacuation/</link>
       <pubDate>Fri, 29 May 2026 05:20:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/ghana-southafrica-evacuation/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/ghana-southafrica-evacuation/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Ghana has received its first group of citizens evacuated from South Africa following reports of anti immigrant tensions and attacks on foreign nationals.</description>
       
-      <media:content url="http://localhost:1313/images/ghana/returnees-south-africa.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/ghana/returnees-south-africa.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/ghana/returnees-south-africa.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/ghana/returnees-south-africa.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Ghana has received its first group of citizens evacuated from South Africa following reports of anti immigrant tensions and attacks on foreign nationals.</p>
 <p>The flight, carrying around 300 Ghanaians, arrived in Accra where authorities provided reception support and initial reintegration assistance.</p>
@@ -173,14 +173,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Energy Ministry to launch real-time ECG command centre to monitor power distribution</title>
-      <link>http://localhost:1313/intel/energy-ministry-monitor-ecg/</link>
+      <link>https://arenarintel.com/intel/energy-ministry-monitor-ecg/</link>
       <pubDate>Fri, 29 May 2026 05:05:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/energy-ministry-monitor-ecg/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/energy-ministry-monitor-ecg/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Ghana’s Energy Ministry plans to establish a command-and-control centre to monitor Electricity Company of Ghana operations in real time and improve service delivery.</description>
       
-      <media:content url="http://localhost:1313/images/ghana/ecg-command-centre.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/ghana/ecg-command-centre.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/ghana/ecg-command-centre.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/ghana/ecg-command-centre.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Ghana’s Energy Minister Dr. John Abdulai Jinapor has announced plans to establish a dedicated command-and-control centre to monitor the operations of the Electricity Company of Ghana (ECG) in real time.</p>
 <p>The initiative is aimed at improving accountability and enhancing the reliability of electricity distribution across the country.</p>
@@ -194,14 +194,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>GCB Bank named Best Regional Bank in West Africa at African Banker Awards</title>
-      <link>http://localhost:1313/intel/gcb-named-best-bank/</link>
+      <link>https://arenarintel.com/intel/gcb-named-best-bank/</link>
       <pubDate>Fri, 29 May 2026 04:45:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/gcb-named-best-bank/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/gcb-named-best-bank/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>GCB Bank has been named Best Regional Bank in West Africa at the African Banker Awards held during the African Development Bank Annual Meetings.</description>
       
-      <media:content url="http://localhost:1313/images/ghana/gcb-bank-award.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/ghana/gcb-bank-award.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/ghana/gcb-bank-award.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/ghana/gcb-bank-award.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>GCB Bank has been named Best Regional Bank in West Africa at the 20th African Banker Awards, held in Brazzaville on the sidelines of the African Development Bank Annual Meetings.</p>
 <p>The award places Ghana’s largest locally owned bank among leading financial institutions recognised for performance across innovation, infrastructure financing, and inclusive banking initiatives.</p>
@@ -213,14 +213,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Four illegal miners die after pit collapse at abandoned galamsey site in Ashanti Region</title>
-      <link>http://localhost:1313/intel/illegal-miners-death/</link>
+      <link>https://arenarintel.com/intel/illegal-miners-death/</link>
       <pubDate>Fri, 29 May 2026 04:25:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/illegal-miners-death/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/illegal-miners-death/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Four illegal miners have died after a collapsed pit at a former illegal mining site in the Amansie Central District of Ghana’s Ashanti Region.</description>
       
-      <media:content url="http://localhost:1313/images/ghana/galamsey-collapse.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/ghana/galamsey-collapse.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/ghana/galamsey-collapse.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/ghana/galamsey-collapse.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Four illegal miners have died after a pit collapsed at an abandoned illegal mining site in Skuumu near Gyaman-Nkwanta in the Amansie Central District of Ghana’s Ashanti Region.</p>
 <p>The incident occurred around 4:00 pm on Wednesday, when the group reportedly entered the restricted site and the ground gave way, trapping them beneath the rubble.</p>
@@ -233,14 +233,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Iceland’s parliament approves referendum on EU accession talks</title>
-      <link>http://localhost:1313/intel/iceland-eu-referendum-talks/</link>
+      <link>https://arenarintel.com/intel/iceland-eu-referendum-talks/</link>
       <pubDate>Fri, 29 May 2026 04:10:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/iceland-eu-referendum-talks/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/iceland-eu-referendum-talks/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Iceland’s parliament has voted to hold a referendum in August on restarting European Union accession talks, reviving debate over potential membership.</description>
       
-      <media:content url="http://localhost:1313/images/world/iceland-eu-referendum.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/world/iceland-eu-referendum.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/world/iceland-eu-referendum.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/world/iceland-eu-referendum.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Iceland’s parliament has voted in favour of holding a referendum on whether to restart European Union accession talks, setting up a nationwide vote scheduled for August 29.</p>
 <p>The proposal forms part of a government-backed two-step plan that could eventually lead to EU membership if approved in a second referendum later in the decade.</p>
@@ -253,14 +253,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>US imposes fresh sanctions on Iran’s military-linked oil sales network</title>
-      <link>http://localhost:1313/intel/us-imposes-new-sanctions/</link>
+      <link>https://arenarintel.com/intel/us-imposes-new-sanctions/</link>
       <pubDate>Fri, 29 May 2026 03:55:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/us-imposes-new-sanctions/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/us-imposes-new-sanctions/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>The United States has imposed new sanctions targeting vessels and entities involved in Iran’s oil trade, citing efforts to restrict military-linked revenue flows.</description>
       
-      <media:content url="http://localhost:1313/images/world/us-iran-sanctions-oil.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/world/us-iran-sanctions-oil.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/world/us-iran-sanctions-oil.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/world/us-iran-sanctions-oil.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>The United States has imposed new sanctions targeting Iran’s military-linked oil trade, according to the US Treasury Department.</p>
 <p>The measures include restrictions on eight vessels involved in transporting Iranian crude oil and petroleum products to global markets. Among the ships named were tankers flagged under the Marshall Islands, Comoros, and Panama.</p>
@@ -274,14 +274,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>US Immigration Agent Arrested Over Minneapolis Shooting Case</title>
-      <link>http://localhost:1313/intel/us-immigration-agent-arrested-minneapolis/</link>
+      <link>https://arenarintel.com/intel/us-immigration-agent-arrested-minneapolis/</link>
       <pubDate>Fri, 29 May 2026 03:55:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/us-immigration-agent-arrested-minneapolis/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/us-immigration-agent-arrested-minneapolis/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>U.S. ICE agent Christian Castro was arrested in Texas and charged over the shooting of a Venezuelan man during a January incident in Minneapolis.</description>
       
-      <media:content url="http://localhost:1313/images/world/us-iran-sanctions-oil.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/world/us-iran-sanctions-oil.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/world/us-iran-sanctions-oil.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/world/us-iran-sanctions-oil.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>A U.S. Immigration and Customs Enforcement (ICE) agent has been arrested in Texas and charged in connection with the shooting of a Venezuelan man in Minneapolis earlier this year.</p>
 <p>Christian Castro, 52, faces four counts of second degree assault and one count of falsely reporting a crime over the January 14 shooting of Julio Cesar Sosa-Celis, according to Minnesota prosecutors.</p>
@@ -293,14 +293,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Myanmar president to visit India in first trip since taking office</title>
-      <link>http://localhost:1313/intel/myanmar-tovisit-india/</link>
+      <link>https://arenarintel.com/intel/myanmar-tovisit-india/</link>
       <pubDate>Fri, 29 May 2026 03:40:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/myanmar-tovisit-india/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/myanmar-tovisit-india/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Myanmar President Min Aung Hlaing is set to visit India for talks with Prime Minister Narendra Modi, marking his first official visit since taking office.</description>
       
-      <media:content url="http://localhost:1313/images/world/myanmar-india-visit.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/world/myanmar-india-visit.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/world/myanmar-india-visit.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/world/myanmar-india-visit.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Myanmar President Min Aung Hlaing is scheduled to visit India from May 30 to June 3, in what will be his first official trip to the country since assuming office, India’s foreign ministry said.</p>
 <p>During the visit, he is expected to hold talks with Prime Minister Narendra Modi in New Delhi on June 1, according to the ministry statement.</p>
@@ -311,14 +311,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Romanian prosecutors add hate speech charges against Andrew Tate in ongoing investigation</title>
-      <link>http://localhost:1313/intel/romania-andrewtate-investigation/</link>
+      <link>https://arenarintel.com/intel/romania-andrewtate-investigation/</link>
       <pubDate>Fri, 29 May 2026 03:25:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/romania-andrewtate-investigation/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/romania-andrewtate-investigation/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Romanian prosecutors have expanded their investigation into Andrew Tate by adding charges of inciting hatred and discrimination against women.</description>
       
-      <media:content url="http://localhost:1313/images/world/andrew-tate-romania-investigation.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/world/andrew-tate-romania-investigation.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/world/andrew-tate-romania-investigation.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/world/andrew-tate-romania-investigation.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Romanian prosecutors have expanded their ongoing criminal investigation into internet personality Andrew Tate by adding charges of inciting hatred and discrimination against women.</p>
 <p>The Directorate for Investigating Organised Crime and Terrorism (DIICOT) said the new allegations relate to public statements made by Tate between 2021 and 2024, which prosecutors argue promoted hostility against women on social media.</p>
@@ -331,14 +331,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Greenpeace says illegal miners continue extracting billions in Amazon gold</title>
-      <link>http://localhost:1313/intel/greenpaces-illegalgold-mining-study/</link>
+      <link>https://arenarintel.com/intel/greenpaces-illegalgold-mining-study/</link>
       <pubDate>Fri, 29 May 2026 03:10:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/greenpaces-illegalgold-mining-study/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/greenpaces-illegalgold-mining-study/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Greenpeace says illegal gold mining continues across Brazil’s Amazon rainforest despite government efforts to crack down on the activity.</description>
       
-      <media:content url="http://localhost:1313/images/environment/amazon-illegal-gold-mining.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/environment/amazon-illegal-gold-mining.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/environment/amazon-illegal-gold-mining.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/environment/amazon-illegal-gold-mining.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Illegal miners are continuing to extract billions of dollars worth of gold from Brazil’s Amazon rainforest despite an ongoing government crackdown, according to a Greenpeace study.</p>
 <p>The environmental group said miners have adapted to enforcement measures by using so called “ghost permits” to disguise the origin of illegally mined gold.</p>
@@ -349,14 +349,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>EU fines Temu €200m over illegal and unsafe products on platform</title>
-      <link>http://localhost:1313/intel/eu-fines-temu/</link>
+      <link>https://arenarintel.com/intel/eu-fines-temu/</link>
       <pubDate>Fri, 29 May 2026 02:45:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/eu-fines-temu/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/eu-fines-temu/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>The European Union has fined Chinese-owned retailer Temu €200m after finding illegal and unsafe products on its platform, including faulty chargers and hazardous baby toys.</description>
       
-      <media:content url="http://localhost:1313/images/world/temu-eu-fine.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/world/temu-eu-fine.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/world/temu-eu-fine.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/world/temu-eu-fine.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>The European Union has fined Chinese-owned online retailer Temu €200 million for allowing illegal and unsafe products to be sold on its platform.</p>
 <p>The European Commission said Temu failed to properly identify and assess systemic risks linked to products sold to consumers, including dangerous baby toys and faulty electronic chargers.</p>
@@ -369,14 +369,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Taylor Swift files to trademark voice and image over AI concerns</title>
-      <link>http://localhost:1313/intel/swift-voice-trademark/</link>
+      <link>https://arenarintel.com/intel/swift-voice-trademark/</link>
       <pubDate>Fri, 29 May 2026 02:25:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/swift-voice-trademark/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/swift-voice-trademark/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Taylor Swift has filed trademark applications for her voice and image in an effort to protect against AI-generated impersonations.</description>
       
-      <media:content url="http://localhost:1313/images/entertainment/taylor-swift-ai-trademark.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/entertainment/taylor-swift-ai-trademark.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/entertainment/taylor-swift-ai-trademark.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/entertainment/taylor-swift-ai-trademark.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Taylor Swift has filed trademark applications in the United States to protect her voice and image amid growing concerns over artificial intelligence impersonations.</p>
 <p>The filings include one application using a photo of Swift on stage during her Eras Tour, along with two audio clips of her introducing herself during album promotions.</p>
@@ -386,14 +386,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Man jailed over planned attack on Taylor Swift Vienna concert</title>
-      <link>http://localhost:1313/intel/man-guilty-over-swift-attack/</link>
+      <link>https://arenarintel.com/intel/man-guilty-over-swift-attack/</link>
       <pubDate>Fri, 29 May 2026 02:05:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/man-guilty-over-swift-attack/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/man-guilty-over-swift-attack/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>An Austrian court sentenced a 21-year-old man to 15 years in prison after he admitted planning a jihadist attack targeting Taylor Swift’s 2024 Vienna concerts.</description>
       
-      <media:content url="http://localhost:1313/images/world/vienna-security.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/world/vienna-security.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/world/vienna-security.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/world/vienna-security.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>An Austrian court has sentenced a 21-year-old man to 15 years in prison after he admitted planning a jihadist attack targeting Taylor Swift’s Vienna concerts in August 2024.</p>
 <p>The man, identified as Beran A under Austrian privacy laws, was convicted of multiple terrorism-related offences in Wiener Neustadt.</p>
@@ -406,14 +406,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Blue Origin rocket explodes during test in setback for New Glenn program</title>
-      <link>http://localhost:1313/intel/blue-origin-explodes/</link>
+      <link>https://arenarintel.com/intel/blue-origin-explodes/</link>
       <pubDate>Fri, 29 May 2026 01:50:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/blue-origin-explodes/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/blue-origin-explodes/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>A Blue Origin New Glenn rocket exploded during a hot fire test, marking a major setback for the company’s efforts to compete with SpaceX.</description>
       
-      <media:content url="http://localhost:1313/images/space/blue-origin-new-glenn.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/space/blue-origin-new-glenn.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/space/blue-origin-new-glenn.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/space/blue-origin-new-glenn.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>A Blue Origin New Glenn rocket exploded during a hot fire test on a launchpad in Florida, dealing a setback to the company’s space program.</p>
 <p>Video from the scene showed the rocket igniting before erupting into a large fireball that sent flames and smoke into the air.</p>
@@ -425,14 +425,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Drone strike hits Romanian apartment building near Ukraine border, two injured</title>
-      <link>http://localhost:1313/intel/dronestrikes-hit-romanian-building/</link>
+      <link>https://arenarintel.com/intel/dronestrikes-hit-romanian-building/</link>
       <pubDate>Fri, 29 May 2026 01:30:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/dronestrikes-hit-romanian-building/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/dronestrikes-hit-romanian-building/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>A drone struck a residential building in Galati, Romania, causing a fire and injuring two people near the Ukraine border.</description>
       
-      <media:content url="http://localhost:1313/images/europe/romania-drone-fire.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/europe/romania-drone-fire.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/europe/romania-drone-fire.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/europe/romania-drone-fire.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>A drone struck a residential building in the city of Galati, Romania, near the Ukraine border, injuring two people, according to Romania’s emergency inspection authority.</p>
 <p>Authorities said the drone hit a 10th floor apartment, causing a fire in the building.</p>
@@ -444,14 +444,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Netanyahu orders expansion of Israeli control in Gaza</title>
-      <link>http://localhost:1313/intel/netanyahu-expands-gaza-control/</link>
+      <link>https://arenarintel.com/intel/netanyahu-expands-gaza-control/</link>
       <pubDate>Fri, 29 May 2026 00:42:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/netanyahu-expands-gaza-control/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/netanyahu-expands-gaza-control/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Israeli Prime Minister Benjamin Netanyahu said he had directed the military to expand Israeli control in Gaza to 70 percent as ceasefire negotiations with Hamas remain stalled.</description>
       
-      <media:content url="http://localhost:1313/images/intel/trump-landscape.jpg" medium="image" />
-      <enclosure url="http://localhost:1313/images/intel/trump-landscape.jpg" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/intel/trump-landscape.jpg" medium="image" />
+      <enclosure url="https://arenarintel.com/images/intel/trump-landscape.jpg" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>Israeli Prime Minister Benjamin Netanyahu said Thursday that he had instructed the military to expand Israeli control in Gaza to 70 percent of the territory as fighting and negotiations with Hamas continue.</p>
 <p>Speaking at a conference in the occupied West Bank, Netanyahu said Israeli forces had already increased their control beyond previous positions and would continue operations step by step.</p>
@@ -465,9 +465,9 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Bolivia rules out president’s resignation amid growing unrest</title>
-      <link>http://localhost:1313/intel/bolivia-president-resignation/</link>
+      <link>https://arenarintel.com/intel/bolivia-president-resignation/</link>
       <pubDate>Fri, 29 May 2026 00:18:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/bolivia-president-resignation/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/bolivia-president-resignation/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>Bolivia’s government rejected calls for President Rodrigo Paz to resign as protests and nationwide blockades continue to disrupt major cities and supply chains.</description>
       
@@ -485,14 +485,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Three utility workers killed in drone strike in Russia controlled Donetsk region</title>
-      <link>http://localhost:1313/intel/workers-killed-russia/</link>
+      <link>https://arenarintel.com/intel/workers-killed-russia/</link>
       <pubDate>Thu, 28 May 2026 23:20:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/workers-killed-russia/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/workers-killed-russia/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>A drone strike killed three utility workers in the Russia controlled Donetsk region of eastern Ukraine, according to local officials.</description>
       
-      <media:content url="http://localhost:1313/images/europe/donetsk-drone-attack.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/europe/donetsk-drone-attack.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/europe/donetsk-drone-attack.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/europe/donetsk-drone-attack.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>A Ukrainian drone strike killed three utility workers in the Russia controlled part of the Donetsk region in eastern Ukraine, according to local authorities.</p>
 <p>Officials said the workers were part of a repair crew for a water supply company and were travelling in a vehicle when it was struck.</p>
@@ -503,14 +503,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>US military denies claim aircraft was shot down near Iran’s Bushehr</title>
-      <link>http://localhost:1313/intel/us-denies-shotdown-aircraft/</link>
+      <link>https://arenarintel.com/intel/us-denies-shotdown-aircraft/</link>
       <pubDate>Thu, 28 May 2026 21:15:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/us-denies-shotdown-aircraft/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/us-denies-shotdown-aircraft/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>The US military has denied Iranian state media claims that an American aircraft was shot down near Bushehr.</description>
       
-      <media:content url="http://localhost:1313/images/middle-east/iran-bushehr-denial.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/middle-east/iran-bushehr-denial.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/middle-east/iran-bushehr-denial.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/middle-east/iran-bushehr-denial.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>The US military has denied claims that an American aircraft was shot down near Bushehr in Iran.</p>
 <p>The denial follows a report from Iranian state television that said a US aircraft had been destroyed in the Jam governorate in Bushehr province, citing a local governor.</p>
@@ -520,14 +520,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>WHO identifies Ebola treatments and vaccines for trial use amid outbreak</title>
-      <link>http://localhost:1313/intel/who-ebola-update/</link>
+      <link>https://arenarintel.com/intel/who-ebola-update/</link>
       <pubDate>Thu, 28 May 2026 19:30:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/who-ebola-update/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/who-ebola-update/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>The World Health Organization has identified experimental treatments and vaccines to be prioritized for clinical trials during an ongoing Ebola outbreak in Africa.</description>
       
-      <media:content url="http://localhost:1313/images/health/ebola-treatment-trials.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/health/ebola-treatment-trials.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/health/ebola-treatment-trials.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/health/ebola-treatment-trials.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>The World Health Organization (WHO) has recommended prioritizing several experimental treatments and vaccines for clinical trials amid an ongoing Ebola outbreak in Africa.</p>
 <p>The WHO identified three candidate treatments for the Bundibugyo strain of Ebola, including Mapp Biopharmaceutical’s MBP134, Regeneron’s maftivimab, and Gilead Sciences’ remdesivir.</p>
@@ -539,14 +539,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>At least 52 killed in clashes between armed groups in Colombia</title>
-      <link>http://localhost:1313/intel/52-killed-clashes-colombia/</link>
+      <link>https://arenarintel.com/intel/52-killed-clashes-colombia/</link>
       <pubDate>Thu, 28 May 2026 17:50:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/52-killed-clashes-colombia/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/52-killed-clashes-colombia/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>At least 52 fighters were killed in clashes between rival armed groups in a key cocaine trafficking region in Colombia, according to a rebel statement.</description>
       
-      <media:content url="http://localhost:1313/images/latin-america/colombia-armed-clashes.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/latin-america/colombia-armed-clashes.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/latin-america/colombia-armed-clashes.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/latin-america/colombia-armed-clashes.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>At least 52 guerrilla fighters have been killed in clashes between rival armed groups in Colombia, according to a statement from one of the factions involved.</p>
 <p>The fighting took place in a strategic region linked to cocaine production and trafficking, according to the group.</p>
@@ -557,14 +557,14 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>US to quarantine Ebola-exposed citizens in Kenya under new containment plan</title>
-      <link>http://localhost:1313/intel/who-us-kenya-ebolaupdate/</link>
+      <link>https://arenarintel.com/intel/who-us-kenya-ebolaupdate/</link>
       <pubDate>Thu, 28 May 2026 17:40:00 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/who-us-kenya-ebolaupdate/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/who-us-kenya-ebolaupdate/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>The US will isolate citizens exposed to Ebola in a facility in Kenya instead of returning them to the United States, according to White House officials.</description>
       
-      <media:content url="http://localhost:1313/images/health/ebola-kenya-quarantine.webp" medium="image" />
-      <enclosure url="http://localhost:1313/images/health/ebola-kenya-quarantine.webp" type="image/jpeg" />
+      <media:content url="https://arenarintel.com/images/health/ebola-kenya-quarantine.webp" medium="image" />
+      <enclosure url="https://arenarintel.com/images/health/ebola-kenya-quarantine.webp" type="image/jpeg" />
       
 <content:encoded><![CDATA[<p>The United States is setting up a facility in Kenya to quarantine American citizens who have been exposed to Ebola, according to White House officials.</p>
 <p>Under the plan, individuals who have been exposed but remain asymptomatic will be monitored at the facility in Kenya rather than being returned to the United States.</p>
@@ -576,9 +576,9 @@ South Africa coach Hugo Broos has told critics to &ldquo;shut up&rdquo; and insi
     
     <item>
       <title>Cuba warns risk of US military action is increasing</title>
-      <link>http://localhost:1313/intel/cuba-us-military-increase/</link>
+      <link>https://arenarintel.com/intel/cuba-us-military-increase/</link>
       <pubDate>Fri, 22 May 2026 05:34:43 +0000</pubDate>
-      <guid isPermaLink="true">http://localhost:1313/intel/cuba-us-military-increase/</guid>
+      <guid isPermaLink="true">https://arenarintel.com/intel/cuba-us-military-increase/</guid>
       <dc:creator>The Intel Desk</dc:creator>
       <description>&lt;p&gt;Cuba warned Thursday that the risk of military aggression from the United States is increasing as negotiations between Havana and Washington show little progress.&lt;/p&gt;
 &lt;p&gt;Deputy Foreign Minister Josefina Vidal accused the United States of attempting to portray Cuba as a national security threat in order to justify further pressure against the island.&lt;/p&gt;
