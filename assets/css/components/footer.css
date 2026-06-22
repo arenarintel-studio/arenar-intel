@@ -12,14 +12,46 @@
 .footer-grid {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1.4rem 1rem;
 }
 
+@media (max-width: 900px) {
+  .footer-grid {
+    gap: 1.5rem;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   ROW 1 — BRAND LEFT, NETWORKS RIGHT
+───────────────────────────────────────────── */
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-top {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
 /* ─────────────────────────────────────────────
    BRAND
 ───────────────────────────────────────────── */
+
+.footer-brand {
+  flex: 0 1 auto;
+  max-width: 540px;
+}
 
 .footer-brand img {
   width: 140px;
@@ -32,7 +64,7 @@
   color: #9a9a9a;
   line-height: 1.8;
   font-size: 1rem;
-  font-family: Arial, sans-serif; 
+
 }
 
 /* ─────────────────────────────────────────────
@@ -40,38 +72,12 @@
 ───────────────────────────────────────────── */
 
 .footer-heading {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #777;
-  font-family: Arial, sans-serif; 
   letter-spacing: 0.5px;
-}
-
-/* ─────────────────────────────────────────────
-   NAVIGATION LINKS
-───────────────────────────────────────────── */
-
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  margin: 0.8rem 0;
-}
-
-.footer-nav a {
-  margin-bottom: 0.9rem;
-  color: #d6d6d6;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.2s ease;
-  font-family: Arial, sans-serif; 
-  font-size: 1rem;
-}
-
-.footer-nav a:hover {
-  color: white;
+  color: #777;
 }
 
 /* ─────────────────────────────────────────────
@@ -81,7 +87,6 @@
 .footer-socials {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
 }
 
 .social-icons {
@@ -95,10 +100,10 @@
   align-items: center;
   justify-content: center;
 
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 50%;
+  border-radius: 8px;
 
   color: #d0d0d0;
   text-decoration: none;
@@ -111,6 +116,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+@media (hover: hover) {
+  .social-icons a:hover {
+    background: white;
+    color: black;
+    border-color: white;
+  }
+}
+
 .social-icons a:active {
   background: white;
   color: black;
@@ -118,23 +131,40 @@
   transition: none;
 }
 
-.social-icons a:active i {
-  color: black;
+/* ─────────────────────────────────────────────
+   ROW 2 — NAVIGATION (centered, evenly spaced)
+───────────────────────────────────────────── */
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0.5rem 0 0.5rem;
+}
+
+.footer-nav a {
+  color: #d6d6d6;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: white;
 }
 
 /* ─────────────────────────────────────────────
    COPYRIGHT
 ───────────────────────────────────────────── */
 
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
+
 
 .footer-bottom p {
-  padding-top: 0.8rem;
   color: #777;
   font-size: 0.9rem;
-  font-family: Arial, sans-serif; 
+  text-align: left;
 }
 
 /* ─────────────────────────────────────────────
@@ -151,7 +181,6 @@
   background: #0a0a0a;
   border: 2px solid #777;
   border-radius: 4px;
-  font-family: Arial, sans-serif; 
 
   color: #d6d6d6;
   font-size: 0.9rem;
@@ -180,15 +209,6 @@
 /* ─────────────────────────────────────────────
    RESPONSIVE
 ───────────────────────────────────────────── */
-
-@media (max-width: 900px) {
-  .footer-grid {
-    gap: 0.995rem;
-  }
-  .footer-brand h2 {
-    font-size: 1.6rem;
-  }
-}
 
 @media (min-width: 1400px) {
   .back-to-intel {
