@@ -15,7 +15,7 @@
   gap: 1.5rem;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 1.4rem 1rem;
+  padding: 2rem 1.4rem 1.5rem;
 }
 
 @media (max-width: 900px) {
@@ -147,7 +147,6 @@
   color: #d6d6d6;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 600;
   transition: color 0.2s ease;
 }
 
@@ -160,6 +159,18 @@
 ───────────────────────────────────────────── */
 
 
+
+.footer-bottom p {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    border-top: none;
+    padding-top: 0;
+  }
+}
 
 .footer-bottom p {
   color: #777;
@@ -206,12 +217,8 @@
   color: white;
 }
 
-/* ─────────────────────────────────────────────
-   RESPONSIVE
-───────────────────────────────────────────── */
-
 @media (min-width: 1400px) {
   .back-to-intel {
-    right: calc((100% - 1400px) / 2 + 1.4rem);
+    right: calc((100% - 1400px) / 2 + 3rem);
   }
 }
