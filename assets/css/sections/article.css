@@ -12,7 +12,7 @@
   font-family: Arial, sans-serif;
   letter-spacing: 0.5px;
   font-weight: var(--headline-weight);
-  font-size: clamp(1.6rem, 5vw, 4rem);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
   line-height: 1;
   margin-bottom: 1rem;
   
@@ -211,4 +211,45 @@ font-family: Times;
   text-align: center;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+/* ─────────────────────────────────────────────
+   DESKTOP READING SIZE
+───────────────────────────────────────────── */
+
+@media (min-width: 768px) {
+
+  .article-meta {
+    font-size: 1.05rem;
+  }
+
+  .image-source {
+    font-size: 1rem;
+  }
+
+  .article-source {
+    font-size: 1rem;
+  }
+
+  .article-body {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .article-body blockquote {
+    font-size: 1.3rem;
+  }
+
+  .article-body h2 {
+    font-size: 1.8rem;
+  }
+
+  .article-body h3 {
+    font-size: 1.5rem;
+  }
+
+  .article-actions button {
+    font-size: 0.95rem;
+  }
+
 }

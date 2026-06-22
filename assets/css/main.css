@@ -109,21 +109,18 @@ p, small {
 ───────────────────────────────────────────── */
 
 .x-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  box-sizing: border-box;
+  background-color: #181717;
 }
 
 .x-post-link {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   height: 2rem;
   padding: 0 0.5rem;
-  background-color: #181717;
   color: var(--white);
   text-decoration: none;
   overflow: hidden;
@@ -161,11 +158,58 @@ p, small {
 .news-feed {
   display: flex;
   flex-direction: column;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-left: var(--page-padding);
   padding-right: var(--page-padding);
   padding-bottom: 1.3rem;
+}
+
+/* ─────────────────────────────────────────────
+   HERO GRID (desktop only — featured + sidebar)
+───────────────────────────────────────────── */
+
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hero-featured {
+    min-width: 0;
+  }
+
+  .hero-featured .featured-card {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .hero-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0rem;
+    min-width: 0;
+  }
+
+  .hero-sidebar .text-card,
+  .hero-sidebar .compact-card {
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .hero-sidebar > a:last-child .text-card,
+  .hero-sidebar > a:last-child .compact-card {
+    border-bottom: none;
+  }
 }
 
 /* ─────────────────────────────────────────────
@@ -383,4 +427,62 @@ button,
 header,
 .menu-panel {
   -webkit-tap-highlight-color: transparent;
+}
+
+/* ─────────────────────────────────────────────
+   DESKTOP CARD SIZING
+───────────────────────────────────────────── */
+
+@media (min-width: 768px) {
+
+  /* FEATURED CARD */
+  .card-info h2 {
+    font-size: 1.4rem;
+    line-height: 1.15;
+  }
+
+  .card-info p {
+    font-size: 1.1rem;
+  }
+
+  .card-info small {
+    font-size: 0.95rem;
+  }
+
+  /* TEXT CARD */
+  .text-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-card p {
+    font-size: 1rem;
+  }
+
+  /* BASIC CARD */
+  .basic-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .basic-card p {
+    font-size: 1rem;
+  }
+
+  .basic-card small {
+    font-size: 0.95rem;
+  }
+
+  /* COMPACT CARD */
+  .compact-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .compact-card small {
+    font-size: 0.95rem;
+  }
+
+  /* GRID CARD */
+  .grid-card h3 {
+    font-size: 1.15rem;
+  }
+
 }

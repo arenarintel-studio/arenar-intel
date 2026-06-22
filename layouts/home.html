@@ -22,33 +22,45 @@
     {{/* LOAD THE MASTER MANIFEST CONTROL BOARD */}}
     {{ $board := site.Data.homepage }}
 
-    <!-- SLOT 1: FEATURED CARD -->
-    {{ if $board.slot_1 }}
-    {{ with site.GetPage (printf "/intel/%s" $board.slot_1) }}
-      {{ partial "cards/featured.html" . }}
-    {{ end }}
-    {{ end }}
+    <!-- HERO SECTION: Featured + 3 side cards -->
+    <div class="hero-grid">
 
-    <!-- SLOT 2: TEXT CARD -->
-    {{ if $board.slot_2 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_2) }}
-        {{ partial "cards/text.html" . }}
+      <!-- SLOT 1: FEATURED CARD (LEFT) -->
+      {{ if $board.slot_1 }}
+        {{ with site.GetPage (printf "/intel/%s" $board.slot_1) }}
+          <div class="hero-featured">
+            {{ partial "cards/featured.html" . }}
+          </div>
+        {{ end }}
       {{ end }}
-    {{ end }}
 
-    <!-- SLOT 3: COMPACT CARD -->
-    {{ if $board.slot_3 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_3) }}
-        {{ partial "cards/compact.html" . }}
-      {{ end }}
-    {{ end }}
+      <!-- SIDEBAR: slots 2, 3, 4 (RIGHT on desktop, STACKED on mobile) -->
+      <div class="hero-sidebar">
 
-    <!-- SLOT 4: COMPACT CARD -->
-    {{ if $board.slot_4 }}
-      {{ with site.GetPage (printf "/intel/%s" $board.slot_4) }}
-        {{ partial "cards/compact.html" . }}
-      {{ end }}
-    {{ end }}
+        <!-- SLOT 2: TEXT CARD -->
+        {{ if $board.slot_2 }}
+          {{ with site.GetPage (printf "/intel/%s" $board.slot_2) }}
+            {{ partial "cards/text.html" . }}
+          {{ end }}
+        {{ end }}
+
+        <!-- SLOT 3: COMPACT CARD -->
+        {{ if $board.slot_3 }}
+          {{ with site.GetPage (printf "/intel/%s" $board.slot_3) }}
+            {{ partial "cards/compact.html" . }}
+          {{ end }}
+        {{ end }}
+
+        <!-- SLOT 4: COMPACT CARD -->
+        {{ if $board.slot_4 }}
+          {{ with site.GetPage (printf "/intel/%s" $board.slot_4) }}
+            {{ partial "cards/compact.html" . }}
+          {{ end }}
+        {{ end }}
+
+      </div>
+
+    </div>
 
     <!-- SLOT 5: BASIC CARD -->
     {{ if $board.slot_5 }}

@@ -40,6 +40,20 @@ function closeMenu() {
   }
 }
 
+// Close menu when any menu link is clicked
+document.querySelectorAll(".menu-nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMenu();
+  });
+});
+
+// Reset menu state when returning via back button (bfcache)
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) {
+    closeMenu();
+  }
+});
+
 // Clear search whenever menu opens
 if (menuCheckbox) {
   menuCheckbox.addEventListener("change", () => {

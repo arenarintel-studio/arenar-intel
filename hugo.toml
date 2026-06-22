@@ -13,7 +13,7 @@ disableKinds = ["taxonomy", "term"]
   logo = '/images/logo-512.png'
   twitter = '@arenarintel'
 
-  xbar = "Iran has agreed to a ceasefire deal after intense negotiations in Geneva. Read the full thread for the geopolitical breakdown."
+  xbar = "Iran has agreed to a ceasefire deal after intense negotiations in Geneva."
   xbarlink = "https://x.com/ArenarIntel/status/1234567890"
 
 [module]
