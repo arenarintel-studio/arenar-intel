@@ -2,10 +2,10 @@
 title = "Neymar to miss Brazil's World Cup match with Haiti"
 date = 2026-06-18T14:00:00Z
 draft = false
-image = "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1600&auto=format&fit=crop"
+image = "/images/intel/two-players-on-a-pitch.webp"
 summary = "Brazil forward Neymar will not travel with the squad for Friday's World Cup match against Haiti as he recovers from a calf injury, the country's football body says."
 source = "Based on reporting by Reuters and AP."
-image_source = "Unsplash"
+image_source = "Players compete for the ball during a match. Photo: Unsplash"
 +++
 Neymar will not travel with the Brazil squad to Philadelphia for their second World Cup group game against Haiti as he recovers from a calf injury, the Brazilian Football Association said.
 

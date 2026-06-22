@@ -2,10 +2,10 @@
 title = "Broos tells critics to 'shut up' after Mexico loss"
 date = 2026-06-17T13:30:00Z
 draft = false
-image = "/images/intel/trump-landscape.jpg"
+image = "/images/intel/stadium.webp"
 summary = "South Africa coach Hugo Broos has hit back at critics of his tactics after the team's 2-0 loss to Mexico, ahead of Thursday's World Cup clash with the Czech Republic."
 source = "Based on Reuters reporting"
-image_source = "Library of Congress"
+image_source = "A football stadium. Photo: Unsplash"
 +++
 
 Broos tells critics to 'shut up' after Mexico loss
