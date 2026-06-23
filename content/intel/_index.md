@@ -1,3 +1,5 @@
----
-title: "intel"
----
++++
+title = "Intel"
+[_build]
+  render = "never"
++++
