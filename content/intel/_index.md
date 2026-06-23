@@ -1,5 +1,5 @@
 +++
 title = "Intel"
-[_build]
+[build]
   render = "never"
 +++
