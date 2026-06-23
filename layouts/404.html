@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Page Not Found | {{ site.Title }}</title>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+
+  <input type="checkbox" id="menuToggle" class="menu-checkbox" />
+
+  <header class="site-header" data-pagefind-ignore>
+    {{ partial "header.html" . }}
+  </header>
+
+  {{ partial "menu.html" . }}
+
+  <main>
+    <div class="error-page">
+      <h1>Page Not Found</h1>
+      <p>The page you are looking for does not exist or has been moved.</p>
+      <p>It may have been part of an earlier version of this site.</p>
+      <a href="/" class="error-home-link">Return to Arenar Intel</a>
+    </div>
+  </main>
+
+  <footer data-pagefind-ignore>
+    {{ partial "footer.html" . }}
+  </footer>
+
+</body>
+</html>

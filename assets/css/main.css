@@ -486,3 +486,44 @@ header,
   }
 
 }
+
+/* ─────────────────────────────────────────────
+   404 ERROR PAGE
+───────────────────────────────────────────── */
+
+.error-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.error-page h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.error-page p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-soft);
+  margin-bottom: 1rem;
+}
+
+.error-page .error-home-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  background: var(--black);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.error-page .error-home-link:hover {
+  background: #333;
+}
