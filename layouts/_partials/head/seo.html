@@ -13,10 +13,13 @@
   {{ $imageAbs = $logoAbs }}
 {{ end }}
 
+{{ $editorialURL := absURL "/editorial-team/" }}
+{{ $founderURL := printf "%s#seth-anokye-amoyaw" $editorialURL }}
+
 {{/* ─────────────────────────────────────────────
      ORGANIZATION SCHEMA
-     Tells Google "Arenar Intel" is a real publisher.
-     Shows on every page.
+     Tells Google "Arenar Intel" is a real publisher
+     with a real human founder.
    ───────────────────────────────────────────── */}}
 <script type="application/ld+json">
 {
@@ -24,12 +27,12 @@
   "@type": "NewsMediaOrganization",
   "name": "Arenar Intelligence",
   "alternateName": [
-  "Arenar Intel",
-  "Arenar",
-  "Arenar News",
-  "Arenar Intelligence News",
-  "The Global Intelligence Feed"
-],
+    "Arenar Intel",
+    "Arenar",
+    "Arenar News",
+    "Arenar Intelligence News",
+    "The Global Intelligence Feed"
+  ],
   "url": "{{ site.BaseURL }}",
   "logo": {
     "@type": "ImageObject",
@@ -37,10 +40,30 @@
     "width": 512,
     "height": 512
   },
+  "founder": {
+    "@type": "Person",
+    "@id": "{{ $founderURL }}",
+    "name": "Seth Anokye Amoyaw",
+    "jobTitle": "Founder & Editor",
+    "worksFor": {
+      "@type": "NewsMediaOrganization",
+      "name": "Arenar Intelligence"
+    },
+    "url": "{{ $editorialURL }}"
+  },
+  "foundingDate": "2025",
+  "foundingLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Accra",
+      "addressCountry": "GH"
+    }
+  },
   "sameAs": [
     "https://x.com/arenarintel",
     "https://www.threads.com/arenarintel",
-    "https://www.tiktok/@arenarintel",
+    "https://www.tiktok.com/@arenarintel",
     "https://www.youtube.com/@arenarintel"
   ]
 }
@@ -78,6 +101,7 @@
      SEO element on the entire site.
    ───────────────────────────────────────────── */}}
 {{ if and (not .IsHome) (eq .Section "intel") }}
+{{ $authorName := .Params.author | default "The Intel Desk" }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -94,8 +118,15 @@
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ (or .Lastmod .Date).Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {
+    {{ if eq $authorName "Seth Anokye Amoyaw" }}
     "@type": "Person",
-    "name": "{{ .Params.author | default "The Intel Desk" }}"
+    "name": "Seth Anokye Amoyaw",
+    "url": "{{ $editorialURL }}"
+    {{ else }}
+    "@type": "Organization",
+    "name": "The Intel Desk",
+    "url": "{{ $editorialURL }}"
+    {{ end }}
   },
   "publisher": {
     "@type": "NewsMediaOrganization",

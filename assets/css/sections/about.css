@@ -78,3 +78,9 @@
   letter-spacing: 0.5px;
   border-radius: 6px;
 }
+
+.contact-email {
+  text-decoration: underline;
+  color: inherit;
+
+}

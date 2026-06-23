@@ -38,6 +38,17 @@
 font-family: Arial, sans-serif; 
 }
 
+.byline-link {
+  color: var(--text-soft);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.byline-link:hover {
+  border-bottom-color: var(--text-soft);
+}
+
 /* ─────────────────────────────────────────────
    ACTION BUTTONS (SHARE / SAVE)
 ───────────────────────────────────────────── */
