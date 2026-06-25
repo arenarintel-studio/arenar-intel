@@ -5,7 +5,7 @@ draft = false
 image = "/images/intel/iran-flag.webp"
 summary = "Iran's UN envoy has disputed a U.S. claim that its unfrozen assets would be controlled by Washington and spent on American goods, insisting only Iran will decide."
 source = "Based on Reuters reporting."
-image_source = "The Iranian flag. Photo: Sina Drakhshani/ Unsplash"
+image_source = "The Iranian flag. Photo: Sina Drakhshani / Unsplash"
 +++
 
 Iran alone will decide how to use its soon-to-be-unfrozen assets, the country's UN ambassador in Geneva said on Tuesday, rejecting a U.S. claim that Washington would have any control over the funds. Ali Bahreini said the roughly $12 billion would not be subject to U.S. oversight, nor be required to buy American goods, disputing comments made by U.S. Vice President JD Vance.
