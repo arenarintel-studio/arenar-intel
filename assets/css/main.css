@@ -418,6 +418,19 @@ p, small {
 }
 
 /* ─────────────────────────────────────────────
+   SUMMARY LINE CLAMP (max 3 lines on cards)
+───────────────────────────────────────────── */
+
+.card-info p,
+.text-card p,
+.basic-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ─────────────────────────────────────────────
    GLOBAL INTERACTION FIXES
 ───────────────────────────────────────────── */
 

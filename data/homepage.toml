@@ -8,20 +8,19 @@ slot_1 = "trump-seeks-87b-from-congress"
 slot_2 = "uk-to-criminalise-gender-conversion-therapies"
 
 #compact
-slot_3 = "ghana-england-match"
-slot_4 = "ukraine-revise-russia-ceasefire-if-un-fails-to-act"
+slot_3 = "herald-newspaper-editor-larry-jailed-for-contempt-of-court"
+slot_4 = "ghana-england-match"
 
 #basic
-slot_5 = "neymar-to-miss-world-cup-with-haiti.md"
+slot_5 = "iran-rejects-us-claim-of-control-over-unfrozen-assets"
 
 #compact
-slot_6 = "iran-rejects-us-claim-of-control-over-unfrozen-assets"
-slot_7 = "trump-demands-hormuz-reopen-iran-deal"
+slot_6 = "trump-demands-hormuz-reopen-iran-deal"
+slot_7 = "ukraine-revise-russia-ceasefire-if-un-fails-to-act"
 slot_8 = "broos-tells-critics-to-shutup"
 
 #text
-#slot_9 = "eu-fines-temu"
-
+slot_9 = "neymar-to-miss-world-cup-with-haiti.md"
 #basic
 #slot_10 = "romania-andrewtate-investigation"
 
