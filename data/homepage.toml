@@ -21,13 +21,13 @@ slot_6 = "trump-demands-hormuz-reopen-iran-deal"
 slot_7 = "iran-rejects-us-claim-of-control-over-unfrozen-assets"
 
 #compact
-slot_8 = "broos-tells-critics-to-shutup"
+slot_8 = "neymar-to-miss-world-cup-with-haiti.md"
 
 #text
-slot_9 = "neymar-to-miss-world-cup-with-haiti.md"
+slot_9 = "ukraine-revise-russia-ceasefire-if-un-fails-to-act"
 
 #basic
-slot_10 = "ukraine-revise-russia-ceasefire-if-un-fails-to-act"
+slot_10 = "broos-tells-critics-to-shutup"
 
 #text
 #slot_11 = "myanmar-tovisit-india"
