@@ -2,8 +2,7 @@
 # Just type the URL slug/filename of the article you want in each slot.
 
 #featured
-slot_1 = "trump-seeks-87b-from-congress"
-
+slot_1 = "tiktok-youtube-deactivate-child-accounts-in-indonesia.md"
 #text
 slot_2 = "gja-vows-to-defend-press-freedom-after-dogbey-jailed"
 
@@ -15,7 +14,7 @@ slot_4 = "ghana-england-match"
 slot_5 = "uk-to-criminalise-gender-conversion-therapies"
 
 #text
-slot_6 = "trump-demands-hormuz-reopen-iran-deal"
+slot_6 = "trump-seeks-87b-from-congress"
 
 #basic
 slot_7 = "iran-rejects-us-claim-of-control-over-unfrozen-assets"
@@ -30,7 +29,7 @@ slot_9 = "ukraine-revise-russia-ceasefire-if-un-fails-to-act"
 slot_10 = "broos-tells-critics-to-shutup"
 
 #text
-#slot_11 = "myanmar-tovisit-india"
+slot_11 = "trump-demands-hormuz-reopen-iran-deal"
 #slot_12 = "us-imposes-new-sanctions"
 #slot_13 = "iceland-eu-referendum-talks"
 
