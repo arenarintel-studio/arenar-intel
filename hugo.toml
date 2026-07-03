@@ -13,8 +13,8 @@ disableKinds = ["taxonomy", "term"]
   logo = '/images/logo-512.png'
   twitter = '@arenarintel'
 
-  xbar = "Iran says any vessel seeking to transit the Strait of Hormuz must obtain permission."
-  xbarlink = "https://x.com/arenarintel/status/2070067535282663563?s=46"
+  xbar = "JUST IN: Portugal advances to Round of 16 after defeating Croatia in the FIFA World Cup."
+  xbarlink = "https://x.com/arenarintel/status/2072870763065926028?s=20"
 
 [module]
   [module.hugoVersion]

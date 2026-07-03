@@ -83,6 +83,52 @@
   </div>
   {{ end }}
 
+  <!-- LEARN MORE — links news to evergreen explainers -->
+  {{ with .Params.learn_more }}
+  <aside class="learn-more" data-pagefind-ignore aria-label="Learn more">
+    <h2 class="learn-more-title">More on This Topic:</h2>
+    <div class="learn-more-list">
+      {{ range . }}
+        {{ with site.GetPage (printf "/learn/%s" .) }}
+        <a href="{{ .RelPermalink }}" class="learn-more-card">
+          {{ with .Params.image }}
+            <img src="{{ . }}" alt="{{ $.Title }}" class="learn-more-img" loading="lazy" />
+          {{ end }}
+          <div class="learn-more-text">
+            <h3>{{ .Title }}</h3>
+            {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+          </div>
+        </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </aside>
+  {{ end }}
+
+  <!-- READ NEXT — links to other news (compact cards) -->
+  {{ with .Params.read_next }}
+  <section class="read-next" data-pagefind-ignore aria-label="Read next">
+    <h2 class="section-heading">Read Next</h2>
+    {{ range . }}
+      {{ with site.GetPage (printf "/intel/%s" .) }}
+        {{ partial "cards/compact.html" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+  {{ end }}
+
+  <!-- EDITOR'S-PICK — suggested news (basic cards) -->
+  {{ with .Params.editors_pick }}
+  <section class="editors-pick" data-pagefind-ignore aria-label="Editors Pick">
+    <h2 class="section-heading">Editor's Pick</h2>
+    {{ range . }}
+      {{ with site.GetPage (printf "/intel/%s" .) }}
+        {{ partial "cards/basic.html" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+  {{ end }}
+
 </main>
 
 {{ end }}
