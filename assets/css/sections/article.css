@@ -116,7 +116,7 @@ font-family: Georgia, Arial;
 
 .image-source {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-bottom: 1rem;
 font-family: Times;
 }
@@ -153,9 +153,9 @@ font-family: Times;
 /* Directly targeting H2 overrides the global Arial rule */
 .article-body h2 {
   margin-bottom: 0.5rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.2;
-  font-family: Cambria, Georgia, serif; 
+  font-family: Georgia, serif; 
 }
 
 /* Directly targeting H3 overrides the global Arial rule */

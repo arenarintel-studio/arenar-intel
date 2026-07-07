@@ -2,9 +2,9 @@
 # Just type the URL slug/filename of the article you want in each slot.
 
 #featured
-slot_1 = "ghanaian-shot-dead-in-south-africa-amid-xenophobic-attacks"
+slot_1 = "ecg-maintenance-full-list-of-affected-areas"
 #text
-slot_2 = "ukraine-revise-russia-ceasefire-if-un-fails-to-act"
+slot_2 = "ghanaian-shot-dead-in-south-africa-amid-xenophobic-attacks"
 
 #compact
 slot_3 = "tiktok-youtube-deactivate-child-accounts-in-indonesia.md"
@@ -34,7 +34,7 @@ slot_12 = "gja-vows-to-defend-press-freedom-after-dogbey-jailed"
 slot_13 = "iran-rejects-us-claim-of-control-over-unfrozen-assets"
 
 #compact
-#slot_14 = "gcb-named-best-bank"
+slot_14 = "ukraine-revise-russia-ceasefire-if-un-fails-to-act"
 #slot_15 = "energy-ministry-monitor-ecg"
 
 #basic
