@@ -226,6 +226,32 @@ font-family: Times;
 }
 
 /* ─────────────────────────────────────────────
+   READ NEXT / EDITOR'S PICK SECTIONS
+───────────────────────────────────────────── */
+
+.read-next,
+.editors-pick {
+  margin-top: 1.5rem;
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+/* Remove trailing border after the last card only */
+.editors-pick .card-link:last-child .basic-card {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* ─────────────────────────────────────────────
    LEARN MORE BOX (news → knowledge)
 ───────────────────────────────────────────── */
 
